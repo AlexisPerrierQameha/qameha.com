@@ -1,0 +1,393 @@
+/***************************************************************
+		          STYLESHEET FOR QAMEHA.COM
+***************************************************************/
+
+/****************** SHARED ELEMENTS ********************/
+body{
+	font-family:Georgia;
+	font-size: 13px;
+	color:#656566;
+	background-color:#323233;
+	line-height: 18px;
+}
+
+.fixedWidthContent{
+	width:920px;
+	margin: auto;
+}
+a{
+	color: #656566;
+	text-decoration:none;
+}
+a:hover{
+	color: #000;
+	text-decoration:underline;
+}
+.classicHtml h2{
+	font-size: 19px;
+	margin-bottom: 10px;
+}
+.classicHtml h3{
+	font-size: 15px;
+	clear:both;
+	padding: 20px 0px 10px 0px;
+}
+.classicHtml li{
+	list-style-type: disc;
+}
+.classicHtml p{
+	margin-bottom: 10px;
+}
+strong{
+	font-size: 15px;
+	padding: 10px 10px 10px 40px;
+	display:block;
+}
+hr{
+	margin: 20px 0px;
+}
+ul{
+	margin: 10px 0px;
+}
+li{
+	margin-left: 20px;
+}
+/****************** SPECIFIC ELEMENTS ********************/
+#promoWrapper{
+	min-width: 920px;
+	position:relative;
+}
+#promo{
+	width: 273px;
+	height: 161px;
+	background:url("/images/banner_promo.png");
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+#headest{
+	background: url("/images/loop_headest.jpg");
+	color: #EEEEEE;
+	height: 45px;
+	padding-top: 15px;
+	font-style: italic;
+}
+#bottomLoop{
+	height:12px;
+	background:url("/images/bottom_loop.png") repeat-x;
+	margin-top: -12px;
+}
+#header{
+	padding: 10px 0px;
+	background-color:#FFFFFF;
+}
+	#header #logo{
+		width: 120px;
+		height: 120px;
+		background:url("/images/logo_qameha.jpg");
+		display: block;
+		float: left;
+	}
+	#header #menu{
+		float:right;
+		width: 600px;
+		font-size: 18px;
+		text-align:right;
+		margin-top : 95px;
+	}
+
+#subZone{
+	color: #EEEEEE;
+	font-size: 18px;
+	font-style:italic;
+	position: relative;
+	background:url("/images/loop_subzone.png") repeat-y;
+	background-color: #2d2c2e;
+	padding-bottom: 15px;
+}
+	#subZone .fixedWidthContent{
+		position: relative;
+	}
+	#subZone #cubes{
+		background:url("/images/cubes.jpg");
+		height:66px;
+		width: 196px;
+		position: absolute;
+		top: 15px;
+		left: 600px;
+	}
+	#subZone #content{
+		padding: 20px 0px;
+	}
+	#subZone p{
+		padding-top: 10px;
+		width: 600px;
+	}
+	#subZone h1{
+		background:url("/images/rmf.png") no-repeat;
+		padding-top:43px;
+		overflow: hidden;
+		height: 0px;
+		margin-top: 10px;
+	}
+	#subZone #contactUs{
+		float:right;
+		background:url("/images/call_to_acttion_button.jpg");
+		width: 213px;
+		height:32px;
+		padding-top: 14px;
+		text-align:center;
+		color:#fff;
+		margin-top: -30px;
+		font-style:normal;
+		font-size: 20px;
+		display: block;
+	}
+.pageContent{
+	margin: auto;
+	padding: 15px 0px;
+	background-color:#FFFFFF;
+}
+#newsAndTwitter{
+	background-color: #868686;
+	height: 180px;
+}
+	#newsAndTwitter h2{
+		padding: 20px 0px 10px 0px;
+	}
+	#newsAndTwitter p{
+		color: #eeeeee;
+		font-size: 17px;
+		font-style: italic;
+	}
+	#newsAndTwitter #twitter{
+		width: 550px;
+		background: transparent url(/images/twitter.jpg) no-repeat scroll 10px 95px;
+		height: 170px;
+		position: relative;
+		float: left;
+	}
+		#twitter #date{
+			float:right;
+		}
+		#twitter #followUs{
+			float:right;
+			background:url("/images/follow_us_box.jpg") no-repeat;
+			height:39px;
+			width: 233px;
+			display:block;
+			position: absolute;
+			top: 120px;
+			left: 320px;
+			color: #fff;
+			padding:10px 0px 0px 20px;
+			font-size: 16px;
+		}
+	#newsAndTwitter #news{
+		margin: 5px 0px;
+		border-left: 2px solid #ebebeb;
+		height: 160px;
+		width: 340px;
+		float: right;
+		position: relative;
+		background: url("/images/bubble.png") no-repeat 60px 0px;
+	}
+		#newsAndTwitter #news h2{
+			margin-left: 20px;
+		}
+		#newsAndTwitter #news p{
+			color: #eeeeee;
+			margin-left: 20px;
+		}
+			#newsAndTwitter #news p em{
+				font-size: 12px;
+				display:block;
+			}
+			#newsAndTwitter #news img{
+				position:absolute;
+				top: 110px;
+				left: 20px;
+			}
+#footer{
+	background-color: #323233;
+}
+	#footer .module{
+		width: 200px;
+		height: 160px;
+		float:left;
+		border-right: 2px solid #acacac;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display:block;
+	}
+	#footer #recruiting{
+		background:url("/images/recruiting_logo_dark.jpg") no-repeat 0px 0px;
+	}
+	#footer #evaluation{
+		background:url("/images/evaluation_logo_dark.jpg") no-repeat 25px 10px;
+	}
+	#footer #mobility{
+		background:url("/images/mobility_logo_dark.jpg") no-repeat 30px 14px;
+	}
+	#footer #endNavigation{
+		font-size: 15px;
+		width: 310px;
+		float: right;
+		margin-top: 20px;
+	}
+		#footer #endNavigation li{
+			list-style-type: disc;
+			margin-left: 35px;
+		}
+		#footer #endNavigation a{
+			color: #eeeeee;
+		}
+		#footer #endNavigation img{
+			margin: 15px 0px 0px 20px;
+			border: 1px solid #cccccc;
+		}
+/*********************** INDEX PAGE ELEMENTS *********************/
+.verticalSeparator{
+	background:url("/images/vertical_separator.jpg");
+	float:left;
+	width: 3px;
+	height: 410px;
+	margin: 0px 20px 0px 20px;
+}
+.moduleBlock{
+	width: 200px;
+	float: left;
+	padding-top: 140px;
+}
+	.moduleBlock h1{
+		height: 0px;
+		overflow:hidden;
+		margin-bottom: 10px;
+	}
+	.moduleBlock ul{
+		margin: 10px 0px 10px 0px;
+	}
+	.moduleBlock li{
+		padding-left: 20px;
+		font-size: 16px;
+	}
+	.moduleBlock p a{
+		display: block;
+		background: url("/images/learn_more_icon.jpg") no-repeat scroll 0px 3px;
+		padding: 0px 0px 0px 20px;
+	}
+
+#testimonials{
+	background: url("/images/testimonial_middle.jpg");
+	height:376px;
+	width: 225px;
+	float: right;
+	position: relative;
+}
+	#testimonials #top{
+		height: 17px;
+		background:url("/images/testimonial_top.jpg");
+		width: 225px;
+		position:absolute;
+		top:0px;
+	}
+	#testimonials #bottom{
+		height: 30px;
+		background:url("/images/testimonial_bottom.jpg");
+		width: 225px;
+		position:absolute;
+		top:365px;
+	}
+	#testimonials p{
+		padding: 10px 25px 0px 25px;
+		color: #eeeeee;
+		font-size: 21px;
+		line-height:24px;
+		font-style:italic;
+		margin-bottom:30px;
+	}
+		#testimonials p img{
+			width: 30%;
+		}
+	#testimonials #client{
+		float: right;
+		padding-right: 10px;
+		color: #eeeeee;
+		font-size: 15px;
+	}
+	#testimonials #closeQuote{
+		float:right;
+	}
+	#testimonials #caroussel{
+		color: #eeeeee;
+		position:absolute;
+		bottom: 10px;
+		margin-left: 20px;
+	}
+		#testimonials #caroussel a{
+			color: #eeeeee;
+		}
+/* MODULES BLOCKS */
+#recruiting{
+	background:url("/images/recruiting_logo.jpg") no-repeat;
+}
+	#recruiting h1{
+		background: url("/images/recruiting_text.jpg") no-repeat;
+		padding-top: 31px;
+	}
+	#recruiting li{
+		background:url("/images/recruiting_dot.jpg") no-repeat scroll 0px 4px;
+	}
+#evaluation{
+	background:url("/images/evaluation_logo.jpg") no-repeat;
+}
+	#evaluation h1{
+		background: url("/images/evaluation_text.jpg") no-repeat;
+		padding-top: 31px;
+	}
+	#evaluation li{
+		background:url("/images/evaluation_dot.jpg") no-repeat scroll 0px 4px;
+	}
+#mobility{
+	background:url("/images/mobility_logo.jpg") no-repeat;
+}
+	#mobility h1{
+		background: url("/images/mobility_text.jpg") no-repeat;
+		padding-top: 31px;
+	}
+	#mobility li{
+		background:url("/images/mobility_dot.jpg") no-repeat scroll 0px 4px;
+	}
+	
+/*********************** TEAM PAGE ELEMENTS *********************/
+#teamContent{
+	padding-bottom: 50px;
+}
+	#teamContent img{
+		float: left;
+		margin: 0px 20px 0px 0px;
+	}
+	#teamContent p{
+		width: 700px;
+	}
+	#teamContent a{
+		text-decoration:underline;
+	}
+	#teamContent ul{
+		margin-left: 200px;
+		margin-top: 15px;
+	}
+	
+/* -------------------- CLEARFIX CLASS -------------------- */
+
+.clearfix:after {clear: both;
+content: '.';
+display: block;
+visibility: hidden;
+height: 0;}
+
+.clearfix {display: inline-block;}
+
+* html .clearfix {height: 1%;}
+
+.clearfix {display: block;}

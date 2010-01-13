@@ -1,0 +1,14 @@
+#promo{
+	behavior: url(/stylesheets/iepngfix.htc);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/banner_promo.png');
+}
+#testimonials p #closeQuote{
+	margin-right: 20px;
+	margin-top: -20px;
+}
+#promo{
+	background:url("/images/banner_promo_ie.png");
+}
+#bottomLoop{
+	display: none;
+}

@@ -1,0 +1,573 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fusion 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-22 14:31+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: digitalnature <hello@digitalnature.ro>\n"
+"Language-Team: digitalnature.ro <hello@digitalnature.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: c:\\wamp\\www\\wordpress\\wp-content\\themes\\fusion\n"
+"X-Poedit-SearchPath-1: .\n"
+"X-Poedit-SearchPath-2: ..\n"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/404.php:7
+msgid "Page not found (404)"
+msgstr "Page non trouvée (404)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:9
+msgid "Archive for category"
+msgstr "Archives de la catégorie"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:11
+msgid "Posts Tagged"
+msgstr "Tags de l'article"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:13
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:15
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:17
+msgid "Archive for"
+msgstr "Archive pour"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:13
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:35
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:203
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:20
+msgid "F jS, Y"
+msgstr "j F Y"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:15
+msgid "F, Y"
+msgstr "F Y"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:17
+msgid "Y"
+msgstr "Y"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:19
+msgid "Author Archive"
+msgstr "Archive de l'auteur"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:21
+msgid "Blog Archives"
+msgstr "Blog Archives"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:30
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:14
+msgid "Permanent Link to"
+msgstr "Rétroliens à"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:35
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:20
+#, php-format
+msgid "Posted by %s in %s"
+msgstr "Posté par %s dans %s"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:35
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:37
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:20
+#, php-format
+msgid "Posts by %s"
+msgstr "Posté par %s"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:35
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:20
+msgid "on"
+msgstr "le"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:42
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:16
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:28
+msgid "Read the rest of this entry &raquo;"
+msgstr "Lire la suite &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:54
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:46
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:40
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:26
+msgid "No Comments"
+msgstr "Pas de commentaires"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:54
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:46
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:40
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:26
+msgid "1 Comment"
+msgstr "1 Commentaire"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:54
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:46
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:40
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:26
+msgid "% Comments"
+msgstr "% Commentaires"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:65
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:53
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:52
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:12
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:33
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Page précédente"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:66
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:54
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:53
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:13
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:34
+msgid "Newer Entries &raquo;"
+msgstr "Page suivante &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:72
+#, php-format
+msgid "Sorry, but there aren't any posts in the %s category yet."
+msgstr "Désolé, mais il n'y a pas encore d'articles dans la catégorie %s."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:74
+msgid "Sorry, but there aren't any posts with this date."
+msgstr "Désolé, mais il n'y a pas d'articles pour cette date."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:77
+#, php-format
+msgid "Sorry, but there aren't any posts by %s yet."
+msgstr "Désolé mais il n'y a pas encore d'articles de %s."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:79
+msgid "No posts found."
+msgstr "Pas d'articles trouvé."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archives.php:10
+msgid "Archives by Month:"
+msgstr "Archives par mois."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archives.php:14
+msgid "Archives by Subject:"
+msgstr "Archives par sujet."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:20
+msgid "This user hasn't shared any biographical information"
+msgstr ""
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:25
+#, fuzzy
+msgid "Homepage:"
+msgstr "Home"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:26
+msgid "Yahoo Messenger:"
+msgstr ""
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:27
+msgid "Jabber/GTalk:"
+msgstr ""
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:28
+msgid "AIM:"
+msgstr ""
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:45
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:29
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:25
+msgid "l, F jS, Y"
+msgstr "l j F Y"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:46
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:26
+msgid "Tags: "
+msgstr ""
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:46
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:26
+#, fuzzy
+msgid "Posted in"
+msgstr "Posté par %s dans %s"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:46
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:26
+msgid "Edit"
+msgstr ""
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/author.php:59
+#, fuzzy
+msgid "No posts found by this author."
+msgstr "Pas d'articles trouvé."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:5
+msgid "Enter your password to view comments"
+msgstr "Entrez votre mot de passe pour voir les commentaires."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:21
+msgid "Comments"
+msgstr "Commentaires"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:22
+msgid "Trackbacks"
+msgstr "Rétroliens"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:41
+msgid "No comments yet."
+msgstr "Pas de nouveau commentaire."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:62
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Vous devez vous <a href=\"%s\">connecter</a> pour écrire un commentaire."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:69
+msgid "Cancel Reply"
+msgstr ""
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:72
+msgid "Logged in as"
+msgstr "Connecté sous"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:72
+msgid "Log out of this account"
+msgstr "Déconnection de ce compte"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:72
+msgid "Logout &raquo;"
+msgstr "Déconnection &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:75
+#, php-format
+msgid "Welcome back <strong>%s</strong>."
+msgstr "Bienvenue <strong>%s</strong>."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:75
+msgid "Change &raquo;"
+msgstr "Changer &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:75
+msgid "Close &raquo;"
+msgstr "Ferme &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:80
+msgid "Name"
+msgstr "Nom"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:80
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:84
+msgid "(required)"
+msgstr "(obligatoire)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:84
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:84
+msgid "(will not be published)"
+msgstr "(non publié)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:88
+msgid "Website"
+msgstr "Website"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:106
+msgid "Submit Comment"
+msgstr "Valider le commentaire"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:124
+msgid "No trackbacks yet."
+msgstr "Pas encore de Rétroliens."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:137
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:7
+msgid "Fusion theme by"
+msgstr "Fusion theme (Fr par <a href=\"http://www.semageek.com\">Semageek</a>) par"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:7
+msgid "powered by "
+msgstr "Propulsé par"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:8
+msgid "Entries (RSS)"
+msgstr "Entrées (RSS)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:8
+msgid "and"
+msgstr "et"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:8
+msgid "Comments (RSS)"
+msgstr "Commentaires (RSS)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:15
+msgid "Increase/Decrease text size"
+msgstr "Diminuer/Augmenter la taille du texte"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:16
+msgid "Switch between full and fixed width"
+msgstr "basculez entre la largeur totale ou fixe."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:88
+msgid "Fusion Theme Options"
+msgstr "Option du thème Fusion"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:91
+msgid "Meta keywords:"
+msgstr "Mots clés META"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:92
+msgid "Separate with commas"
+msgstr "Séparé par des virgules"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:97
+msgid "Use custom logo image"
+msgstr "Utiliser un logo personalisé"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:97
+msgid "Upload your logo as \"logo.png\" in the theme directory:"
+msgstr "Uploadez votre logo comme \"logo.png\" dans le répertoire du thème:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:97
+msgid "You should export the logo image with transparency enabled"
+msgstr "Vous devez exporter l'image du logo avec la transparence active"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:102
+msgid "Disable homepage tab"
+msgstr "Désactive l'onglet Page d'accueil"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:102
+msgid "Check this if you are using a static page as the homepage"
+msgstr "Cochez si vous utilisez une page d'accueil statique"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:107
+msgid "Show the categories as header tabs"
+msgstr "Voir les catégories dans les onglets"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:107
+msgid "(instead of pages)"
+msgstr "(à la place des pages)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:112
+msgid "Disable the default category block in the sidebar"
+msgstr "Désactive le bloc Catégorie par defaut de la sidebar"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:112
+msgid "Check if you prefer the widgetized category display or just want to hide the categories"
+msgstr "Cochez si vous préférez utiliser les catégorie en Widget ou si vous voulez juste cacher les Catégories"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:117
+msgid "Disable the default search block in the sidebar"
+msgstr "Desactiver le bloc Rechercher par default"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:117
+msgid "Check if you don't like the theme-default search look"
+msgstr "Cochez si vous n'aimez pas le bloc Rechercher par défaut du thème"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:122
+msgid "Disable layout controls (Aa/<>)"
+msgstr "Désactiver le controle des layouts (Aa/<>)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:124
+msgid "Default page content width:"
+msgstr "Largeur par défaut de la page :"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:127
+msgid "Fixed (960 pixels)"
+msgstr "Fixé (960 pixels)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:131
+msgid "Fluid (95 percent of the visitor's screen width)"
+msgstr "Modulable (95 pourcent de la largeur d'écran visiteur)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:132
+msgid "Note that if the layout controls are enabled, the visitor's javascript page width cookie setting will override this option"
+msgstr "Notez que si le controle de layout est activé, la largeur de page Javascript du visiteur dans le cookies surpasse cette option"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:136
+msgid "Sidebar position:"
+msgstr "Position de la SideBar"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:139
+msgid "Right (default)"
+msgstr "Droite(default)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:143
+msgid "Left"
+msgstr "Gauche"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:149
+msgid "Disable jQuery and the associated code"
+msgstr "Desactiver jQuery et le code associé"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:149
+msgid "This will reduce the page load with ~70 KB, but will also disable some features and effects (layout controls, rss links inside category menu, comment tabs, trackbacks).<br />You shouldn't change this unless you have problems with your host regarding bandwidth"
+msgstr "Le chargement de la page sera réduit de 70kB, mais certains effets seront inactif (layout controls, rss dans le menu categorie, onglet commentaires, rétroliens).<br />Vous changerez cette option que dans le cas de problème de bande passante."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "Custom CSS code"
+msgstr "Code CSS Personnalisé"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "Here you can add or change anything related to design if you have some basic CSS knowledge. Check "
+msgstr "Ici vous pouvez ajouter ou changer le design, si vous avez des besoins CSS basique particulier. Cochez"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "to see existing styles, which you can redefine here."
+msgstr "pour voir les styles existants, que vous pouvez redefinir ici."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "Don't modify style.css if you wish to preserve your changes after theme update! Use this option instead."
+msgstr "Ne modifier pas style.css si vous desirez conserver vos changements après une mise à jour de thème! Utilisez plutôt cette otion."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:155
+msgid "Save Changes"
+msgstr "Sauvegardez les changements"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:203
+msgid "by"
+msgstr "par"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:203
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:203
+msgid "H:i"
+msgstr "H:i"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:207
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:217
+msgid "Reply"
+msgstr "Répondre"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:217
+msgid "Quote"
+msgstr "Citez"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:158
+msgid "You are Home"
+msgstr "Vous êtes à Home"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:158
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:160
+msgid "Home"
+msgstr "Home"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:160
+msgid "Click for Home"
+msgstr "Cliquez pour aller à Home"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:28
+msgid "This entry was posted on"
+msgstr "Cet article a été posté le"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:30
+msgid "and is filed under"
+msgstr "et classé dans"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:32
+msgid "You can follow any responses to this entry through"
+msgstr "<br>Vous pouvez vous abonner aux commentaires via le flux"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:35
+#, php-format
+msgid "You can <a href=\"#respond\">leave a response</a>, or <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
+msgstr "<br>Vous pouvez <a href=\"#respond\">laisser un commentaire</a>, ou un <a href=\"%s\" rel=\"trackback\">rétrolien</a> de votre site."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:39
+#, php-format
+msgid "Responses are currently closed, but you can <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
+msgstr "Les commentaires sont fermés, mais vous pouvez mettre un<a href=\"%s\" rel=\"trackback\">rétrolien</a> de votre site."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:43
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr "Vous pouvez aller à la fin et laissez un commentaire. Les rétroliens ne sont pas autorisés."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:47
+msgid "Both comments and pings are currently closed."
+msgstr "Les commentaires et les rétroliens ne sont pas autorisés."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:49
+msgid "Edit this entry"
+msgstr "<br>Editer cet article"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:54
+msgid "Sorry, no attachments matched your criteria."
+msgstr "Désolé, pas de pièces jointes correspondant à vos critères."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:60
+msgid "Not Found"
+msgstr "Non trouvé"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:61
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Désolé, mais vous cherchez quelque chose qui n'est pas là."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/links.php:9
+msgid "Links:"
+msgstr "Liens:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/page-3col.php:23
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/page-hidecomments.php:23
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/page-nosidebar.php:19
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/page.php:16
+msgid "Read the rest of this page &raquo;"
+msgstr "Lire la suite &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:7
+msgid "Search Results"
+msgstr "Résultat de recherche"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:39
+msgid "No posts found. Try a different search?"
+msgstr "Pas d'article trouvé. Essayez une autre recherche."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/searchform.php:8
+msgid "Search"
+msgstr "Rechercher"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:27
+#, php-format
+msgid "You are currently browsing the archives for the %1$s category."
+msgstr "Vous parcourez actuellement les archives de la catégorie %1$s."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:30
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:33
+#, php-format
+msgid "You are currently browsing the archives for %1$s"
+msgstr "Vous parcourez actuellement les archives de %1$s"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:36
+#, php-format
+msgid "You are currently browsing the archives for the year %1$s"
+msgstr "Vous parcourez actuellement les archives de l'année %1$s"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:39
+msgid "You have searched the archives for"
+msgstr "Vous avez recherché dans les archives :"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:42
+msgid "You are currently browsing the archives."
+msgstr "Vous parcourez actuellement les archives"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:66
+msgid "Archives"
+msgstr "Archives"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:77
+msgid "Meta"
+msgstr "Meta"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:61
+msgid "Sorry, no posts matched your criteria."
+msgstr "Désolé, aucun article ne correspond à vos critères."
+
+#~ msgid "Subscribe to comments feed"
+#~ msgstr "Abonnez vous au flux de commentaire"
+

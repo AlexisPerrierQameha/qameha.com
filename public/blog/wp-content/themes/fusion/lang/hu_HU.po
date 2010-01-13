@@ -1,0 +1,522 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fusion 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-14 01:34+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Balint Vereskuti <balint@vereskuti.info>\n"
+"Language-Team: vereskuti.info <balint@vereskuti.info>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/404.php:8
+msgid "Page not found (404)"
+msgstr "Ez nincs meg (404)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:10
+msgid "Archive for category"
+msgstr "Kategória archívuma: "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:12
+msgid "Posts Tagged"
+msgstr "Tagelt hozzászólások"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:14
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:16
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:18
+msgid "Archive for"
+msgstr "Archívum a következőhöz:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:14
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:32
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:198
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:17
+msgid "F jS, Y"
+msgstr "Y. F. j."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:16
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:33
+msgid "F, Y"
+msgstr "Y F"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:18
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:36
+msgid "Y"
+msgstr "Y"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:20
+msgid "Author Archive"
+msgstr "Szerző archívuma"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:22
+msgid "Blog Archives"
+msgstr "Blog archívuma"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:27
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:11
+msgid "Permanent Link to"
+msgstr "Állandó link a következőhöz"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:32
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:17
+#, php-format
+msgid "Posted by %s in %s"
+msgstr "Írta %s a %s kategóriában,"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:32
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:17
+#, php-format
+msgid "Posts by %s"
+msgstr "%s hozzászólásai"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:32
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:17
+msgid "on"
+msgstr "dátum: "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:39
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:18
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:25
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:21
+msgid "Read the rest of this entry &raquo;"
+msgstr "Bejegyzés részleteinek olvasása &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:51
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:37
+msgid "No Comments"
+msgstr "Nincsenek hozzászólások"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:51
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:37
+msgid "1 Comment"
+msgstr "1 hozzászólás"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:51
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:37
+msgid "% Comments"
+msgstr "% hozzászólás"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:62
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:49
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Régebbi hozzászólások"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:63
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:50
+msgid "Newer Entries &raquo;"
+msgstr "Újabb hozzászólások &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:69
+#, php-format
+msgid "Sorry, but there aren't any posts in the %s category yet."
+msgstr "Sajnáljuk, egyelőre még nincs ilyen hozzászólás a %s kategóriában."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:71
+msgid "Sorry, but there aren't any posts with this date."
+msgstr "Sajnáljuk, de nincsenek hozzászólások ezzel a dátummal."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:74
+#, php-format
+msgid "Sorry, but there aren't any posts by %s yet."
+msgstr "Sajnáljuk, de %s még szólt hozzá."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archive.php:76
+msgid "No posts found."
+msgstr "Nincs hozzászólás."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archives.php:13
+msgid "Archives by Month:"
+msgstr "Archív adatok hónap szerint:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/archives.php:18
+msgid "Archives by Subject:"
+msgstr "Archív adatok tárgy szerint:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:6
+msgid "Enter your password to view comments"
+msgstr "Adja meg jelszavát a hozzászólások megtekintéséhez"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:22
+msgid "Comments"
+msgstr "Hozzászólások"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:23
+msgid "Trackbacks"
+msgstr "Visszajelzések"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:42
+msgid "No comments yet."
+msgstr "Még nem érkezett hozzászólás"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:63
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Kérjük, <a href=\"%s\">jelentkezzen be</a> a hozzászóláshoz!"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:71
+msgid "Logged in as"
+msgstr "Bejelentkezve, mint "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:71
+msgid "Log out of this account"
+msgstr "Kijelentkezés"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:71
+msgid "Logout &raquo;"
+msgstr "Kijelentkezés &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:74
+#, php-format
+msgid "Welcome back <strong>%s</strong>."
+msgstr "Üdv újra <strong>%s</strong>."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:74
+msgid "Change &raquo;"
+msgstr "Megváltoztat &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:74
+msgid "Close &raquo;"
+msgstr "Bezárás &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:79
+msgid "Name"
+msgstr "Név"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:79
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:83
+msgid "(required)"
+msgstr "(kötelező)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:83
+msgid "E-Mail"
+msgstr "e-mail"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:83
+msgid "(will not be published)"
+msgstr "(nem lesz látható más számára)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:87
+msgid "Website"
+msgstr "Weboldal"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:105
+msgid "Submit Comment"
+msgstr "Hozzászólás elküldése"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:108
+msgid "Subscribe to comments feed"
+msgstr "Feliratkozás a hozzászólások követésére"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:123
+msgid "No trackbacks yet."
+msgstr "Nincs visszajelzés"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/comments.php:134
+msgid "Comments are closed."
+msgstr "Hozzászólások lezárva."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:7
+msgid "Fusion theme by"
+msgstr "Fusion témát csinálta"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:7
+msgid "powered by "
+msgstr "támogatja a "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:8
+msgid "Entries (RSS)"
+msgstr "Bejegyzések (RSS)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:8
+msgid "and"
+msgstr "és"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:8
+msgid "Comments (RSS)"
+msgstr "Hozzászólások (RSS)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:15
+msgid "Increase/Decrease text size"
+msgstr "Szöveg méretét növelni/csökkenteni"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/footer.php:16
+msgid "Switch between full and fixed width"
+msgstr "Teljes és rögzített méret közötti váltás"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:88
+msgid "Fusion Theme Options"
+msgstr "Fusion Téma Beállításai"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:91
+msgid "Meta keywords:"
+msgstr "Meta kulcsszavak:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:92
+msgid "Separate with commas"
+msgstr "Vesszővel elválasztva"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:97
+msgid "Use custom logo image"
+msgstr "Saját logo, kép"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:97
+msgid "Upload your logo as \"logo.png\" in the theme directory:"
+msgstr "Töltse fel saját logoját \"logo.png\" formátumban a téma könyvtárába:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:97
+msgid "You should export the logo image with transparency enabled"
+msgstr "Saját logóját átlátszó formátum-támogatással exportálja"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:102
+msgid "Disable homepage tab"
+msgstr "Kezdőoldal letiltása"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:102
+msgid "Check this if you are using a static page as the homepage"
+msgstr "Akkor használja, ha kezdőoldalként statikus oldalt állított be"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:107
+msgid "Show the categories as header tabs"
+msgstr "Kategóriákat jelenítse meg menüként"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:107
+msgid "(instead of pages)"
+msgstr "(az oldalak helyett)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:112
+msgid "Disable the default category block in the sidebar"
+msgstr "Alapértelmezett kategória rész tiltása az oldalsó menüben"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:112
+msgid "Check if you prefer the widgetized category display or just want to hide the categories"
+msgstr "Kapcsolja be, ha a widgetek szeretné használni, vagy ha el akarja rejteni a kategóriákat"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:117
+msgid "Disable the default search block in the sidebar"
+msgstr "Alapértelmezett keresési mező elrejtése az oldalsó menüben"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:117
+msgid "Check if you don't like the theme-default search look"
+msgstr "Kapcsolja be, ha nem szereti a téma alapértelmezett keresőjét"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:122
+msgid "Disable layout controls (Aa/<>)"
+msgstr "Kinézet változtatásának tiltása (Aa/<>)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:124
+msgid "Default page content width:"
+msgstr "Bejegyzések alapértelmezett szélessége:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:127
+msgid "Fixed (960 pixels)"
+msgstr "Fix (960 pixel)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:131
+msgid "Fluid (95 percent of the visitor's screen width)"
+msgstr "Változó (95%, a látogató képernyőfelbontásának megfelelően)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:132
+msgid "Note that if the layout controls are enabled, the visitor's javascript page width cookie setting will override this option"
+msgstr "Figyeljen arra, hogy amennyiben a kinézet változtatása engedélyezett, akkor a látogató javascriptes oldalszélességének süti-beállításai felülírják ezt a lehetőséget"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:136
+msgid "Sidebar position:"
+msgstr "Oldalsó menü helye:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:139
+msgid "Right (default)"
+msgstr "Jobb (alapértelmezett)"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:143
+msgid "Left"
+msgstr "Bal"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:149
+msgid "Disable jQuery and the associated code"
+msgstr "jQuery és a hozzá tartózó kódok letiltása"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:149
+msgid "This will reduce the page load with ~70 KB, but will also disable some features and effects (layout controls, rss links inside category menu, comment tabs, trackbacks).<br />You shouldn't change this unless you have problems with your host regarding bandwidth"
+msgstr "Ez az oldal betöltődését gyorsítja (~70 KB), azonban néhány funkció nem lesz elérhető (kinézet változtatása, rss a kategóriákban, hozzászólás fül, visszautalás).<br />Ne változtassa, csak ha szolgáltatójával sávszélesség-probléma merül fel!"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "Custom CSS code"
+msgstr "Egyéni CSS kód"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "Here you can add or change anything related to design if you have some basic CSS knowledge. Check "
+msgstr "Írja ide, vagy változtassa meg itt a dizájnnal összefüggő kódokat - alapvető CSS ismeret szükséges. Tanulmányozza a "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "to see existing styles, which you can redefine here."
+msgstr "fájlban a meglévő stílusokat, melyeket itt tud megváltoztatni."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:152
+msgid "Don't modify style.css if you wish to preserve your changes after theme update! Use this option instead."
+msgstr "NE változtassa meg a style.css fájlt, ha a változásokat meg szeretné őrizni a téma feltöltése után! Használja inkább ezt a funkciót."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:155
+msgid "Save Changes"
+msgstr "Változások mentése"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:198
+msgid "by"
+msgstr "által"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:198
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s nál/nél"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:198
+msgid "H:i"
+msgstr "H:i"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:202
+msgid "Your comment is awaiting moderation."
+msgstr "Hozzászólása moderálásra vár."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:212
+msgid "Reply"
+msgstr "Válasz"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/functions.php:212
+msgid "Quote"
+msgstr "Idézet"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:144
+msgid "You are Home"
+msgstr "A nyitólapon van"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:144
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:146
+msgid "Home"
+msgstr "Nyitólap"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/header.php:146
+msgid "Click for Home"
+msgstr "Ugrás a nyitólapra"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:31
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:33
+msgid "This entry was posted on"
+msgstr "A bejegyzés készült: "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:33
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:35
+msgid "and is filed under"
+msgstr "és az alábbi kategóriában található: "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:36
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:38
+msgid "You can follow any responses to this entry through"
+msgstr "A bejegyzést nyomon követheti "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:41
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:43
+#, php-format
+msgid "You can <a href=\"#respond\">leave a response</a>, or <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
+msgstr "Lejjebb <a href=\"#respond\">válaszolhat</a>, vagy <a href=\"%s\" rel=\"trackback\">visszautalhat</a> saját weboldaláról."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:45
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:47
+#, php-format
+msgid "Responses are currently closed, but you can <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
+msgstr "A válaszolási lehetőség lezárva, azonban <a href=\"%s\" rel=\"trackback\">visszautalhat</a> saját weboldaláról."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:49
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:51
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr "Ugorjon a végére, és írjon választ. Visszapingelés jelenleg nem engedélyezett."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:53
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:55
+msgid "Both comments and pings are currently closed."
+msgstr "Hozzászólások és visszapingelés sem engedélyezett."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:56
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:58
+msgid "Edit this entry"
+msgstr "Hozzászólás szerkesztése"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/image.php:68
+msgid "Sorry, no attachments matched your criteria."
+msgstr "Sajnos nincs a kritériumoknak megfelelő csatolmány."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:57
+msgid "Not Found"
+msgstr "Nem található"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/index.php:58
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Sajnáljuk, de amit keres, az itt nem található."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/links.php:11
+msgid "Links:"
+msgstr "Linkek:"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/page-nosidebar.php:16
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/page.php:13
+msgid "Read the rest of this page &raquo;"
+msgstr "Olvassa tovább &raquo;"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:10
+msgid "Search Results"
+msgstr "Keresés eredménye"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/search.php:36
+msgid "No posts found. Try a different search?"
+msgstr "Nem találtam hozzászólást. Megpróbálja máshogy a keresést?"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/searchform.php:8
+msgid "Search"
+msgstr "Keresés"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:27
+#, php-format
+msgid "You are currently browsing the archives for the %1$s category."
+msgstr "Jelenleg a %1$s kategória archívumában keres."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:30
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:33
+#, php-format
+msgid "You are currently browsing the archives for %1$s"
+msgstr "Jelenleg a %1$si arhcívumban keres"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:30
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:34
+msgid "l, F jS, Y"
+msgstr "l, Y. F. j."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:36
+#, php-format
+msgid "You are currently browsing the archives for the year %1$s"
+msgstr "Jelenleg a(z) %1$s archívumában keres"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:39
+msgid "You have searched the archives for"
+msgstr "Az archívumban a következőre keresett rá: "
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:42
+msgid "You are currently browsing the archives."
+msgstr "Jelenleg az archívumban keres."
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:70
+msgid "Archives"
+msgstr "Archívum"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/sidebar.php:83
+msgid "Meta"
+msgstr "Meta"
+
+#: c:\wamp\www\wordpress\wp-content\themes\fusion/single.php:70
+msgid "Sorry, no posts matched your criteria."
+msgstr "Sajnáljuk, nincs a keresésnek megfelelő hozzászólás."
+

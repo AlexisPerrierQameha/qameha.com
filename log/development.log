@@ -3993,3 +3993,32 @@ Rendering template within layouts/website
 Rendering website/contact
 Rendered website/_header_contact (0.0ms)
 Completed in 80ms (View: 79, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-14 12:41:40) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.0ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-14 12:41:42) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.2ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-14 12:41:43) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.2ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing WebsiteController#recruiting (for 127.0.0.1 at 2010-01-14 12:41:45) [GET]
+Rendering template within layouts/website
+Rendering website/recruiting
+Rendered website/_saas_assets (0.5ms)
+Rendered website/_header_recruiting (0.7ms)
+Completed in 64ms (View: 63, DB: 0) | 200 OK [http://localhost/recruiting]

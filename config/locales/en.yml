@@ -114,7 +114,7 @@ en:
         # Evaluation
     evaluation_introduction: "Simplifiez les campagnes d’évaluations, générez des statistiques sur le nombre de salariés évalués par site et catégorie de population, identifiez vos « best 10 % », diffusez partout la culture du management par les objectifs en évaluant plus souvent vos collaborateurs, garantissez l’accès des évaluations aux seules personnes concernées."
     evaluation_assetsblock_intro: "Un outil réalisé par des professionels des ressources humaines"
-    evaluation_asset1_content: "<ul><li>Vos campagnes en trois étapes : Validation des compositions d’équipe par les managers</li><li>Envoi à chaque collaborateur du formulaire d’évaluation correspondant à sa catégorie, <br />Auto-évaluation puis évaluation par le manager / les managers projets</li></ul>"
+    evaluation_asset1_content: "<ul><li>Vos campagnes en trois étapes : Validation des compositions d’équipe par les managers</li><li>Envoi à chaque collaborateur du formulaire d’évaluation correspondant à sa catégorie,</li><li>Auto-évaluation puis évaluation par le manager / les managers projets</li></ul>"
     evaluation_asset2_content: "<ul><li>Automatisation des relances des opérationnels,</li><li>Rappel des objectifs à atteindre et des résultats obtenus</li><li>Génération de statistiques</li></ul>"
     evaluation_asset3_content: "<ul><li>Archivage sécurisé et garanti des évaluations,</li><li>Gestion des droits d’accès aux documents</li><li>Signature électronique par le manager et le collaborateur</li></ul>"
     evaluation_quote: "Qameha est une solution complète de gestion des recrutements conçue et réalisée par des opérationnels des Ressources Humaines."
@@ -134,9 +134,9 @@ en:
         # Recruiting Agencies
     recruiting_agency_header: "Gérez vos recrutements mission par mission, supervisez les missions de vos consultants grâce à des indicateurs de pilotage visuels et personnalisables. <br />Interfacez-vous avec vos clients sans limitation de manière à suivre en même temps qu’eux la progression des entretiens et les sensibiliser à la gestion du temps."
     recruiting_agency_assetsblock_intro: "Un outil réalisé par des professionels du recrutement"
-    recruiting_agency_asset1_content: "<ul><li>Les cv entrants sont enregistrés automatiquement et affectés à la mission,<br /><br />Un outil de recherche dans la base de données performant (codes et recherche texte),<br /><br />L’information est partagée en temps réel avec le clien</li></ul>t"
-    recruiting_agency_asset2_content: "<ul><li>La sélection des candidats est simplifiée grâce à une lecture facile à l’écran,<br /><br />La base de données est remplie en mode de saisie assistée,<br /><br />L’historique des candidats et les évaluations sont accessibles rapidement</li></ul>"
-    recruiting_agency_asset3_content: "<ul><li>Les réponses aux candidats sont automatiques ou suggérées selon les cas,<br /><br />Le management  dispose d’outils d’analyse, d’alertes et de synthèses,<br /><br />L’efficacité des supports (jobboards, écoles…) est mise en évidence</li></ul>"
+    recruiting_agency_asset1_content: "<ul><li>Les cv entrants sont enregistrés automatiquement et affectés à la mission,</li><li>Un outil de recherche dans la base de données performant (codes et recherche texte),</li><li>L’information est partagée en temps réel avec le clien</li></ul>t"
+    recruiting_agency_asset2_content: "<ul><li>La sélection des candidats est simplifiée grâce à une lecture facile à l’écran,</li><li>La base de données est remplie en mode de saisie assistée,</li><li>L’historique des candidats et les évaluations sont accessibles rapidement</li></ul>"
+    recruiting_agency_asset3_content: "<ul><li>Les réponses aux candidats sont automatiques ou suggérées selon les cas,</li><li>Le management  dispose d’outils d’analyse, d’alertes et de synthèses,</li><li>L’efficacité des supports (jobboards, écoles…) est mise en évidence</li></ul>"
     recruiting_agency_quote: "Qameha est une solution complète de gestion des recrutements conçue et réalisée par des opérationnels des Ressources Humaines."
     client_recruiting_agency: "Groupe Hubert"
     recruiting_agency_title: "Recrutement"

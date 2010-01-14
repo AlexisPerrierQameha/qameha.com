@@ -80,10 +80,12 @@ li{
 #promo{
 	width: 273px;
 	height: 161px;
-	background:url("/images/banner_promo.png");
 	position: absolute;
 	top: 0px;
 	right: 0px;
+}
+.fr #promo{
+	background:url("/images/fr/banner_promo.png");
 }
 #headest{
 	background: url("/images/loop_headest.jpg");
@@ -136,12 +138,12 @@ li{
 		top: 15px;
 		left: 600px;
 	}
-	#subZone #rmfTitle{
-		background:url("/images/rmf.png") no-repeat;
+	.fr #subZone #rmfTitle{
+		background:url("/images/fr/rmf.png") no-repeat;
 	}
 	#subZone #contactUs{
 		float:right;
-		background:url("/images/call_to_acttion_button.jpg");
+		background:url("/images/call_to_action_button.jpg");
 		width: 213px;
 		height:32px;
 		padding-top: 14px;
@@ -171,7 +173,7 @@ li{
 	}
 	#newsAndTwitter #twitter{
 		width: 550px;
-		background: transparent url(/images/twitter.jpg) no-repeat scroll 10px 95px;
+		background: transparent url("/images/twitter.jpg") no-repeat scroll 10px 95px;
 		height: 170px;
 		position: relative;
 		float: left;
@@ -229,14 +231,14 @@ li{
 		margin-bottom: 20px;
 		display:block;
 	}
-	#footer #recruiting{
-		background:url("/images/recruiting_logo_dark.jpg") no-repeat 0px 0px;
+	.fr #footer #recruiting{
+		background:url("/images/fr/recruiting_logo_dark.jpg") no-repeat 0px 0px;
 	}
-	#footer #evaluation{
-		background:url("/images/evaluation_logo_dark.jpg") no-repeat 25px 10px;
+	.fr #footer #evaluation{
+		background:url("/images/fr/evaluation_logo_dark.jpg") no-repeat 25px 10px;
 	}
-	#footer #mobility{
-		background:url("/images/mobility_logo_dark.jpg") no-repeat 30px 14px;
+	.fr #footer #mobility{
+		background:url("/images/fr/mobility_logo_dark.jpg") no-repeat 30px 14px;
 	}
 	#footer #endNavigation{
 		font-size: 15px;
@@ -364,8 +366,10 @@ li{
 	background:url("/images/recruiting_logo.jpg") no-repeat;
 }
 	#recruiting h1{
-		background: url("/images/recruiting_text.jpg") no-repeat;
 		padding-top: 31px;
+	}
+	.fr #recruiting h1{
+		background: url("/images/fr/recruiting_text.jpg") no-repeat;
 	}
 	#recruiting li{
 		background:url("/images/recruiting_dot.jpg") no-repeat scroll 0px 4px;
@@ -374,8 +378,10 @@ li{
 	background:url("/images/evaluation_logo.jpg") no-repeat;
 }
 	#evaluation h1{
-		background: url("/images/evaluation_text.jpg") no-repeat;
 		padding-top: 31px;
+	}
+	.fr #evaluation h1{
+		background: url("/images/fr/evaluation_text.jpg") no-repeat;
 	}
 	#evaluation li{
 		background:url("/images/evaluation_dot.jpg") no-repeat scroll 0px 4px;
@@ -384,8 +390,10 @@ li{
 	background:url("/images/mobility_logo.jpg") no-repeat;
 }
 	#mobility h1{
-		background: url("/images/mobility_text.jpg") no-repeat;
 		padding-top: 31px;
+	}
+	.fr #mobility h1{
+		background: url("/images/fr/mobility_text.jpg") no-repeat;
 	}
 	#mobility li{
 		background:url("/images/mobility_dot.jpg") no-repeat scroll 0px 4px;
@@ -406,7 +414,7 @@ li{
 		font-size: 18px;
 		font-style:italic;
 		font-weight:normal;
-		margin: 20px 0px;
+		margin: 20px 0px 10px 0px;
 	}
 	.modulePage .moduleAsset{
 		width: 193px;
@@ -458,8 +466,8 @@ li{
 			padding-left: 20px;
 		}
 	.modulePage #saasAsset2{
-		border-left: 2px solid #ebebeb;
-		border-right: 2px solid #ebebeb;
+		border-left: 2px solid #cdcdcd;
+		border-right: 2px solid #cdcdcd;
 	}
 	.modulePage #learnMoreModule{
 		display:block;
@@ -469,8 +477,8 @@ li{
 		margin-right: -3px;
 	}
 /*********************** RECRUITING PAGE ELEMENTS *********************/
-#subZone #recruitingTitle{
-	background:url("/images/recruiting_header_text.jpg") no-repeat;
+.fr #subZone #recruitingTitle{
+	background:url("/images/fr/recruiting_header_text.jpg") no-repeat;
 }
 #subZone #recruitingLogo{
 	background: url("/images/recruiting_logo_header.jpg");
@@ -486,23 +494,24 @@ li{
 .recruitingModule .introduction{
 	background:url("/images/recruiting_intro_icon.png") no-repeat;
 }
-.recruitingModule #asset1{
-	background:url("/images/asset_efficacity.png");
+.fr .recruitingModule #asset1{
+	background:url("/images/fr/asset_efficacity.png");
 }	
-.recruitingModule #asset2{
-	background:url("/images/asset_rapidity.png");
+.fr .recruitingModule #asset2{
+	background:url("/images/fr/asset_rapidity.png");
 }
-.recruitingModule #asset3{
-	background:url("/images/asset_quality.png");
+.fr .recruitingModule #asset3{
+	background:url("/images/fr/asset_quality.png");
 }
-.recruitingModule #learnMoreModule{
-	background: url("/images/learn_more_recruiting.jpg");
+.fr .recruitingModule #learnMoreModule{
+	background: url("/images/fr/learn_more_recruiting.jpg");
 }
 /*********************** CONTACT PAGE ELEMENTS *********************/
 .halfZone{
 	width: 400px;
 	padding-right: 50px;
 	float: left;
+	padding-bottom: 30px;
 }
 
 /*********************** TEAM PAGE ELEMENTS *********************/
@@ -514,7 +523,6 @@ li{
 		margin: 0px 20px 0px 0px;
 	}
 	#teamContent p{
-		width: 700px;
 	}
 	#teamContent a{
 		text-decoration:underline;

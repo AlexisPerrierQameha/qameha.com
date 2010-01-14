@@ -1,0 +1,36 @@
+<div class="clearfix pageContent modulePage recruitingModule">
+	<div class="fixedWidthContent clearfix">
+		<div id="assets">
+			<p class="introduction">
+				<%= t "recruiting_agency_introduction" %>
+				<%= link_to t("contact_us_to_know_more"), contact_path %><br /><br />
+			</p>
+		
+			<h1>"<%= t "recruiting_agency_assetsblock_intro" %>"</h1>
+		
+			<div class="moduleAsset" id="asset1">
+				<%= t "recruiting_agency_asset1_content" %>
+			</div>
+			<div class="moduleAsset" id="asset2">
+				<%= t "recruiting_agency_asset2_content" %>
+			</div>
+			<div class="moduleAsset" id="asset3">
+				<%= t "recruiting_agency_asset3_content" %>
+			</div>
+		</div>
+			
+		<div id="testimonials">
+			<div id="top"></div>
+			<p> 
+				<%= image_tag "open_quote_light.jpg" %>
+				<span id="quote_0" class="quote"><%= t "recruiting_agency_quote" %></span>
+				<%= image_tag "close_quote_light.jpg", :id => "closeQuote" %>
+			</p>
+			<div id="client">
+				<span class="client" id="client_0"><%= t "client_recruiting_agency" %></span>
+			</div>
+			<div id="bottom"></div>
+		</div>
+	</div>
+	<%= render :partial => "saas_assets"%>
+</div>

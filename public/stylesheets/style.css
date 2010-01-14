@@ -83,7 +83,14 @@ li{
 	position: absolute;
 	top: 0px;
 	right: 0px;
+
 }
+	#promo a{
+		display: block;	
+		width: 200px;
+		height: 120px;
+		float:right;
+	}
 .fr #promo{
 	background:url("/images/fr/banner_promo.png");
 }

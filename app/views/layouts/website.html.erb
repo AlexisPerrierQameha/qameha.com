@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
 <head>
-	<title>Qameha | Agile Recruiting Solutions</title>
+	<title><%= t "website_title" %></title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 	<%= stylesheet_link_tag "reset", :media => "all" %>
 	<%= stylesheet_link_tag "style", :media => "all" %>
@@ -18,13 +18,15 @@
 <body class="<%= t "language_class" %>">
   	<% if @display_promo %>
 		<div id="promoWrapper">
-			<div id="promo"></div>
+			<div id="promo">
+				<%= link_to "", recruitment_agencies_path %>
+			</div>
 		</div>
 	<% end %>
 	
 	<div id="headest">
 		<div class="fixedWidthContent">
-			Qameha | Agile Recruiting Solutions
+			<%= t "qameha_baseline" %>
 		</div>
 	</div>
 	

@@ -38,7 +38,7 @@ ActionController::Routing::Routes.draw do |map|
   map.recruiting "recruiting", :controller => "website", :action => "recruiting"
   map.evaluation "evaluation", :controller => "website", :action => "evaluation"
   map.mobility "mobility", :controller => "website", :action => "mobility"
-  
+  map.recruitment_agencies "recruitment-agencies", :controller => "website", :action => "recruitment_agencies"
   map.root :controller => "website"
 
   # See how all your routes lay out with "rake routes"

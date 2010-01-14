@@ -1,5 +1,10 @@
 en:
     language_class: "fr"
+    
+    # CROSS PAGE TITLES
+    website_title: "Recrutement, Evaluation, Mobilité | Qameha"
+    qameha_baseline: "Recrutement, Evaluation, Mobilité | Qameha"
+    
     # NAVIGATION
     contact: "Contact"
     team: "L'équipe"
@@ -8,6 +13,7 @@ en:
     recruiting: "Recrutement"
     evaluation: "Evaluation"
     mobility: "Mobilité"
+    contact_us_to_know_more: "Contactez-nous pour en savoir plus."
     
     # INDEX
         # Modules
@@ -101,7 +107,7 @@ en:
     recruiting_asset1_content: "Chaque recrutement est structuré en projet,<br /> Les risques de non recrutement sont identifiés rapidement grâce aux outils de pilotage et alertes.<br />L'information est partagée en temps réel"
     recruiting_asset2_content: "L'enregistrement des cv entrants est automatique, <br /> La sélection des candidats est simplifiée grâce à une lecture facile à l'écran,<br /> Le rythme des actions est soutenu par la suggestion automatique de la prochaine étape au bon interlocuteur"
     recruiting_asset3_content: "Les réponses aux candidats sont automatiques ou suggérées selon les cas. Le comité de direction dispose d'outils d'analyse et de synthèses: durée moyenne des missions, pertinence des dépenses engagées... La consistution d'une base de données permet de ne plus dépendre uniquement des jobboards"
-    recruiting_quote: "Une citation spécifique au module de recrutement devrait aller ici."
+    recruiting_quote: "Qameha est une solution complète de gestion des recrutements conçue et réalisée par des opérationnels des Ressources Humaines."
     client_recruiting: "Groupe Hubert"
     recruiting_title: "Recrutement"
     recruiting_header: "Qameha Recrutement gère le recrutement depuis la définition de poste jusqu'à l'intégration du candidat. <br />Avec le module Qameha recrutement, mettez un consultant dans vos process ! Recrutez mieux, plus vite, en économisant du temps."
@@ -125,5 +131,15 @@ en:
     client_mobility: "Groupe Hubert"
     mobility_title: "Mobilité"
     mobility_header: "Qameha Recrutement gère le recrutement depuis la définition de poste jusqu'à l'intégration du candidat. <br />Avec le module Qameha recrutement, mettez un consultant dans vos process ! Recrutez mieux, plus vite, en économisant du temps."
+        # Recruiting Agencies
+    recruiting_agency_header: "Gérez vos recrutements mission par mission, supervisez les missions de vos consultants grâce à des indicateurs de pilotage visuels et personnalisables. <br />Interfacez-vous avec vos clients sans limitation de manière à suivre en même temps qu’eux la progression des entretiens et les sensibiliser à la gestion du temps."
+    recruiting_agency_assetsblock_intro: "Un outil réalisé par des professionels du recrutement"
+    recruiting_agency_asset1_content: "Les cv entrants sont enregistrés automatiquement et affectés à la mission,<br />Un outil de recherche dans la base de données performant (codes et recherche texte),,<br />L’information est partagée en temps réel avec le client"
+    recruiting_agency_asset2_content: "La sélection des candidats est simplifiée grâce à une lecture facile à l’écran,,<br />La base de données est remplie en mode de saisie assistée,<br />L’historique des candidats et les évaluations sont accessibles rapidement"
+    recruiting_agency_asset3_content: "Les réponses aux candidats sont automatiques ou suggérées selon les cas,,<br />Le management  dispose d’outils d’analyse, d’alertes et de synthèses,,<br />L’efficacité des supports (jobboards, écoles…) est mise en évidence"
+    recruiting_agency_quote: "Qameha est une solution complète de gestion des recrutements conçue et réalisée par des opérationnels des Ressources Humaines."
+    client_recruiting_agency: "Groupe Hubert"
+    recruiting_agency_title: "Recrutement"
+    recruiting_agency_introduction: "Qameha pour les cabinets de recrutement est <b>Gratuit jusqu'à 3 utilisateurs</b>."
     
     

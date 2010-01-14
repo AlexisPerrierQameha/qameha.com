@@ -22,4 +22,7 @@ class WebsiteController < ApplicationController
   def mobility
   end
   
+  def recruitment_agencies
+  end
+  
 end

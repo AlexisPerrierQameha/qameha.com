@@ -4022,3 +4022,11 @@ Rendering website/recruiting
 Rendered website/_saas_assets (0.5ms)
 Rendered website/_header_recruiting (0.7ms)
 Completed in 64ms (View: 63, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing WebsiteController#recruiting (for 127.0.0.1 at 2010-01-14 12:43:24) [GET]
+Rendering template within layouts/website
+Rendering website/recruiting
+Rendered website/_saas_assets (0.6ms)
+Rendered website/_header_recruiting (0.3ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/recruiting]

@@ -1,8 +1,8 @@
 <div id="jobsContent" class="clearfix pageContent classicHtml">
 	<div class="fixedWidthContent">		
-		<h2>Rejoignez-nous !</h2>
+		<h2><%= t "join_us" %></h2>
 		<p>
-			Hébergés au sein de l’incubateur Télécom ParisTech depuis début juillet, nous cherchons aujourd’hui à nous développer et recrutons :
+			<%= "jobs_introduction" %>
 		</p>
 		<ul>
 			<li><%= link_to "Développeurs Ruby on Rails / CDI", "#dev"%></li>
@@ -10,68 +10,64 @@
 			<li><%= link_to "Web marketeur / CDI", "#market"%></li>
 		</ul>
 		<hr />
-		<h3 id="dev">Développeur Ruby on Rails</h3>
+		<h3 id="dev"><%= t "developer_rails" %></h3>
 		<%= image_tag "rails.png", :style => "float:right"%>
-		<p>Deux développeurs Ruby on Rails / CDI / Paris 14ème / Rémunération selon expérience.</p>
+		<p><%= t "developer_rails_looking_for"%></p>
 
-		<p>Au sein d’une équipe de trois associés fondateurs, vous êtes complètement associé(e) au développement de l’entreprise.
-		Vous reportez à l’associé en charge des IT et prenez en charge le développement de modules fonctionnels, de l’écriture du code aux test et déploiement.</p>
+		<p><%= t "developer_rails_context" %></p>
 
-		<p>Vous évoluez au rythme de la société soit en management (croissance de l’équipe IT), soit vers des axes de recherches (partenariats laboratoires), soit de web marketing.</p>
-
-		<p><b>Contenu technique</b></p>
+		<p><b><%= t "technical_content" %></b></p>
 		<ul>
-			<li>Conception de solution web en ruby on rails</li>
-			<li>Développement de solution open source Web en ruby on rails</li>
-			<li>Modélisation des Bases de données</li>
-			<li>Récupération des spécifications fonctionnelles</li>
-			<li>Rédaction des spécifications techniques</li>
+			<li><%= t "developer_rails_technical_bullet_0" %></li>
+			<li><%= t "developer_rails_technical_bullet_1" %></li>
+			<li><%= t "developer_rails_technical_bullet_2" %></li>
+			<li><%= t "developer_rails_technical_bullet_3" %></li>
+			<li><%= t "developer_rails_technical_bullet_4" %></li>
 		</ul>
 
-		<p><b>Compétences requises</b></p>
+		<p><b><%= t "required_skills" %></b></p>
 		<ul>
-			<li>Connaissance de Ruby on Rails obligatoire.</li>
-			<li>Connaissance des modèles MVC</li>
-			<li>Connaissances des webservices</li>
-			<li>Connaissance des SGBD MySQL obligatoire (Développement, Conception, …)</li>
+			<li><%= t "developer_rails_required_bullet_0" %></li>
+			<li><%= t "developer_rails_required_bullet_1" %></li>
+			<li><%= t "developer_rails_required_bullet_2" %></li>
+			<li><%= t "developer_rails_required_bullet_3" %></li>
 		</ul>
 
-		<p>Bonne maîtrise de l’anglais impérative</p>
+		<p><%= t "english_required" %></p>
 
-		<p>Si vous êtes intéressé(e) n’hésitez pas à nous envoyer votre candidature à l’adresse suivante : <%= link_to "ingnieur_informatique_ror.qameha@qameha.net", "mailto:ingnieur_informatique_ror.qameha@qameha.net"%></p>
+		<p><%= t "if_interested" %> : <%= link_to "ingnieur_informatique_ror.qameha@qameha.net", "mailto:ingnieur_informatique_ror.qameha@qameha.net"%></p>
 		
 		
 		
-		<h3 id="inge">Ingénieur Informaticien</h3>
-		<p>Nous recherchons un développeur sur Ruby on Rails / Stage long ou apprentissage (pré-embauche possible) / Paris 14ème</p>
+		<h3 id="inge"><%= t "software_engineer"%></h3>
+		<p><%= t "software_engineer_looking_for" %></p>
 
-		<p>Au sein d’une équipe de trois associés fondateurs, vous êtes complètement associé(e) au développement de l’entreprise.
-		Vous reportez à l’associé en charge des IT et prenez en charge le développement de modules fonctionnels, de l’écriture du code aux test et déploiement.</p>
+		<p><%= t "software_engineer_context"%></p>
 
-		<p><b>Contenu technique</b></p>
+		<p><b><%= t "technical_content" %></b></p>
 		<ul>
-			<li>Conception de solution web en ruby on rails</li>
-			<li>Développement de solution open source Web en ruby on rails</li>
-			<li>Modélisation des Bases de données</li>
-			<li>Récupération des spécifications fonctionnelles</li>
-			<li>Rédaction des spécifications techniques</li>
+			<li><%= t "software_engineer_technical_bullet_0" %></li>
+			<li><%= t "software_engineer_technical_bullet_1" %></li>
+			<li><%= t "software_engineer_technical_bullet_2" %></li>
+			<li><%= t "software_engineer_technical_bullet_3" %></li>
+			<li><%= t "software_engineer_technical_bullet_4" %></li>
 		</ul>
 
-		<p><b>Compétences requises</b></p>
+		<p><b><%= t "required_skills" %></b></p>
 		<ul>
-			<li>Connaissance de Ruby on Rails obligatoire.</li>
-			<li>Connaissance des modèles MVC</li>
-			<li>Connaissances des webservices</li>
-			<li>Connaissance des SGBD MySQL obligatoire (Développement, Conception, …)</li>
+			<li><%= t "software_engineer_required_bullet_0" %></li>
+			<li><%= t "software_engineer_required_bullet_1" %></li>
+			<li><%= t "software_engineer_required_bullet_2" %></li>
+			<li><%= t "software_engineer_required_bullet_3" %></li>
 		</ul>
 
-		<p>Bonne maîtrise de l’anglais impérative</p>
+		<p><%= t "english_required" %></p>
 
-		<p>Si vous êtes intéressé(e) n’hésitez pas à nous envoyer votre candidature à l’adresse suivante : <%= link_to "stage.qameha@qameha.net", "mailto:stage.qameha@qameha.net"%></p>
+		<p><%= t "if_interested" %> : <%= link_to "stage.qameha@qameha.net", "mailto:stage.qameha@qameha.net"%></p>
 		
-		<h3 id="market">Web Marketeur</h3>
+		<h3 id="market"><%= t "web_marketer" %></h3>
 		<p>
-			Nous rechercons un web marketeur en CDI. Contactez nous à l'adresse suivante pour plus d'informations : <%= link_to "web_marketeur.qameha@qameha.net", "mailto:web_marketeur.qameha@qameha.net" %>
+			<%= t "web_marketer_content" %> <%= link_to "web_marketeur.qameha@qameha.net", "mailto:web_marketeur.qameha@qameha.net" %>
 		</p>
 	</div>
 </div>

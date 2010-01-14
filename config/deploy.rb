@@ -1,9 +1,8 @@
-#before "deploy:symlink", :ln_folders
-#after "deploy:symlink" , :copy_database_yml
-#after "deploy:symlink", "deploy:update_crontab"
-#after "deploy", "deploy:cleanup"
 
-#require 'capistrano/ext/multistage'
+# If you are using Passenger mod_rails uncomment this:
+# if you're still using the script/reapear helper you will need
+# these http://github.com/rails/irs_process_scripts
+
 
 set :application, 'qameha'
 set :user, 'spock'
@@ -20,12 +19,20 @@ set :git_shallow_clone, 1
 set :git_enable_submodules, 1
 set :use_sudo, false
 
-namespace :deploy do
-  desc "Restarting mod_rails with restart.txt"
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "touch #{current_path}/tmp/restart.txt"
-  end
-end
+ namespace :deploy do
+#   task :start {}
+#   task :stop {}
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
+
+#namespace :deploy do
+#  desc "Restarting mod_rails with restart.txt"
+#  task :restart, :roles => :app, :except => { :no_release => true } do
+#    run "touch #{current_path}/tmp/restart.txt"
+#  end
+#end
 
 set :server_hostname, 'qameha.com'
 set :location, "204.232.206.121"
@@ -36,3 +43,4 @@ set :port, 4800
 role :app, location
 role :web, location
 role :db,  location, :primary => true
+

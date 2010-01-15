@@ -495,6 +495,53 @@ li{
 		height: 224px;
 		margin-right: -3px;
 	}
+	
+/*********************** MOBILITY PAGE ELEMENTS *********************/
+.mobilityModule #assets{
+	height: 430px;
+}
+.fr #subZone #mobilityTitle{
+	background:url("/images/fr/mobility.png") no-repeat;
+}
+#subZone #mobilityLogo{
+	background: url("/images/mobility_logo.png") no-repeat;
+	width:101px;
+	height: 111px;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+}
+
+/*********************** EVALUATION PAGE ELEMENTS *********************/
+.fr #subZone #evaluationTitle{
+	background:url("/images/fr/evaluation_header_text.jpg") no-repeat;
+}
+#subZone #evaluationLogo{
+	background: url("/images/evaluation_logo.png");
+	width:117px;
+	height: 129px;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+}
+.evaluationModule .saasAsset h2{
+	background:url("/images/recruiting_saas_asset_bullet.jpg") no-repeat;
+}
+.evaluationModule .introduction{
+	background:url("/images/q_magenta.jpg") no-repeat;
+}
+.fr .evaluationModule #asset1{
+	background:url("/images/fr/asset_evaluation_efficacity.jpg");
+}	
+.fr .evaluationModule #asset2{
+	background:url("/images/fr/asset_evaluation_va.jpg");
+}
+.fr .evaluationModule #asset3{
+	background:url("/images/fr/asset_evaluation_quality.jpg");
+}
+.fr .evaluationModule #learnMoreModule{
+	background: url("/images/fr/learn_more_evaluation.jpg");
+}
 /*********************** RECRUITING PAGE ELEMENTS *********************/
 .fr #subZone #recruitingTitle{
 	background:url("/images/fr/recruiting_header_text.jpg") no-repeat;
@@ -511,16 +558,16 @@ li{
 	background:url("/images/recruiting_saas_asset_bullet.jpg") no-repeat;
 }
 .recruitingModule .introduction{
-	background:url("/images/recruiting_intro_icon.png") no-repeat;
+	background:url("/images/recruiting_intro_icon.jpg") no-repeat;
 }
 .fr .recruitingModule #asset1{
-	background:url("/images/fr/asset_efficacity.png");
+	background:url("/images/fr/asset_efficacity.jpg");
 }	
 .fr .recruitingModule #asset2{
-	background:url("/images/fr/asset_rapidity.png");
+	background:url("/images/fr/asset_rapidity.jpg");
 }
 .fr .recruitingModule #asset3{
-	background:url("/images/fr/asset_quality.png");
+	background:url("/images/fr/asset_quality.jpg");
 }
 .fr .recruitingModule #learnMoreModule{
 	background: url("/images/fr/learn_more_recruiting.jpg");

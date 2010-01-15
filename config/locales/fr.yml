@@ -122,15 +122,11 @@ en:
     evaluation_title: "Evaluation"
     evaluation_header: "Qameha Evaluation gère le campagne d’évaluations de vos collaborateurs sur l’ensemble de vos sites. <br /> Avec le module Qameha Evaluation, transformez une obligation réglementaire en outil de management par l’objectif ! Evaluez tout le monde, plus vite, en économisant du temps."
         # Mobility
-    mobility_introduction: "et gagnez en visibilité sur l'ensemble des recrutements."
-    mobility_assetsblock_intro: "Un outil réalisé par des professionels du recrutement"
-    mobility_asset1_content: "<ul><li>Chaque recrutement est structuré en projet,<br /> Les risques de non recrutement sont identifiés rapidement grâce aux outils de pilotage et alertes.<br />L'information est partagée en temps réel</li></ul>"
-    mobility_asset2_content: "<ul><li>L'enregistrement des cv entrants est automatique, <br /> La sélection des candidats est simplifiée grâce à une lecture facile à l'écran,<br /> Le rythme des actions est soutenu par la suggestion automatique de la prochaine étape au bon interlocuteur</li></ul>"
-    mobility_asset3_content: "<ul><li>Les réponses aux candidats sont automatiques ou suggérées selon les cas. Le comité de direction dispose d'outils d'analyse et de synthèses: durée moyenne des missions, pertinence des dépenses engagées... La consistution d'une base de données permet de ne plus dépendre uniquement des jobboards</li></ul>"
+    mobility_placeholder_text: "Couplé au module « évaluation » et au moteur de recherche de notre module recrutement, le module mobilité permet fluidité de l'information entre des souhaits d'évolutions des salariés et les besoins actuels ou futurs des différents services de l'entreprise. <br /><br /><strong>Ce module est en cours de développement.</strong><br /><br /> N'hésitez pas à nous contacter si vous souhaitez faire partie d'un club de clients partenaires : certains clients nous soutiennent avant la livraison de la version commercialisée du module et bénéficient de développements spécifiques à leurs besoins."
     mobility_quote: "Qameha est une solution complète de gestion des recrutements conçue et réalisée par des opérationnels des Ressources Humaines."
     client_mobility: "Groupe Hubert"
     mobility_title: "Mobilité"
-    mobility_header: "Qameha Recrutement gère le recrutement depuis la définition de poste jusqu'à l'intégration du candidat. <br />Avec le module Qameha recrutement, mettez un consultant dans vos process ! Recrutez mieux, plus vite, en économisant du temps."
+    mobility_header: "Mobilité interne : un outil simple pour faire le lien entre les aspirations individuelles et les besoins de compétences<br /><br />"
         # Recruiting Agencies
     recruiting_agency_header: "Gérez vos recrutements mission par mission, supervisez les missions de vos consultants grâce à des indicateurs de pilotage visuels et personnalisables. <br />Interfacez-vous avec vos clients sans limitation de manière à suivre en même temps qu’eux la progression des entretiens et les sensibiliser à la gestion du temps."
     recruiting_agency_assetsblock_intro: "Un outil réalisé par des professionels du recrutement"

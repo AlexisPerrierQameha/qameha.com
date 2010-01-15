@@ -1,3 +1,4 @@
+
 #promo{
 	behavior: url(/stylesheets/iepngfix.htc);
 }
@@ -23,4 +24,19 @@
 }
 .modulePage #testimonials #bottom{
 	_margin-top: 20px;
+}
+
+#subZone #evaluationLogo{
+	behavior: url(/stylesheets/iepngfix.htc);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/evaluation_logo.png') !important;
+}
+strong img{
+	left: -25px;
+}
+.halfZone{
+	width: 380px;
+}
+#subZone #mobilityLogo{
+	behavior: url(/stylesheets/iepngfix.htc);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mobility_logo.png') !important;
 }

@@ -710,3 +710,48 @@ The error occurred while evaluating nil.inject):
 Rendered rescues/_trace (102.2ms)
 Rendered rescues/_request_and_response (0.2ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:32:43) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.6ms)
+Completed in 45ms (View: 44, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:32:44) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.2ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:32:44) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.5ms)
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:32:45) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.3ms)
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:32:45) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.4ms)
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://localhost/]

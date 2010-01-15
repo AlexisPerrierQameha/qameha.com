@@ -77,20 +77,24 @@ li{
 	min-width: 920px;
 	position:relative;
 }
+#promoWrapper a{
+	display: block;	
+	width: 200px;
+	height: 120px;
+	z-index: 100000000;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
 #promo{
 	width: 273px;
 	height: 161px;
 	position: absolute;
 	top: 0px;
 	right: 0px;
-
+	z-index: 10;
 }
-	#promo a{
-		display: block;	
-		width: 200px;
-		height: 120px;
-		float:right;
-	}
+
 .fr #promo{
 	background:url("/images/fr/banner_promo.png");
 }
@@ -334,7 +338,7 @@ li{
 	}
 	#testimonials #bottom{
 		height: 30px;
-		background:url("/images/testimonial_bottom.jpg");
+		background:url("/images/testimonial_bottom.jpg") no-repeat;
 		width: 225px;
 		position:absolute;
 		top:365px;
@@ -407,6 +411,14 @@ li{
 	}
 /*********************** MODULE PAGE ELEMENTS *********************/
 .modulePage{}
+	.modulePage ul{
+		margin: 0px;
+	}
+	.modulePage li{
+		list-style-type: disc;
+		margin-left: 10px;
+		padding-bottom: 5px;
+	}
 	.modulePage #assets{
 		width: 690px;
 		float: left;
@@ -421,7 +433,7 @@ li{
 		font-size: 18px;
 		font-style:italic;
 		font-weight:normal;
-		margin: 20px 0px 10px 0px;
+		margin: 20px 0px 15px 0px;
 	}
 	.modulePage .moduleAsset{
 		width: 193px;
@@ -442,7 +454,7 @@ li{
 		background:url("/images/testimonial_middle_light.jpg");
 	}
 	.modulePage #testimonials #bottom{
-		background:url("/images/testimonial_bottom_light.jpg");
+		background:url("/images/testimonial_bottom_light.jpg") no-repeat;
 	}
 	.modulePage #testimonials p{
 		color:#656566 !important;

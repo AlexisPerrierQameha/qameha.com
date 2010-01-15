@@ -23,6 +23,7 @@ class WebsiteController < ApplicationController
   end
   
   def recruitment_agencies
+    @display_promo = true
   end
   
 end

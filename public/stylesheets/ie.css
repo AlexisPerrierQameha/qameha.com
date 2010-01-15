@@ -1,6 +1,12 @@
 #promo{
 	behavior: url(/stylesheets/iepngfix.htc);
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/banner_promo.png');
+}
+.fr #promo{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/fr/banner_promo.png');
+	z-index: 1;
+}
+#promo a{
+	z-index: 1000000;
 }
 #testimonials p #closeQuote{
 	margin-right: 20px;
@@ -10,4 +16,11 @@
 }
 #bottomLoop{
 	display: none;
+}
+.modulePage #testimonials{
+}
+.modulePage #testimonials p {
+}
+.modulePage #testimonials #bottom{
+	_margin-top: 20px;
 }

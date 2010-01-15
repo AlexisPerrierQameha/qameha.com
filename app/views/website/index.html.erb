@@ -1,90 +1,91 @@
 <div class="clearfix pageContent">
-	<div class="fixedWidthContent">
-		<div class="moduleBlock" id="recruiting">
-			<%= link_to "<h1>#{t('recruiting')}</h1>", recruiting_path, :class => "moduleTitleLink" %>
-			<p>
-				<%= t "recruiting_speech" %>
-			</p>
-			<ul>
-				<li><%= t "recruiting_bullet_1" %></li>
-				<li><%= t "recruiting_bullet_2" %></li>
-				<li><%= t "recruiting_bullet_3" %></li>
-			</ul>
-			<%= link_to t("learn_more"), recruiting_path, :class => "arrowLink" %>
-		</div>
-		<div class="verticalSeparator"></div>
-		<div class="moduleBlock" id="evaluation">
-			<%= link_to "<h1>#{t('evaluation')}</h1>", evaluation_path, :class => "moduleTitleLink"  %>
-			<p>
-				<%= t "evaluation_speech" %>
-			</p>
-			<ul>
-				<li><%= t "evaluation_bullet_1" %></li>
-				<li><%= t "evaluation_bullet_2" %></li>
-				<li><%= t "evaluation_bullet_3" %></li>
-			</ul>
-			<%= link_to t("learn_more"), evaluation_path, :class => "arrowLink" %>
-		</div>
-		<div class="verticalSeparator"></div>
-		<div class="moduleBlock" id="mobility">
-			<%= link_to "<h1>#{t('mobility')}</h1>", mobility_path, :class => "moduleTitleLink"  %>
-			<p>
-				<%= t "mobility_speech" %>
-			</p>
-			<ul>
-				<li><%= t "mobility_bullet_1" %></li>
-				<li><%= t "mobility_bullet_2" %></li>
-				<li><%= t "mobility_bullet_3" %></li>
-			</ul>
-			<%= link_to t("learn_more"), mobility_path, :class => "arrowLink" %>
-		</div>
-		<div id="testimonials">
-			<div id="top"></div>
-			<p> 
-				<%= image_tag "open_quote.jpg" %>
-				<span id="quote_0" class="quote"><%= t "quote_0" %></span>
-				<span id="quote_1" class="quote" style="display:none;"><%= t "quote_1" %></span>
-				<span id="quote_2" class="quote" style="display:none;"><%= t "quote_2" %></span>
-				<span id="quote_3" class="quote" style="display:none;"><%= t "quote_3" %></span>
-				<span id="quote_4" class="quote" style="display:none;"><%= t "quote_4" %></span>
-				
-				<%= image_tag "close_quote.jpg", :id => "closeQuote" %>
-			</p>
-			<div id="client">
-				<span class="client" id="client_0"><%= t "client_0" %></span>
-				<span class="client" id="client_1" style="display:none;"><%= t "client_1" %></span>
-				<span class="client" id="client_2" style="display:none;"><%= t "client_2" %></span>
-				<span class="client" id="client_3" style="display:none;"><%= t "client_3" %></span>
-				<span class="client" id="client_4" style="display:none;"><%= t "client_4" %></span>
-			</div>
-			<div id="caroussel">
-				<a href="#" id="previousTestimonial"></a> 
-					<div id="testimonialsCounter"><span id="testimonialsCount">1</span> / 5 </div>
-				<a href="#" id="nextTestimonial"></a>
-			</div>
-			<div id="bottom"></div>
-		</div>
-	</div>
+  <div class="fixedWidthContent">
+    <div class="moduleBlock" id="recruiting">
+      <%= link_to "<h1>#{t('recruiting')}</h1>", recruiting_path, :class => "moduleTitleLink" %>
+      <p>
+        <%= t "recruiting_speech" %>
+      </p>
+      <ul>
+        <li><%= t "recruiting_bullet_1" %></li>
+        <li><%= t "recruiting_bullet_2" %></li>
+        <li><%= t "recruiting_bullet_3" %></li>
+      </ul>
+      <%= link_to t("learn_more"), recruiting_path, :class => "arrowLink" %>
+    </div>
+    <div class="verticalSeparator"></div>
+    <div class="moduleBlock" id="evaluation">
+      <%= link_to "<h1>#{t('evaluation')}</h1>", evaluation_path, :class => "moduleTitleLink"  %>
+      <p>
+        <%= t "evaluation_speech" %>
+      </p>
+      <ul>
+        <li><%= t "evaluation_bullet_1" %></li>
+        <li><%= t "evaluation_bullet_2" %></li>
+        <li><%= t "evaluation_bullet_3" %></li>
+      </ul>
+      <%= link_to t("learn_more"), evaluation_path, :class => "arrowLink" %>
+    </div>
+    
+    <div class="verticalSeparator"></div>
+    <div class="moduleBlock" id="mobility">
+      <%= link_to "<h1>#{t('mobility')}</h1>", mobility_path, :class => "moduleTitleLink"  %>
+      <p>
+        <%= t "mobility_speech" %>
+      </p>
+      <ul>
+        <li><%= t "mobility_bullet_1" %></li>
+        <li><%= t "mobility_bullet_2" %></li>
+        <li><%= t "mobility_bullet_3" %></li>
+      </ul>
+      <%= link_to t("learn_more"), mobility_path, :class => "arrowLink" %>
+    </div>
+    <div id="testimonials">
+      <div id="top"></div>
+      <p>
+        <%= image_tag "open_quote.jpg" %>
+        <span id="quote_0" class="quote"><%= t "quote_0" %></span>
+        <span id="quote_1" class="quote" style="display:none;"><%= t "quote_1" %></span>
+        <span id="quote_2" class="quote" style="display:none;"><%= t "quote_2" %></span>
+        <span id="quote_3" class="quote" style="display:none;"><%= t "quote_3" %></span>
+        <span id="quote_4" class="quote" style="display:none;"><%= t "quote_4" %></span>
+
+        <%= image_tag "close_quote.jpg", :id => "closeQuote" %>
+      </p>
+      <div id="client">
+        <span class="client" id="client_0"><%= t "client_0" %></span>
+        <span class="client" id="client_1" style="display:none;"><%= t "client_1" %></span>
+        <span class="client" id="client_2" style="display:none;"><%= t "client_2" %></span>
+        <span class="client" id="client_3" style="display:none;"><%= t "client_3" %></span>
+        <span class="client" id="client_4" style="display:none;"><%= t "client_4" %></span>
+      </div>
+      <div id="caroussel">
+        <a href="#" id="previousTestimonial"></a>
+        <div id="testimonialsCounter"><span id="testimonialsCount">1</span> / 5 </div>
+        <a href="#" id="nextTestimonial"></a>
+      </div>
+      <div id="bottom"></div>
+    </div>
+  </div>
 </div>
 <div id="newsAndTwitter">
-	<div class="fixedWidthContent">
-		<div id="twitter">
-			<h2>Twitter</h2>
-			<p id="twitterContent">
-				<%= t "loading_tweet" %> &nbsp;&nbsp;<%= image_tag "ajax-loader.gif" %>
-			</p>
-			<div id="twitterDate"></div>
-			<%= link_to "Nous suivre sur Twitter", "http://twitter.com/qameha", :id => "followUs" %>
-		</div>
-		<div id="news">
-			<h2><%= t "news" %></h2>
-			<p>
-				<%= t "news_main"%>
-				<em>
-					<%= t "news_minor" %>
-				</em>
-			</p>
-			<%= image_tag "q.jpg" %>
-		</div>
-	</div>
+  <div class="fixedWidthContent">
+    <div id="twitter">
+      <h2>Twitter</h2>
+      <p id="twitterContent">
+        <%= t "loading_tweet" %> &nbsp;&nbsp;<%= image_tag "ajax-loader.gif" %>
+      </p>
+      <div id="twitterDate"></div>
+      <%= link_to "Nous suivre sur Twitter", "http://twitter.com/qameha", :id => "followUs", :title => "@qameha", :target => "_blank" %>
+    </div>
+    <div id="news">
+      <h2><%= t "news" %></h2>
+      <p>
+        <%= t "news_main"%>
+        <em>
+          <%= t "news_minor" %>
+        </em>
+      </p>
+      <%= image_tag "q.jpg" %>
+    </div>
+  </div>
 </div>

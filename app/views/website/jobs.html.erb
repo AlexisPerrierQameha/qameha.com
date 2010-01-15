@@ -1,16 +1,8 @@
 <div id="jobsContent" class="clearfix pageContent classicHtml">
 	<div class="fixedWidthContent">		
-		<h2><%= t "join_us" %></h2>
-		<p>
-			<%= t "jobs_introduction" %>
-		</p>
-		<ul>
-			<li><%= link_to "Développeurs Ruby on Rails / CDI", "#dev"%></li>
-			<li><%= link_to "Ingénieur informaticien / Stage", "#inge"%></li>
-			<li><%= link_to "Web marketeur / CDI", "#market"%></li>
-		</ul>
-		<hr />
-		<h3 id="dev"><%= t "developer_rails" %></h3>
+		<h2 id="dev">
+<%= t "developer_rails" %>
+        </h2>
 		<%= image_tag "rails.png", :style => "float:right"%>
 		<p><%= t "developer_rails_looking_for"%></p>
 
@@ -38,8 +30,11 @@
 		<p><%= t "if_interested" %> : <%= link_to "ingnieur_informatique_ror.qameha@qameha.net", "mailto:ingnieur_informatique_ror.qameha@qameha.net"%></p>
 		
 		
-		
-		<h3 id="inge"><%= t "software_engineer"%></h3>
+		      <hr />
+
+		<h2 id="inge">
+<%= t "software_engineer"%>
+        </h2>
 		<p><%= t "software_engineer_looking_for" %></p>
 
 		<p><%= t "software_engineer_context"%></p>
@@ -65,9 +60,11 @@
 
 		<p><%= t "if_interested" %> : <%= link_to "stage.qameha@qameha.net", "mailto:stage.qameha@qameha.net"%></p>
 		
-		<h3 id="market"><%= t "web_marketer" %></h3>
+      <hr />
+		<h2 id="market"><%= t "web_marketer" %></h2>
 		<p>
 			<%= t "web_marketer_content" %> <%= link_to "web_marketeur.qameha@qameha.net", "mailto:web_marketeur.qameha@qameha.net" %>
 		</p>
-	</div>
+        <p>&nbsp;</p>
+    </div>
 </div>

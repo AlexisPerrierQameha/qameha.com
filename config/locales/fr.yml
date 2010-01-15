@@ -2,8 +2,8 @@ en:
     language_class: "fr"
     
     # CROSS PAGE TITLES
-    website_title: "Recrutement, Evaluation, Mobilit&eacute; | Qameha"
-    qameha_baseline: "Recrutement, Evaluation, Mobilit&eacute; | Qameha"
+    website_title: "Recrutement Evaluation Mobilit&eacute; Qameha"
+    qameha_baseline: "Qameha | Recrutement &nbsp; Evaluation &nbsp; Mobilit&eacute;"
     
     # NAVIGATION
     contact: "Contact"
@@ -13,19 +13,19 @@ en:
     recruiting: "Recrutement"
     evaluation: "Evaluation"
     mobility: "Mobilit&eacute;"
-    contact_us_to_know_more: "Contactez-nous pour en savoir plus."
+    contact_us_to_know_more: "Contactez-nous pour en&nbsp;savoir plus."
     
     # INDEX
         # Modules
-    recruiting_speech: "G&egrave;re le recrutement depuis la d&eacute;finition de poste jusqu'à l'int&eacute;gration du candidat. Participatif, Qameha implique les op&eacute;rationnels, automatise les relances et fait gagner temps et qualit&eacute; à chaque &eacute;tape."
-    evaluation_speech: "R&eacute;pond aux obligations r&eacute;glementaires et sociales et d&eacute;ploie les objectifs de management. Qameha &eacute;valuations automatise les relances des op&eacute;rationnels et g&eacute;n&egrave;re les statistiques d'&eacute;valuation."
-    mobility_speech: "Relie comp&eacute;tences, aspirations, besoin pour donner du sens aux &eacute;valuations, responsabiliser les managers et faciliter la mobilit&eacute;."
+    recruiting_speech: "G&egrave;re le&nbsp;recrutement depuis la&nbsp;d&eacute;finition de&nbsp;poste jusqu'à l'int&eacute;gration du candidat. Participatif, Qameha implique les op&eacute;rationnels, automatise les relances et fait gagner temps et qualit&eacute; à&nbsp;chaque &eacute;tape."
+    evaluation_speech: "R&eacute;pond aux&nbsp;obligations r&eacute;glementaires et sociales et d&eacute;ploie les&nbsp;objectifs de&nbsp;management. Qameha &eacute;valuations automatise les&nbsp;relances des&nbsp;op&eacute;rationnels et g&eacute;n&egrave;re les&nbsp;statistiques d'&eacute;valuation."
+    mobility_speech: "Relie comp&eacute;tences, aspirations, besoin pour donner du&nbsp;sens aux &eacute;valuations, responsabiliser les&nbsp;managers et faciliter la&nbsp;mobilit&eacute;."
     recruiting_bullet_1: "Structure"
     recruiting_bullet_2: "Cadence"
     recruiting_bullet_3: "Pilote"
     evaluation_bullet_1: "Simplifie"
     evaluation_bullet_2: "Automatise"
-    evaluation_bullet_3: "G&egrave;re les acc&egrave;s"
+    evaluation_bullet_3: "G&egrave;re les&nbsp;acc&egrave;s"
     mobility_bullet_1: "Fid&eacute;lise"
     mobility_bullet_2: "Capitalise"
     mobility_bullet_3: "Fluidifie"
@@ -44,18 +44,18 @@ en:
         # Actu
     loading_tweet: "Chargement du dernier tweet"
     news: "Actu"
-    news_main: "Retrouvez nous au Salon des Solutions Ressources Humaines"
+    news_main: "Retrouvez-nous au&nbsp;Salon des&nbsp;Solutions Ressources&nbsp;Humaines"
     news_minor: "Porte de Versailles du 9 au 11 mars 2010 - Stand E25"
     
     # JOBS
     join_us: "Rejoignez-nous !"
-    jobs_introduction: "H&eacute;berg&eacute;s au sein de l’incubateur T&eacute;l&eacute;com ParisTech depuis d&eacute;but juillet, nous cherchons aujourd’hui à nous d&eacute;velopper et recrutons :"
+    jobs_introduction: "H&eacute;berg&eacute;s au&nbsp;sein de l’incubateur T&eacute;l&eacute;com ParisTech, nous&nbsp;cherchons aujourd’hui à&nbsp;nous&nbsp;d&eacute;velopper et nous&nbsp;recrutons :"
     technical_content: "Contenu technique"
     required_skills: "Comp&eacute;tences requises"
-    english_required: "Bonne maîtrise de l’anglais imp&eacute;rative"
-    if_interested: "Si vous &ecirc;tes int&eacute;ress&eacute;(e) n’h&eacute;sitez pas à nous envoyer votre candidature à l’adresse suivante"
+    english_required: "Bonne maîtrise de&nbsp;l’anglais imp&eacute;rative"
+    if_interested: "Si vous &ecirc;tes int&eacute;ress&eacute;(e) n’h&eacute;sitez pas à&nbsp;nous&nbsp;envoyer votre&nbsp;candidature à&nbsp;l’adresse suivante"
         # Developer
-    developer_rails: "D&eacute;veloppeur Ruby on Rails"
+    developer_rails: "D&eacute;veloppeur Ruby&nbsp;on&nbsp;Rails"
     developer_rails_looking_for: "Deux d&eacute;veloppeurs Ruby on Rails / CDI / Paris 14&egrave;me / R&eacute;mun&eacute;ration selon exp&eacute;rience."
     developer_rails_context: "Au sein d’une &eacute;quipe de trois associ&eacute;s fondateurs, vous &ecirc;tes compl&egrave;tement associ&eacute;(e) au d&eacute;veloppement de l’entreprise. Vous reportez à l’associ&eacute; en charge des IT et prenez en charge le d&eacute;veloppement de modules fonctionnels, de l’&eacute;criture du code aux test et d&eacute;ploiement. Vous &eacute;voluez au rythme de la soci&eacute;t&eacute; soit en management (croissance de l’&eacute;quipe IT), soit vers des axes de recherches (partenariats laboratoires), soit de web marketing."
     developer_rails_technical_bullet_0: "Conception de solution web en ruby on rails"
@@ -82,15 +82,15 @@ en:
     software_engineer_required_bullet_3: "Connaissance des SGBD MySQL obligatoire (D&eacute;veloppement, Conception, …)"
         # Web Marketer
     web_marketer: "Web Marketeur"
-    web_marketer_content: "Nous rechercons un web marketeur en CDI. Contactez nous à l'adresse suivante pour plus d'informations : "
+    web_marketer_content: "Nous recherchons un web marketeur en CDI. Contactez-nous à&nbsp;l'adresse suivante : "
     
     # CONTACT US 
     contact_us: "Contactez nous"
-    contact_for: "Vous souhaitez en apprendre plus sur Qameha ? Vous souhaitez une d&eacute;monstration ? "
+    contact_for: "Vous souhaitez en apprendre plus sur Qameha&nbsp;? Vous souhaitez une d&eacute;monstration&nbsp;? "
     phone: "T&eacute;l&eacute;phone"
     email: "Email"
-    where_we_are: "Nous sommes dans l’incubateur T&eacute;l&eacute;com ParisTech depuis d&eacute;but juillet, au 9 rue Dareau."
-    team_page: "la page de l'&eacute;quipe"
+    where_we_are: "Nous sommes dans l’incubateur T&eacute;l&eacute;com ParisTech,<br /> 9 rue Dareau 75014 Paris."
+    team_page: "la&nbsp;page de&nbsp;l'&eacute;quipe"
     contact_the_team: "Vous pouvez &eacute;galement contacter individuellement les membres de Qameha via linkedin depuis"
     
     # MODULES

@@ -1,8 +1,5 @@
-
-# If you are using Passenger mod_rails uncomment this:
-# if you're still using the script/reapear helper you will need
-# these http://github.com/rails/irs_process_scripts
-
+after "deploy:symlink" , :copy_database_yml
+after "deploy", "deploy:cleanup"
 
 set :application, 'qameha'
 set :user, 'spock'
@@ -20,19 +17,16 @@ set :git_enable_submodules, 1
 set :use_sudo, false
 
  namespace :deploy do
-#   task :start {}
-#   task :stop {}
    task :restart, :roles => :app, :except => { :no_release => true } do
      run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
    end
  end
 
-#namespace :deploy do
-#  desc "Restarting mod_rails with restart.txt"
-#  task :restart, :roles => :app, :except => { :no_release => true } do
-#    run "touch #{current_path}/tmp/restart.txt"
-#  end
-#end
+# Avoid keeping the database.yml configuration in git.
+task :copy_database_yml, :roles => :app do
+  run "cp /home/spock/qameha.com/database.yml #{release_path}/config/database.yml"
+end
+
 
 set :server_hostname, 'qameha.com'
 set :location, "204.232.206.121"

@@ -1,7 +1,7 @@
 <div class="clearfix pageContent">
 	<div class="fixedWidthContent">
 		<div class="moduleBlock" id="recruiting">
-			<%= link_to "<h1>#{t('recruiting')}</h1>", recruiting_path %>
+			<%= link_to "<h1>#{t('recruiting')}</h1>", recruiting_path, :class => "moduleTitleLink" %>
 			<p>
 				<%= t "recruiting_speech" %>
 			</p>
@@ -14,7 +14,7 @@
 		</div>
 		<div class="verticalSeparator"></div>
 		<div class="moduleBlock" id="evaluation">
-			<%= link_to "<h1>#{t('evaluation')}</h1>", evaluation_path %>
+			<%= link_to "<h1>#{t('evaluation')}</h1>", evaluation_path, :class => "moduleTitleLink"  %>
 			<p>
 				<%= t "evaluation_speech" %>
 			</p>
@@ -27,7 +27,7 @@
 		</div>
 		<div class="verticalSeparator"></div>
 		<div class="moduleBlock" id="mobility">
-			<%= link_to "<h1>#{t('mobility')}</h1>", mobility_path %>
+			<%= link_to "<h1>#{t('mobility')}</h1>", mobility_path, :class => "moduleTitleLink"  %>
 			<p>
 				<%= t "mobility_speech" %>
 			</p>

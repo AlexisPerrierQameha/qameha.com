@@ -279,8 +279,11 @@ li{
 .moduleBlock{
 	width: 200px;
 	float: left;
-	padding-top: 140px;
 }
+	.moduleBlock .moduleTitleLink{
+		display:block;
+		padding-top: 140px;
+	}
 	.moduleBlock h1{
 		height: 0px;
 		overflow:hidden;

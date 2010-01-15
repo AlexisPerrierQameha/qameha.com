@@ -31,4 +31,5 @@ rake.test.out
 tmp/*
 tmp/**/*
 webrat-*.html
-
+a/log/development.log
+b/log/development.log

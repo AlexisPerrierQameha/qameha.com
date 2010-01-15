@@ -27,6 +27,6 @@ development:
   encoding: utf8
   database: qameha_sandbox
   username: root
-  password: galactus
+  password: 
   host: localhost
-  socket: /opt/local/var/run/mysql5/mysqld.sock
+  socket: /tmp/mysql.sock

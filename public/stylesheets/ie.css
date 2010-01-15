@@ -31,7 +31,7 @@
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/evaluation_logo.png') !important;
 }
 strong img{
-	left: -25px;
+	_left: -25px;
 }
 .halfZone{
 	width: 380px;

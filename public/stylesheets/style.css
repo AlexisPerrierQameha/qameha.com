@@ -439,7 +439,7 @@ li{
 		width: 193px;
 		height: 210px;
 		float: left;
-		padding: 86px 20px 0px 20px;
+		padding: 96px 20px 0px 20px;
 		color: #eeeeee;
 		font-size: 14px;
 		line-height: 16px;
@@ -525,7 +525,7 @@ li{
 	right: 0px;
 }
 .evaluationModule .saasAsset h2{
-	background:url("/images/recruiting_saas_asset_bullet.jpg") no-repeat;
+	background:url("/images/evaluation_saas_asset_bullet.jpg") no-repeat;
 }
 .evaluationModule .introduction{
 	background:url("/images/q_magenta.jpg") no-repeat;
@@ -542,6 +542,7 @@ li{
 .fr .evaluationModule #learnMoreModule{
 	background: url("/images/fr/learn_more_evaluation.jpg");
 }
+
 /*********************** RECRUITING PAGE ELEMENTS *********************/
 .fr #subZone #recruitingTitle{
 	background:url("/images/fr/recruiting_header_text.jpg") no-repeat;
@@ -572,6 +573,12 @@ li{
 .fr .recruitingModule #learnMoreModule{
 	background: url("/images/fr/learn_more_recruiting.jpg");
 }
+
+/*********************** RECRUITMENT AGENCY PAGE ELEMENTS *********************/
+.fr #recruitingAgencyTitle{
+	background: url("/images/fr/recruitment_agencies_headertext.jpg") no-repeat;
+}
+
 /*********************** CONTACT PAGE ELEMENTS *********************/
 .halfZone{
 	width: 400px;
@@ -589,6 +596,7 @@ li{
 		margin: 0px 20px 0px 0px;
 	}
 	#teamContent p{
+		width: 700px;
 	}
 	#teamContent a{
 		text-decoration:underline;
@@ -596,6 +604,9 @@ li{
 	#teamContent ul{
 		margin-left: 200px;
 		margin-top: 15px;
+		width: 500px;
+	}
+	#teamContent h3{
 	}
 	
 /* -------------------- CLEARFIX CLASS -------------------- */

@@ -10001,3 +10001,195 @@ Rendering template within layouts/website
 Rendering website/contact
 Rendered website/_header_contact (0.1ms)
 Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:04:35) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:04:36) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (105.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:04:37) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:04:37) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (44.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:04:38) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (105.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:05:02) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:05:03) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (98.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:05:03) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:05:04) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:05:04) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (104.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:09:16) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:09:16) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (103.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:09:17) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:09:17) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (102.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:09:17) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-15 10:09:17) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject):
+  
+
+Rendered rescues/_trace (42.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)

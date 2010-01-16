@@ -4,624 +4,651 @@
 
 /****************** SHARED ELEMENTS ********************/
 body{
-	font-family:Georgia;
-	font-size: 13px;
-	color:#656566;
-	background-color:#323233;
-	line-height: 18px;
+  font-family:Georgia;
+  font-size: 13px;
+  color:#656566;
+  background-color:#323233;
+  line-height: 18px;
 }
 
 .fixedWidthContent{
-	width:920px;
-	margin: auto;
+  width:920px;
+  margin: auto;
 }
 a{
-	color: #656566;
-	text-decoration:none;
+  color: #656566;
+  text-decoration:none;
 }
 a:hover{
-	color: #000;
-	text-decoration:underline;
+  color: #000;
+  text-decoration:underline;
 }
 .classicHtml h2{
-	font-size: 19px;
-	margin-bottom: 10px;
+  font-size: 19px;
+  margin-bottom: 10px;
 }
 .classicHtml h3{
-	font-size: 15px;
-	clear:both;
-	padding: 20px 0px 10px 0px;
+  font-size: 15px;
+  clear:both;
+  padding: 20px 0px 10px 0px;
 }
 .classicHtml li{
-	list-style-type: disc;
+  list-style-type: disc;
 }
 .classicHtml p{
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 strong{
-	font-size: 15px;
-	padding: 10px 10px 10px 40px;
-	display:block;
-	position: relative;
+  font-size: 15px;
+  padding: 10px 10px 10px 40px;
+  display:block;
+  position: relative;
 }
-	strong img{
-		position: absolute;
-		top: 10px;
-		left: 15px;
-	}
+strong img{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
 hr{
-	margin: 20px 0px;
+  margin: 20px 0px;
 }
 ul{
-	margin: 10px 0px;
+  margin: 10px 0px;
 }
 li{
-	margin-left: 20px;
+  margin-left: 20px;
 }
 #subZone #content{
-	padding: 20px 0px;
+  padding: 20px 0px;
 }
 #subZone p{
-	padding-top: 10px;
-	width: 600px;
-	line-height: 24px;
+  padding-top: 10px;
+  width: 600px;
+  line-height: 24px;
 }
 #subZone h1{
-	padding-top:43px;
-	overflow: hidden;
-	height: 0px;
-	margin-top: 10px;
+  padding-top:43px;
+  overflow: hidden;
+  height: 0px;
+  margin-top: 10px;
 }
 /****************** SPECIFIC ELEMENTS ********************/
 #promoWrapper{
-	min-width: 920px;
-	position:relative;
+  min-width: 920px;
+  position:relative;
 }
 #promoWrapper a{
-	display: block;	
-	width: 200px;
-	height: 120px;
-	z-index: 100000000;
-	position: absolute;
-	top: 0px;
-	right: 0px;
+  display: block;
+  width: 200px;
+  height: 120px;
+  z-index: 100000000;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 #promo{
-	width: 273px;
-	height: 161px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	z-index: 10;
+  width: 273px;
+  height: 161px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
 }
 
 .fr #promo{
-	background:url("/images/fr/banner_promo.png");
+  background:url("/images/fr/banner_promo.png");
 }
 #headest{
-	background: url("/images/loop_headest.jpg");
-	color: #EEEEEE;
-	height: 45px;
-	padding-top: 15px;
-	font-style: italic;
+  background: url("/images/loop_headest.jpg");
+  color: #EEEEEE;
+  height: 45px;
+  padding-top: 15px;
+  font-style: italic;
 }
 #bottomLoop{
-	height:12px;
-	background:url("/images/bottom_loop.png") repeat-x;
-	margin-top: -22px;
+  height:12px;
+  background:url("/images/bottom_loop.png") repeat-x;
+  margin-top: -22px;
 }
 #header{
-	padding: 10px 0px;
-	background-color:#FFFFFF;
+  padding: 10px 0px;
+  background-color:#FFFFFF;
 }
-	#header #logo{
-		width: 120px;
-		height: 120px;
-		background:url("/images/logo_qameha.jpg");
-		display: block;
-		float: left;
-	}
-	#header #menu{
-		float:right;
-		width: 600px;
-		font-size: 18px;
-		text-align:right;
-		margin-top : 95px;
-	}
+#header #logo{
+  width: 120px;
+  height: 120px;
+  background:url("/images/logo_qameha.jpg");
+  display: block;
+  float: left;
+}
+#header #menu{
+  float:right;
+  width: 600px;
+  font-size: 18px;
+  text-align:right;
+  margin-top : 95px;
+}
 
 #subZone{
-	color: #EEEEEE;
-	font-size: 18px;
-	font-style:italic;
-	position: relative;
-	background:url("/images/loop_subzone.png") repeat-y;
-	background-color: #2d2c2e;
-	padding-bottom: 15px;
+  color: #EEEEEE;
+  font-size: 18px;
+  font-style:italic;
+  position: relative;
+  background:url("/images/loop_subzone.png") repeat-y;
+  background-color: #2d2c2e;
+  padding-bottom: 15px;
 }
-	#subZone .fixedWidthContent{
-		position: relative;
-	}
-	#subZone #cubes{
-		background:url("/images/cubes.jpg");
-		height:66px;
-		width: 196px;
-		position: absolute;
-		top: 15px;
-		left: 600px;
-	}
-	.fr #subZone #rmfTitle{
-		background:url("/images/fr/rmf.png") no-repeat;
-	}
-	#subZone #contactUs{
-		float:right;
-		background:url("/images/call_to_action_button.jpg");
-		width: 213px;
-		height:32px;
-		padding-top: 14px;
-		text-align:center;
-		color:#fff;
-		margin-top: -30px;
-		font-style:normal;
-		font-size: 20px;
-		display: block;
-	}
+#subZone .fixedWidthContent{
+  position: relative;
+}
+#subZone #cubes{
+  background:url("/images/cubes.jpg");
+  height:66px;
+  width: 196px;
+  position: absolute;
+  top: 15px;
+  left: 600px;
+}
+.fr #subZone #rmfTitle{
+  background:url("/images/fr/rmf.png") no-repeat;
+}
+#subZone #contactUs{
+  float:right;
+  background:url("/images/call_to_action_button.jpg");
+  width: 213px;
+  height:32px;
+  padding-top: 14px;
+  text-align:center;
+  color:#fff;
+  margin-top: -30px;
+  font-style:normal;
+  font-size: 20px;
+  display: block;
+}
 .pageContent{
-	margin: auto;
-	padding: 15px 0px;
-	background-color:#FFFFFF;
+  margin: auto;
+  padding: 15px 0px;
+  background-color:#FFFFFF;
 }
 #newsAndTwitter{
-	background-color: #868686;
-	height: 190px;
+  background-color: #868686;
+  height: 190px;
 }
-	#newsAndTwitter h2{
-		padding: 20px 0px 10px 0px;
-	}
-	#newsAndTwitter p{
-		color: #eeeeee;
-		font-size: 17px;
-		font-style: italic;
-	}
-	#newsAndTwitter #twitter{
-		width: 550px;
-		background: transparent url("/images/twitter.jpg") no-repeat scroll 10px 95px;
-		height: 170px;
-		position: relative;
-		float: left;
-	}
-		#twitter #twitterDate{
-			float:right;
-		}
-		#twitter #followUs{
-			float:right;
-			background:url("/images/follow_us_box.jpg") no-repeat;
-			height:39px;
-			width: 233px;
-			display:block;
-			position: absolute;
-			top: 120px;
-			left: 320px;
-			color: #fff;
-			padding:10px 0px 0px 20px;
-			font-size: 16px;
-		}
-	#newsAndTwitter #news{
-		margin: 5px 0px;
-		border-left: 2px solid #ebebeb;
-		height: 160px;
-		width: 340px;
-		float: right;
-		position: relative;
-		background: url("/images/bubble.jpg") no-repeat 60px 0px;
-	}
-		#newsAndTwitter #news h2{
-			margin-left: 20px;
-		}
-		#newsAndTwitter #news p{
-			color: #eeeeee;
-			margin-left: 20px;
-		}
-			#newsAndTwitter #news p em{
-				font-size: 12px;
-				display:block;
-			}
-			#newsAndTwitter #news img{
-				position:absolute;
-				top: 110px;
-				left: 20px;
-			}
+#newsAndTwitter h2{
+  padding: 20px 0px 10px 0px;
+}
+#newsAndTwitter p{
+  color: #eeeeee;
+  font-size: 17px;
+  font-style: italic;
+}
+#newsAndTwitter #twitter{
+  width: 550px;
+  background: transparent url("/images/twitter.jpg") no-repeat scroll 10px 95px;
+  height: 170px;
+  position: relative;
+  float: left;
+}
+#twitter #twitterDate{
+  float:right;
+}
+#twitter #followUs{
+  float:right;
+  background:url("/images/follow_us_box.jpg") no-repeat;
+  height:39px;
+  width: 233px;
+  display:block;
+  position: absolute;
+  top: 120px;
+  left: 320px;
+  color: #fff;
+  padding:10px 0px 0px 20px;
+  font-size: 16px;
+}
+#newsAndTwitter #news{
+  margin: 5px 0px;
+  border-left: 2px solid #ebebeb;
+  height: 160px;
+  width: 340px;
+  float: right;
+  position: relative;
+  background: url("/images/bubble.jpg") no-repeat 60px 0px;
+}
+#newsAndTwitter #news h2{
+  margin-left: 20px;
+}
+#newsAndTwitter #news p{
+  color: #eeeeee;
+  margin-left: 20px;
+}
+#newsAndTwitter #news p em{
+  font-size: 12px;
+  display:block;
+}
+#newsAndTwitter #news img{
+  position:absolute;
+  top: 110px;
+  left: 20px;
+}
 #footer{
-	background-color: #323233;
+  background-color: #323233;
 }
-	#footer .module{
-		width: 200px;
-		height: 160px;
-		float:left;
-		border-right: 2px solid #acacac;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		display:block;
-	}
-	.fr #footer #recruiting{
-		background:url("/images/fr/recruiting_logo_dark.jpg") no-repeat 0px 0px;
-	}
-	.fr #footer #evaluation{
-		background:url("/images/fr/evaluation_logo_dark.jpg") no-repeat 25px 10px;
-	}
-	.fr #footer #mobility{
-		background:url("/images/fr/mobility_logo_dark.jpg") no-repeat 30px 14px;
-	}
-	#footer #endNavigation{
-		font-size: 15px;
-		width: 310px;
-		float: right;
-		margin-top: 20px;
-	}
-		#footer #endNavigation li{
-			list-style-type: disc;
-			margin-left: 35px;
-		}
-		#footer #endNavigation a{
-			color: #eeeeee;
-		}
-		#footer #endNavigation img{
-			margin: 15px 0px 0px 20px;
-			border: 1px solid #cccccc;
-		}
+#footer .module{
+  width: 200px;
+  height: 160px;
+  float:left;
+  border-right: 2px solid #acacac;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display:block;
+}
+.fr #footer #recruiting{
+  background:url("/images/fr/recruiting_logo_dark.jpg") no-repeat 0px 0px;
+}
+.fr #footer #evaluation{
+  background:url("/images/fr/evaluation_logo_dark.jpg") no-repeat 25px 10px;
+}
+.fr #footer #mobility{
+  background:url("/images/fr/mobility_logo_dark.jpg") no-repeat 30px 14px;
+}
+#footer #endNavigation{
+  font-size: 15px;
+  width: 310px;
+  float: right;
+  margin-top: 20px;
+}
+#footer #endNavigation li{
+  list-style-type: disc;
+  margin-left: 35px;
+}
+#footer #endNavigation a{
+  color: #eeeeee;
+}
+#footer #endNavigation img{
+  margin: 15px 0px 0px 20px;
+  border: 1px solid #cccccc;
+}
 /*********************** INDEX PAGE ELEMENTS *********************/
 .verticalSeparator{
-	background:url("/images/vertical_separator.jpg");
-	float:left;
-	width: 3px;
-	height: 410px;
-	margin: 0px 20px 0px 20px;
+  background:url("/images/vertical_separator.jpg");
+  float:left;
+  width: 3px;
+  height: 410px;
+  margin: 0px 20px 0px 20px;
 }
 .moduleBlock{
-	width: 200px;
-	float: left;
+  width: 200px;
+  float: left;
 }
-	.moduleBlock .moduleTitleLink{
-		display:block;
-		padding-top: 140px;
-	}
-	.moduleBlock h1{
-		height: 0px;
-		overflow:hidden;
-		margin-bottom: 10px;
-	}
-	.moduleBlock ul{
-		margin: 10px 0px 10px 0px;
-	}
-	.moduleBlock li{
-		padding-left: 20px;
-		font-size: 16px;
-	}
-	.moduleBlock p{
-		height: 140px;
-	}
-	.moduleBlock .arrowLink{
-		display: block;
-		background: url("/images/learn_more_icon.jpg") no-repeat scroll 0px 3px;
-		padding: 0px 0px 0px 20px;
-	}
+.moduleBlock .moduleTitleLink{
+  display:block;
+  padding-top: 140px;
+}
+.moduleBlock h1{
+  height: 0px;
+  overflow:hidden;
+  margin-bottom: 10px;
+}
+.moduleBlock ul{
+  margin: 10px 0px 10px 0px;
+}
+.moduleBlock li{
+  padding-left: 20px;
+  font-size: 16px;
+}
+.moduleBlock p{
+  height: 140px;
+}
+.moduleBlock .arrowLink{
+  display: block;
+  background: url("/images/learn_more_icon.jpg") no-repeat scroll 0px 3px;
+  padding: 0px 0px 0px 20px;
+}
 
 #testimonials{
-	background: url("/images/testimonial_middle.jpg");
-	height:376px;
-	width: 225px;
-	float: right;
-	position: relative;
+  background: url("/images/testimonial_middle.jpg");
+  height:376px;
+  width: 225px;
+  float: right;
+  position: relative;
 }
-	#testimonials #previousTestimonial{
-		background:url("/images/previous.png");
-		width: 17px;
-		height:16px;
-		display: block;
-		float: left;
-	}
-	#testimonials #nextTestimonial{
-		background:url("/images/next.png");
-		width: 17px;
-		height:16px;
-		display: block;
-		float: left;
-	}
-	#testimonials #testimonialsCounter{
-		display:block;
-		width: 50px;
-		text-align:center;
-		float:left;
-	}
-	#testimonials #top{
-		height: 17px;
-		background:url("/images/testimonial_top.jpg");
-		width: 225px;
-		position:absolute;
-		top:0px;
-	}
-	#testimonials #bottom{
-		height: 30px;
-		background:url("/images/testimonial_bottom.jpg") no-repeat;
-		width: 225px;
-		position:absolute;
-		top:365px;
-	}
-	#testimonials p{
-		padding: 10px 25px 0px 25px;
-		color: #eeeeee;
-		font-size: 21px;
-		line-height:24px;
-		font-style:italic;
-		margin-bottom:30px;
-	}
-		#testimonials p img{
-			width: 30%;
-		}
-	#testimonials #client{
-		float: right;
-		padding-right: 10px;
-		color: #eeeeee;
-		font-size: 15px;
-	}
-	#testimonials #closeQuote{
-		float:right;
-	}
-	#testimonials #caroussel{
-		color: #eeeeee;
-		position:absolute;
-		bottom: 10px;
-		margin-left: 20px;
-	}
-		#testimonials #caroussel a{
-			color: #eeeeee;
-		}
+#testimonials #previousTestimonial{
+  background:url("/images/previous.png");
+  width: 17px;
+  height:16px;
+  display: block;
+  float: left;
+}
+#testimonials #nextTestimonial{
+  background:url("/images/next.png");
+  width: 17px;
+  height:16px;
+  display: block;
+  float: left;
+}
+#testimonials #testimonialsCounter{
+  display:block;
+  width: 50px;
+  text-align:center;
+  float:left;
+}
+#testimonials #top{
+  height: 17px;
+  background:url("/images/testimonial_top.jpg");
+  width: 225px;
+  position:absolute;
+  top:0px;
+}
+#testimonials #bottom{
+  height: 30px;
+  background:url("/images/testimonial_bottom.jpg") no-repeat;
+  width: 225px;
+  position:absolute;
+  top:365px;
+}
+#testimonials p{
+  padding: 10px 25px 0px 25px;
+  color: #eeeeee;
+  font-size: 21px;
+  line-height:24px;
+  font-style:italic;
+  margin-bottom:30px;
+}
+
+#testimonials ul{
+  padding: 10px 25px 0px 25px;
+  color: #eeeeee;
+  margin-bottom:30px;
+}
+
+#testimonials li.side_blog_titles{
+  font-size: 12px;
+  line-height:14px;
+  font-style:normal;
+}
+
+#testimonials h2.side_blog_titles{
+  padding: 20px 25px 0px 25px;
+  /*margin-top:20px;*/
+  font-size: 12px;
+  line-height:14px;
+  font-style:normal;
+}
+
+
+#testimonials p img{
+  width: 30%;
+}
+#testimonials #client{
+  float: right;
+  padding-right: 10px;
+  color: #eeeeee;
+  font-size: 15px;
+}
+#testimonials #closeQuote{
+  float:right;
+}
+#testimonials #caroussel{
+  color: #eeeeee;
+  position:absolute;
+  bottom: 10px;
+  margin-left: 20px;
+}
+#testimonials #caroussel a{
+  color: #eeeeee;
+}
 /* MODULES BLOCKS */
 #recruiting{
-	background:url("/images/recruiting_logo.jpg") no-repeat;
+  background:url("/images/recruiting_logo.jpg") no-repeat;
 }
-	#recruiting h1{
-		padding-top: 31px;
-	}
-	.fr #recruiting h1{
-		background: url("/images/fr/recruiting_text.jpg") no-repeat;
-	}
-	#recruiting li{
-		background:url("/images/recruiting_dot.jpg") no-repeat scroll 0px 4px;
-	}
+#recruiting h1{
+  padding-top: 31px;
+}
+.fr #recruiting h1{
+  background: url("/images/fr/recruiting_text.jpg") no-repeat;
+}
+#recruiting li{
+  background:url("/images/recruiting_dot.jpg") no-repeat scroll 0px 4px;
+}
 #evaluation{
-	background:url("/images/evaluation_logo.jpg") no-repeat;
+  background:url("/images/evaluation_logo.jpg") no-repeat;
 }
-	#evaluation h1{
-		padding-top: 31px;
-	}
-	.fr #evaluation h1{
-		background: url("/images/fr/evaluation_text.jpg") no-repeat;
-	}
-	#evaluation li{
-		background:url("/images/evaluation_dot.jpg") no-repeat scroll 0px 4px;
-	}
+#evaluation h1{
+  padding-top: 31px;
+}
+.fr #evaluation h1{
+  background: url("/images/fr/evaluation_text.jpg") no-repeat;
+}
+#evaluation li{
+  background:url("/images/evaluation_dot.jpg") no-repeat scroll 0px 4px;
+}
 #mobility{
-	background:url("/images/mobility_logo.jpg") no-repeat;
+  background:url("/images/mobility_logo.jpg") no-repeat;
 }
-	#mobility h1{
-		padding-top: 31px;
-	}
-	.fr #mobility h1{
-		background: url("/images/fr/mobility_text.jpg") no-repeat;
-	}
-	#mobility li{
-		background:url("/images/mobility_dot.jpg") no-repeat scroll 0px 4px;
-	}
+#mobility h1{
+  padding-top: 31px;
+}
+.fr #mobility h1{
+  background: url("/images/fr/mobility_text.jpg") no-repeat;
+}
+#mobility li{
+  background:url("/images/mobility_dot.jpg") no-repeat scroll 0px 4px;
+}
 /*********************** MODULE PAGE ELEMENTS *********************/
 .modulePage{}
-	.modulePage ul{
-		margin: 0px;
-	}
-	.modulePage li{
-		list-style-type: disc;
-		margin-left: 10px;
-		padding-bottom: 5px;
-	}
-	.modulePage #assets{
-		width: 690px;
-		float: left;
-	}
+.modulePage ul{
+  margin: 0px;
+}
+.modulePage li{
+  list-style-type: disc;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+.modulePage #assets{
+  width: 690px;
+  float: left;
+}
 
-	.modulePage .introduction{
-		padding-left: 60px;
-		font-size: 16px;
-	}
-	
-	.modulePage h1{
-		font-size: 18px;
-		font-style:italic;
-		font-weight:normal;
-		margin: 20px 0px 15px 0px;
-	}
-	.modulePage .moduleAsset{
-		width: 193px;
-		height: 210px;
-		float: left;
-		padding: 96px 20px 0px 20px;
-		color: #eeeeee;
-		font-size: 14px;
-		line-height: 16px;
-	}
-	.modulePage #asset1{
-		margin-left: -10px;
-	}
-	.modulePage #testimonials #top{
-		background:url("/images/testimonial_top_light.jpg");
-	}
-	.modulePage #testimonials{
-		background:url("/images/testimonial_middle_light.jpg");
-	}
-	.modulePage #testimonials #bottom{
-		background:url("/images/testimonial_bottom_light.jpg") no-repeat;
-	}
-	.modulePage #testimonials p{
-		color:#656566 !important;
-	}
-	.modulePage #testimonials #client{
-		color:#999999 !important;
-	}
-	.modulePage #testimonials #testimonialsCounter{
-		color:#656566 !important;
-	}
-	.modulePage #testimonials p {
-		margin-bottom: 55px !important;
-	}
-	.modulePage #saasAssets{
-		background-color: #e9e9e9;
-		margin-top: 20px;
-	}
-	.modulePage .saasAsset{
-		width: 180px;
-		float: left;
-		padding: 0px 20px 20px 20px;
-	}
-		.modulePage .saasAsset h2{
-			font-weight:normal;
-			font-size: 20px;
-			letter-spacing: 2px;
-			margin-bottom: 10px;
-			padding-left: 20px;
-		}
-	.modulePage #saasAsset2{
-		border-left: 2px solid #cdcdcd;
-		border-right: 2px solid #cdcdcd;
-	}
-	.modulePage #learnMoreModule{
-		display:block;
-		float:right;
-		width: 229px;
-		height: 224px;
-		margin-right: -3px;
-	}
-	
+.modulePage .introduction{
+  padding-left: 60px;
+  font-size: 16px;
+}
+
+.modulePage h1{
+  font-size: 18px;
+  font-style:italic;
+  font-weight:normal;
+  margin: 20px 0px 15px 0px;
+}
+.modulePage .moduleAsset{
+  width: 193px;
+  height: 210px;
+  float: left;
+  padding: 96px 20px 0px 20px;
+  color: #eeeeee;
+  font-size: 14px;
+  line-height: 16px;
+}
+.modulePage #asset1{
+  margin-left: -10px;
+}
+.modulePage #testimonials #top{
+  background:url("/images/testimonial_top_light.jpg");
+}
+.modulePage #testimonials{
+  background:url("/images/testimonial_middle_light.jpg");
+}
+.modulePage #testimonials #bottom{
+  background:url("/images/testimonial_bottom_light.jpg") no-repeat;
+}
+.modulePage #testimonials p{
+  color:#656566 !important;
+}
+.modulePage #testimonials #client{
+  color:#999999 !important;
+}
+.modulePage #testimonials #testimonialsCounter{
+  color:#656566 !important;
+}
+.modulePage #testimonials p {
+  margin-bottom: 55px !important;
+}
+.modulePage #saasAssets{
+  background-color: #e9e9e9;
+  margin-top: 20px;
+}
+.modulePage .saasAsset{
+  width: 180px;
+  float: left;
+  padding: 0px 20px 20px 20px;
+}
+.modulePage .saasAsset h2{
+  font-weight:normal;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.modulePage #saasAsset2{
+  border-left: 2px solid #cdcdcd;
+  border-right: 2px solid #cdcdcd;
+}
+.modulePage #learnMoreModule{
+  display:block;
+  float:right;
+  width: 229px;
+  height: 224px;
+  margin-right: -3px;
+}
+
 /*********************** MOBILITY PAGE ELEMENTS *********************/
 .mobilityModule #assets{
-	height: 430px;
+  height: 430px;
 }
 .fr #subZone #mobilityTitle{
-	background:url("/images/fr/mobility.png") no-repeat;
+  background:url("/images/fr/mobility.png") no-repeat;
 }
 #subZone #mobilityLogo{
-	background: url("/images/mobility_logo.png") no-repeat;
-	width:101px;
-	height: 111px;
-	position: absolute;
-	top: 15px;
-	right: 0px;
+  background: url("/images/mobility_logo.png") no-repeat;
+  width:101px;
+  height: 111px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
 }
 
 /*********************** EVALUATION PAGE ELEMENTS *********************/
 .fr #subZone #evaluationTitle{
-	background:url("/images/fr/evaluation_header_text.jpg") no-repeat;
+  background:url("/images/fr/evaluation_header_text.jpg") no-repeat;
 }
 #subZone #evaluationLogo{
-	background: url("/images/evaluation_logo.png");
-	width:117px;
-	height: 129px;
-	position: absolute;
-	top: 15px;
-	right: 0px;
+  background: url("/images/evaluation_logo.png");
+  width:117px;
+  height: 129px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
 }
 .evaluationModule .saasAsset h2{
-	background:url("/images/evaluation_saas_asset_bullet.jpg") no-repeat;
+  background:url("/images/evaluation_saas_asset_bullet.jpg") no-repeat;
 }
 .evaluationModule .introduction{
-	background:url("/images/q_magenta.jpg") no-repeat;
+  background:url("/images/q_magenta.jpg") no-repeat;
 }
 .fr .evaluationModule #asset1{
-	background:url("/images/fr/asset_evaluation_efficacity.jpg");
+  background:url("/images/fr/asset_evaluation_efficacity.jpg");
 }	
 .fr .evaluationModule #asset2{
-	background:url("/images/fr/asset_evaluation_va.jpg");
+  background:url("/images/fr/asset_evaluation_va.jpg");
 }
 .fr .evaluationModule #asset3{
-	background:url("/images/fr/asset_evaluation_quality.jpg");
+  background:url("/images/fr/asset_evaluation_quality.jpg");
 }
 .fr .evaluationModule #learnMoreModule{
-	background: url("/images/fr/learn_more_evaluation.jpg");
+  background: url("/images/fr/learn_more_evaluation.jpg");
 }
 
 /*********************** RECRUITING PAGE ELEMENTS *********************/
 .fr #subZone #recruitingTitle{
-	background:url("/images/fr/recruiting_header_text.jpg") no-repeat;
+  background:url("/images/fr/recruiting_header_text.jpg") no-repeat;
 }
 #subZone #recruitingLogo{
-	background: url("/images/recruiting_logo_header.jpg");
-	width:179px;
-	height: 60px;
-	position: absolute;
-	top: 15px;
-	right: 0px;
+  background: url("/images/recruiting_logo_header.jpg");
+  width:179px;
+  height: 60px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
 }
 .recruitingModule .saasAsset h2{
-	background:url("/images/recruiting_saas_asset_bullet.jpg") no-repeat;
+  background:url("/images/recruiting_saas_asset_bullet.jpg") no-repeat;
 }
 .recruitingModule .introduction{
-	background:url("/images/recruiting_intro_icon.jpg") no-repeat;
+  background:url("/images/recruiting_intro_icon.jpg") no-repeat;
 }
 .fr .recruitingModule #asset1{
-	background:url("/images/fr/asset_efficacity.jpg");
+  background:url("/images/fr/asset_efficacity.jpg");
 }	
 .fr .recruitingModule #asset2{
-	background:url("/images/fr/asset_rapidity.jpg");
+  background:url("/images/fr/asset_rapidity.jpg");
 }
 .fr .recruitingModule #asset3{
-	background:url("/images/fr/asset_quality.jpg");
+  background:url("/images/fr/asset_quality.jpg");
 }
 .fr .recruitingModule #learnMoreModule{
-	background: url("/images/fr/learn_more_recruiting.jpg");
+  background: url("/images/fr/learn_more_recruiting.jpg");
 }
 
 /*********************** RECRUITMENT AGENCY PAGE ELEMENTS *********************/
 .fr #recruitingAgencyTitle{
-	background: url("/images/fr/recruitment_agencies_headertext.jpg") no-repeat;
+  background: url("/images/fr/recruitment_agencies_headertext.jpg") no-repeat;
 }
 
 /*********************** CONTACT PAGE ELEMENTS *********************/
 .halfZone{
-	width: 400px;
-	padding-right: 50px;
-	float: left;
-	padding-bottom: 30px;
+  width: 400px;
+  padding-right: 50px;
+  float: left;
+  padding-bottom: 30px;
 }
 
 /*********************** TEAM PAGE ELEMENTS *********************/
 #teamContent{
-	padding-bottom: 50px;
+  padding-bottom: 50px;
 }
-	#teamContent img{
-		float: left;
-		margin: 0px 20px 0px 0px;
-	}
-	#teamContent p{
-		width: 700px;
-	}
-	#teamContent a{
-		text-decoration:underline;
-	}
-	#teamContent ul{
-		margin-left: 200px;
-		margin-top: 15px;
-		width: 500px;
-	}
-	#teamContent h3{
-	}
-	
+#teamContent img{
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+#teamContent p{
+  width: 700px;
+}
+#teamContent a{
+  text-decoration:underline;
+}
+#teamContent ul{
+  margin-left: 200px;
+  margin-top: 15px;
+  width: 500px;
+}
+#teamContent h3{
+}
+
 /* -------------------- CLEARFIX CLASS -------------------- */
 
 .clearfix:after {clear: both;
-content: '.';
-display: block;
-visibility: hidden;
-height: 0;}
+                 content: '.';
+                 display: block;
+                 visibility: hidden;
+                 height: 0;}
 
 .clearfix {display: inline-block;}
 
 * html .clearfix {height: 1%;}
 
 .clearfix {display: block;}
+
+.FormLabel {
+  padding : 10px;
+  
+}

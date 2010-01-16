@@ -1110,3 +1110,12 @@ Rendering template within layouts/website
 Rendering website/jobs
 Rendered website/_header_jobs (1.5ms)
 Completed in 38ms (View: 31, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-15 22:01:20) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.8ms)
+Completed in 47ms (View: 40, DB: 0) | 200 OK [http://localhost/jobs]

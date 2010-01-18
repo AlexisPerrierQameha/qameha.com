@@ -1,5 +1,5 @@
 var current = 0;
-var size = 5;
+var size = 2;
 
 jQuery(function(){
 	initTwitter();
@@ -14,37 +14,46 @@ function initTwitter(){
 		$.getJSON("http://twitter.com/statuses/user_timeline/qameha.json?count=1&callback=?",
 		    function(data){
 				$content.html(data[0].text);
-				$date.html(data[0].created_at.replace("+0000 2010",""))
+				$date.html(data[0].created_at.replace("+0000 2010",""));
         	}
 		);
-		
-		
-		
-		
-		
-		// The info is here : http://twitter.com/statuses/user_timeline/qameha.json?count=1
 	}
 }
 function initCaroussel(){
+	jQuery("#testimonialsTotal").html(size);
 	jQuery("#previousTestimonial").bind("click", function(e){
 		current = current - 1;
 		if(current < 0) current = size - 1;
-		displayCurrent();
+		displayCurrent("previous");
 		e.preventDefault();
 	});
 	jQuery("#nextTestimonial").bind("click", function(e){
 		current = (current + 1) % size;
-		displayCurrent();
+		displayCurrent("next");
 		e.preventDefault();
 	});
+	if(size < 2){
+		jQuery("#caroussel").hide();
+	}
 }
 
-function displayCurrent(){
-	jQuery(".quote").hide();
-	jQuery("#quote_"+current).show();
+function displayCurrent(direction){
+	// Managing testimonials
 
-	jQuery(".client").hide();
-	jQuery("#client_"+current).show();
+	if(direction=="next"){
+		jQuery(".quote:visible").hide("slide", { direction: "right" }, 1000);
+		setTimeout('jQuery("#quote_"+current).show("slide", { direction: "left" }, 1000);', 1000);
+	}else{
+		jQuery(".quote:visible").hide("slide", { direction: "left" }, 1000);
+		setTimeout('jQuery("#quote_"+current).show("slide", { direction: "right" }, 1000);', 1000);
+	}
+	
+	
+	// Managing clients
+	jQuery(".client:visible").fadeOut(1000);
+	setTimeout('jQuery("#client_"+current).fadeIn(1000);', 1000);
+	
+	// Managing quotes
 	
 	jQuery("#testimonialsCount").html(current + 1);
 }

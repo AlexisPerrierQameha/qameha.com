@@ -30,6 +30,7 @@ a:hover{
 .classicHtml h3{
   font-size: 15px;
   clear:both;
+	font-style:italic;
   padding: 20px 0px 10px 0px;
 }
 .classicHtml li{
@@ -61,16 +62,25 @@ li{
 #subZone #content{
   padding: 20px 0px;
 }
+#subZone a{
+	color: #bbbbbb;
+}
 #subZone p{
   padding-top: 10px;
-  width: 600px;
+  width: 670px;
   line-height: 24px;
 }
 #subZone h1{
-  padding-top:43px;
+  padding-top:51px;
   overflow: hidden;
   height: 0px;
-  margin-top: 10px;
+margin-left: -15px;
+}
+.wipP{
+	margin: 20px 0px;
+}
+.wipP img{
+	margin-right: 20px;
 }
 /****************** SPECIFIC ELEMENTS ********************/
 #promoWrapper{
@@ -115,9 +125,9 @@ li{
   background-color:#FFFFFF;
 }
 #header #logo{
-  width: 120px;
-  height: 120px;
-  background:url("/images/logo_qameha.jpg");
+  width: 144px;
+  height: 124px;
+  background:url("/images/logo_qameha.png");
   display: block;
   float: left;
 }
@@ -142,22 +152,22 @@ li{
   position: relative;
 }
 #subZone #cubes{
-  background:url("/images/cubes.jpg");
-  height:66px;
-  width: 196px;
+  background: url(/images/cubes.png);
+  height:77px;
+  width: 203px;
   position: absolute;
   top: 15px;
   left: 600px;
 }
 .fr #subZone #rmfTitle{
-  background:url("/images/fr/rmf.png") no-repeat;
+  background: url(/images/fr/rmf.png) no-repeat;
 }
 #subZone #contactUs{
   float:right;
-  background:url("/images/call_to_action_button.jpg");
+  background:url("/images/call_to_action_button.png");
   width: 213px;
   height:32px;
-  padding-top: 14px;
+  padding-top: 16px;
   text-align:center;
   color:#fff;
   margin-top: -30px;
@@ -178,13 +188,13 @@ li{
   padding: 20px 0px 10px 0px;
 }
 #newsAndTwitter p{
-  color: #eeeeee;
+  color: #DDDDDD;
   font-size: 17px;
   font-style: italic;
 }
 #newsAndTwitter #twitter{
   width: 550px;
-  background: transparent url("/images/twitter.jpg") no-repeat scroll 10px 95px;
+  background: url("/images/twitter.png") no-repeat 10px 95px;
   height: 170px;
   position: relative;
   float: left;
@@ -194,15 +204,15 @@ li{
 }
 #twitter #followUs{
   float:right;
-  background:url("/images/follow_us_box.jpg") no-repeat;
+  background:url("/images/follow_us_box.png") no-repeat;
   height:39px;
   width: 233px;
   display:block;
   position: absolute;
   top: 120px;
-  left: 320px;
+  left: 310px;
   color: #fff;
-  padding:10px 0px 0px 20px;
+  padding:13px 0px 0px 20px;
   font-size: 16px;
 }
 #newsAndTwitter #news{
@@ -218,7 +228,7 @@ li{
   margin-left: 20px;
 }
 #newsAndTwitter #news p{
-  color: #eeeeee;
+  color: #DDDDDD;
   margin-left: 20px;
 }
 #newsAndTwitter #news p em{
@@ -282,12 +292,13 @@ li{
 }
 .moduleBlock .moduleTitleLink{
   display:block;
-  padding-top: 140px;
+  padding-top: 125px;
 }
 .moduleBlock h1{
   height: 0px;
   overflow:hidden;
   margin-bottom: 10px;
+margin-left: -5px;
 }
 .moduleBlock ul{
   margin: 10px 0px 10px 0px;
@@ -295,13 +306,14 @@ li{
 .moduleBlock li{
   padding-left: 20px;
   font-size: 16px;
+	margin-left: 0px;
 }
 .moduleBlock p{
   height: 140px;
 }
 .moduleBlock .arrowLink{
   display: block;
-  background: url("/images/learn_more_icon.jpg") no-repeat scroll 0px 3px;
+  background: url("/images/learn_more_icon.png") no-repeat scroll 0px -2px;
   padding: 0px 0px 0px 20px;
 }
 
@@ -352,7 +364,7 @@ li{
   font-size: 21px;
   line-height:24px;
   font-style:italic;
-  margin-bottom:30px;
+  margin-bottom:50px;
 }
 
 #testimonials ul{
@@ -378,6 +390,9 @@ li{
 #testimonials p img{
   width: 30%;
 }
+.quote{
+	display:inline-block;
+}
 #testimonials #client{
   float: right;
   padding-right: 10px;
@@ -386,6 +401,7 @@ li{
 }
 #testimonials #closeQuote{
   float:right;
+margin-top: -5px;
 }
 #testimonials #caroussel{
   color: #eeeeee;
@@ -404,7 +420,7 @@ li{
   padding-top: 31px;
 }
 .fr #recruiting h1{
-  background: url("/images/fr/recruiting_text.jpg") no-repeat;
+  background: url("/images/fr/recruiting_dark.png") no-repeat;
 }
 #recruiting li{
   background:url("/images/recruiting_dot.jpg") no-repeat scroll 0px 4px;
@@ -416,7 +432,7 @@ li{
   padding-top: 31px;
 }
 .fr #evaluation h1{
-  background: url("/images/fr/evaluation_text.jpg") no-repeat;
+  background: url("/images/fr/evaluation_dark.png") no-repeat;
 }
 #evaluation li{
   background:url("/images/evaluation_dot.jpg") no-repeat scroll 0px 4px;
@@ -428,7 +444,7 @@ li{
   padding-top: 31px;
 }
 .fr #mobility h1{
-  background: url("/images/fr/mobility_text.jpg") no-repeat;
+  background: url("/images/fr/mobility_dark.png") no-repeat;
 }
 #mobility li{
   background:url("/images/mobility_dot.jpg") no-repeat scroll 0px 4px;
@@ -507,6 +523,7 @@ li{
   letter-spacing: 2px;
   margin-bottom: 10px;
   padding-left: 20px;
+	margin-left: -10px;
 }
 .modulePage #saasAsset2{
   border-left: 2px solid #cdcdcd;
@@ -518,6 +535,7 @@ li{
   width: 229px;
   height: 224px;
   margin-right: -3px;
+	margin-top: 30px;
 }
 
 /*********************** MOBILITY PAGE ELEMENTS *********************/
@@ -538,7 +556,7 @@ li{
 
 /*********************** EVALUATION PAGE ELEMENTS *********************/
 .fr #subZone #evaluationTitle{
-  background:url("/images/fr/evaluation_header_text.jpg") no-repeat;
+  background:url("/images/fr/evaluation.png") no-repeat;
 }
 #subZone #evaluationLogo{
   background: url("/images/evaluation_logo.png");
@@ -552,7 +570,7 @@ li{
   background:url("/images/evaluation_saas_asset_bullet.jpg") no-repeat;
 }
 .evaluationModule .introduction{
-  background:url("/images/q_magenta.jpg") no-repeat;
+  background:url("/images/q_magenta.png") no-repeat;
 }
 .fr .evaluationModule #asset1{
   background:url("/images/fr/asset_evaluation_efficacity.jpg");
@@ -564,26 +582,27 @@ li{
   background:url("/images/fr/asset_evaluation_quality.jpg");
 }
 .fr .evaluationModule #learnMoreModule{
-  background: url("/images/fr/learn_more_evaluation.jpg");
+  background: url("/images/fr/learn_more_evaluation.png") no-repeat;
 }
 
 /*********************** RECRUITING PAGE ELEMENTS *********************/
 .fr #subZone #recruitingTitle{
-  background:url("/images/fr/recruiting_header_text.jpg") no-repeat;
+  background:url("/images/fr/recruiting.png") no-repeat;
 }
 #subZone #recruitingLogo{
-  background: url("/images/recruiting_logo_header.jpg");
-  width:179px;
-  height: 60px;
+  background: url("/images/recruiting_logo_header.png");
+  width:193px;
+  height: 74px;
   position: absolute;
   top: 15px;
   right: 0px;
 }
 .recruitingModule .saasAsset h2{
+	margin-left: -10px;
   background:url("/images/recruiting_saas_asset_bullet.jpg") no-repeat;
 }
 .recruitingModule .introduction{
-  background:url("/images/recruiting_intro_icon.jpg") no-repeat;
+  background:url("/images/recruiting_intro_icon.png") no-repeat;
 }
 .fr .recruitingModule #asset1{
   background:url("/images/fr/asset_efficacity.jpg");
@@ -595,12 +614,12 @@ li{
   background:url("/images/fr/asset_quality.jpg");
 }
 .fr .recruitingModule #learnMoreModule{
-  background: url("/images/fr/learn_more_recruiting.jpg");
+  background: url("/images/fr/learn_more_recruiting.png") no-repeat;
 }
 
 /*********************** RECRUITMENT AGENCY PAGE ELEMENTS *********************/
 .fr #recruitingAgencyTitle{
-  background: url("/images/fr/recruitment_agencies_headertext.jpg") no-repeat;
+  background: url("/images/fr/recruitment_agencies.png") no-repeat;
 }
 
 /*********************** CONTACT PAGE ELEMENTS *********************/
@@ -610,7 +629,13 @@ li{
   float: left;
   padding-bottom: 30px;
 }
-
+#contactContent a{
+	text-decoration:underline;
+}
+.fr #contactTitle{
+	padding-top: 51px;
+	background:url("/images/fr/contact.png") no-repeat;
+}
 /*********************** TEAM PAGE ELEMENTS *********************/
 #teamContent{
   padding-bottom: 50px;
@@ -632,7 +657,27 @@ li{
 }
 #teamContent h3{
 }
-
+.fr #teamTitle{
+	background:url("/images/fr/team.png") no-repeat;
+	padding-top: 51px;
+}
+/*********************** JOBS PAGE ELEMENTS *********************/
+#jobsContent h2{
+	padding-left: 20px;
+}
+#jobsContent #dev{
+	background:url("/images/mobility_dot.jpg") no-repeat 0px 3px;
+}
+#jobsContent #inge{
+	background:url("/images/evaluation_dot.jpg") no-repeat 0px 3px;
+}
+#jobsContent #market{
+	background:url("/images/recruiting_dot.jpg") no-repeat 0px 3px;
+}
+.fr #jobsTitle{
+	background:url("/images/fr/joinus.png") no-repeat;
+	padding-top: 51px;
+}
 /* -------------------- CLEARFIX CLASS -------------------- */
 
 .clearfix:after {clear: both;

@@ -3,7 +3,7 @@ en:
     
     # CROSS PAGE TITLES
     website_title: "Recrutement Evaluation Mobilit&eacute; Qameha"
-    qameha_baseline: "Qameha | Recrutement &nbsp; Evaluation &nbsp; Mobilit&eacute;"
+    qameha_baseline: "Qameha &nbsp; | &nbsp; Recrutement &nbsp; Evaluation &nbsp; Mobilit&eacute;"
     
     # NAVIGATION
     contact: "Contact"
@@ -120,9 +120,11 @@ en:
     evaluation_quote: "Qameha est une solution compl&egrave;te de gestion des recrutements conçue et r&eacute;alis&eacute;e par des op&eacute;rationnels des Ressources Humaines."
     client_evaluation: "Groupe Hubert"
     evaluation_title: "Evaluation"
-    evaluation_header: "Qameha Evaluation g&egrave;re le campagne d’&eacute;valuations de vos collaborateurs sur l’ensemble de vos sites. <br /> Avec le module Qameha Evaluation, transformez une obligation r&eacute;glementaire en outil de management par l’objectif ! Evaluez tout le monde, plus vite, en &eacute;conomisant du temps."
+    evaluation_header: "Qameha Evaluation g&egrave;re le campagne d’&eacute;valuations de vos collaborateurs sur l’ensemble de vos sites.  Avec le module Qameha Evaluation, transformez une obligation r&eacute;glementaire en outil de management par l’objectif ! Evaluez tout le monde, plus vite, en &eacute;conomisant du temps."
         # Mobility
-    mobility_placeholder_text: "Coupl&eacute; au module « &eacute;valuation » et au moteur de recherche de notre module recrutement, le module mobilit&eacute; permet fluidit&eacute; de l'information entre des souhaits d'&eacute;volutions des salari&eacute;s et les besoins actuels ou futurs des diff&eacute;rents services de l'entreprise. <br /><br /><strong>Ce module est en cours de d&eacute;veloppement.</strong><br /><br /> N'h&eacute;sitez pas à nous contacter si vous souhaitez faire partie d'un club de clients partenaires : certains clients nous soutiennent avant la livraison de la version commercialis&eacute;e du module et b&eacute;n&eacute;ficient de d&eacute;veloppements sp&eacute;cifiques à leurs besoins."
+    mobility_placeholder_text_0: "Coupl&eacute; au module « &eacute;valuation » et au moteur de recherche de notre module recrutement, le module mobilit&eacute; permet fluidit&eacute; de l'information entre des souhaits d'&eacute;volutions des salari&eacute;s et les besoins actuels ou futurs des diff&eacute;rents services de l'entreprise."
+    mobility_placeholder_text_1: "<strong>Ce module est en cours de d&eacute;veloppement.</strong>"
+    mobility_placeholder_text_2: "N'h&eacute;sitez pas à nous contacter si vous souhaitez faire partie d'un club de clients partenaires : certains clients nous soutiennent avant la livraison de la version commercialis&eacute;e du module et b&eacute;n&eacute;ficient de d&eacute;veloppements sp&eacute;cifiques à leurs besoins."
     mobility_quote: "Qameha est une solution compl&egrave;te de gestion des recrutements conçue et r&eacute;alis&eacute;e par des op&eacute;rationnels des Ressources Humaines."
     client_mobility: "Groupe Hubert"
     mobility_title: "Mobilit&eacute;"

@@ -41,26 +41,19 @@
     </div>
     <div id="testimonials">
       <div id="top"></div>
-      <p>
-        <%= image_tag "open_quote.jpg" %>
+      <p> 
+		<%= image_tag "open_quote.jpg" %>
         <span id="quote_0" class="quote"><%= t "quote_0" %></span>
         <span id="quote_1" class="quote" style="display:none;"><%= t "quote_1" %></span>
-        <span id="quote_2" class="quote" style="display:none;"><%= t "quote_2" %></span>
-        <span id="quote_3" class="quote" style="display:none;"><%= t "quote_3" %></span>
-        <span id="quote_4" class="quote" style="display:none;"><%= t "quote_4" %></span>
-
-        <%= image_tag "close_quote.jpg", :id => "closeQuote" %>
+		<%= image_tag "close_quote.jpg", :id => "closeQuote" %>
       </p>
       <div id="client">
         <span class="client" id="client_0"><%= t "client_0" %></span>
         <span class="client" id="client_1" style="display:none;"><%= t "client_1" %></span>
-        <span class="client" id="client_2" style="display:none;"><%= t "client_2" %></span>
-        <span class="client" id="client_3" style="display:none;"><%= t "client_3" %></span>
-        <span class="client" id="client_4" style="display:none;"><%= t "client_4" %></span>
       </div>
       <div id="caroussel">
         <a href="#" id="previousTestimonial"></a>
-        <div id="testimonialsCounter"><span id="testimonialsCount">1</span> / 5 </div>
+        <div id="testimonialsCounter"><span id="testimonialsCount">1</span> / <span id="testimonialsTotal"></span> </div>
         <a href="#" id="nextTestimonial"></a>
       </div>
       <div id="bottom"></div>
@@ -85,7 +78,16 @@
           <%= t "news_minor" %>
         </em>
       </p>
-      <%= image_tag "q.jpg" %>
+	<!--[if lt IE 7]>
+		<%= image_tag "q.jpg" %>
+	<![endif]-->
+     <!--[if gt IE 6]>
+		<%= image_tag "q.png" %>
+	<![endif]-->
+	<!--[if !IE]><!-->
+	<%= image_tag "q.png" %>
+	<!--<![endif]-->
+
     </div>
   </div>
 </div>

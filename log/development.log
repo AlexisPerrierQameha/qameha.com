@@ -8463,3 +8463,287 @@ Rendering template within layouts/website
 Rendering website/contact
 Rendered website/_header_contact (0.4ms)
 Completed in 34ms (View: 27, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:50:07) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:50:23) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:50:38) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.1ms)
+Completed in 46ms (View: 39, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-01-18 11:50:41) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (status = 'published') ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blog/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blog/_post_summary (18.1ms)
+Rendered blog/_post_summary (2.9ms)
+Rendered blog/_header_index (0.6ms)
+Completed in 56ms (View: 38, DB: 2) | 200 OK [http://localhost/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:50:45) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 104ms (View: 97, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:50:46) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:52:55) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.7ms)
+Completed in 51ms (View: 44, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:53:18) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.8ms)
+Completed in 40ms (View: 33, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:53:31) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.9ms)
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:53:43) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:53:45) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:53:47) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.2ms)
+Completed in 47ms (View: 40, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:54:47) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:54:51) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.3ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:54:54) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.1ms)
+Completed in 39ms (View: 31, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:55:18) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.1ms)
+Completed in 43ms (View: 35, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:55:22) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.1ms)
+Completed in 39ms (View: 32, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:55:25) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.2ms)
+Completed in 39ms (View: 32, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:55:26) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.1ms)
+Completed in 39ms (View: 31, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:55:28) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:55:30) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:56:07) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:56:53) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:57:03) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:57:19) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 41ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#recruitment_agencies (for 127.0.0.1 at 2010-01-18 11:57:32) [GET]
+Rendering template within layouts/website
+Rendering website/recruitment_agencies
+Rendered website/_saas_assets (3.7ms)
+Rendered website/_header_recruitment_agencies (15.0ms)
+Completed in 94ms (View: 87, DB: 0) | 200 OK [http://localhost/recruitment-agencies]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:58:13) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.5ms)
+Completed in 34ms (View: 26, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:58:20) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:58:22) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.2ms)
+Completed in 39ms (View: 31, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:58:54) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.1ms)
+Completed in 39ms (View: 31, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:59:33) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 41ms (View: 33, DB: 0) | 200 OK [http://localhost/]

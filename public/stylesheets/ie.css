@@ -1,6 +1,8 @@
-
-#promo{
+body *{
 	behavior: url(/stylesheets/iepngfix.htc);
+}
+#promo{
+	
 }
 .fr #promo{
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/fr/banner_promo.png');
@@ -23,11 +25,11 @@
 .modulePage #testimonials p {
 }
 .modulePage #testimonials #bottom{
-	_margin-top: 20px;
+	margin-top: 25px;
+	border: 1px solid red;
 }
 
 #subZone #evaluationLogo{
-	behavior: url(/stylesheets/iepngfix.htc);
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/evaluation_logo.png') !important;
 }
 strong img{
@@ -37,6 +39,11 @@ strong img{
 	width: 380px;
 }
 #subZone #mobilityLogo{
-	behavior: url(/stylesheets/iepngfix.htc);
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/mobility_logo.png') !important;
+}
+.moduleBlock{
+	_width: 180px !important;
+}
+#newsAndTwitter #twitter{
+  background: url("/images/twitter.jpg") no-repeat 10px 95px;
 }

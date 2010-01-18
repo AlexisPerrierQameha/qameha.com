@@ -1,14 +1,14 @@
 <div id="content">
-  <h2>
-    <%= t "join_us" %>
-  </h2>
+	  <h1 id="jobsTitle">
+	    <%= t "join_us" %>
+	  </h1>
   <p>
     <%= t "jobs_introduction" %>
   </p>
+<ul>
+  <li><%= link_to t("developer_rails"), "#dev"%></li>
+  <li><%= link_to t("software_engineer"), "#inge"%></li>
+  <li><%= link_to t("web_marketer"), "#market"%></li>
+</ul>
 </div>
-<div id="cubes"></div>
-<br />
-<br />
-<%= link_to t("contact_us"), contact_path, :id => "contactUs" %>
-
 

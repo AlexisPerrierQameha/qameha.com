@@ -1,0 +1,25 @@
+<div class="clearfix pageContent modulePage ">
+  <div class="fixedWidthContent clearfix">
+    <div id="assets">
+      <% @posts.each do |post| %>
+        <%= render :partial => "post_summary", :locals => {:post => post} %>
+      <% end %>
+    </div>
+
+    <div id="testimonials">
+      <div id="top"></div>
+      <H2 class="side_blog_titles">
+        Previous posts
+      </H2>
+      <ul>
+        <% @posts.each do |post| %>
+          <li  class="side_blog_titles">
+            <%= link_to post.title, {:controller => 'blog', :action => 'show', :permalink => post.permalink} %>
+          </li>
+        <% end %>
+      </ul>
+
+      <div id="bottom"></div>
+    </div>
+  </div>
+</div>

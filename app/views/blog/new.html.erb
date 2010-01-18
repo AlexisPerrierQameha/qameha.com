@@ -1,0 +1,44 @@
+<div class="clearfix pageContent modulePage mobilityModule">
+  <div class="fixedWidthContent clearfix">
+    <div id="assets">
+    <div id="ErrorMessages">
+      <%= error_messages_for :post %>
+    </div>
+    <% form_for :post, :url => blogs_path do |f| -%>
+      <table cellpadding="4" cellspacong="4" border="0">
+        <tr>
+          <td class="FormLabel"><%= label_tag "title" %></td>
+          <td>
+            <%= f.text_field :title, :size => 60 %>
+          </td>
+        </tr>
+        <tr>
+          <td class="FormLabel" valign="top"><%= label_tag "excerpt" %></td>
+          <td>
+            <%= f.text_area :excerpt, :rows => "5", :style => "width : 100%;" %>
+          </td>
+        </tr>
+        <tr>
+          <td class="FormLabel"><%= label_tag "text" %></td>
+          <td>
+            <%= f.text_area :text, :class => "mceEditor", :rows => "15", :style => "width : 100%;" %>
+          </td>
+        </tr>
+        <tr>
+          <td class="FormLabel"></td>
+          <td >
+            <p>
+              <%= submit_tag "create" %>
+            </p>
+          </td>
+        </tr>
+      </table>
+
+    <% end -%>
+
+
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="clearfix pageContent modulePage ">
+  <div class="fixedWidthContent clearfix">
+    <div id="assets">
+      <div id="blog_post" style=" width : 80%; ">
+        <%= @post.text unless @post.text.blank? %>
+
+        <p class="post_signature">
+          By Qameha,
+          <%= l @post.published_at.to_date, :format => :short unless @post.published_at.nil? %>
+        </p>
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+
+    <div id="testimonials">
+      <div id="top"></div>
+      <div style="padding-top: 20px;"></div>
+
+      <% unless @next_post.blank?  %>
+        <H2 class="side_blog_titles" style="padding-top: 0px;">
+          <%= t("next post") %>
+        </H2>
+        <ul>
+          <li  class="side_blog_titles">
+            <%= link_to @next_post.title, {:controller => 'blog', :action => 'show', :permalink => @next_post.permalink} %>
+          </li>
+        </ul>
+      <% end %>
+
+      <% unless @previous_post.blank?  %>
+        <H2 class="side_blog_titles" style="padding-top: 0px;">
+          <%= t("previous post") %>
+        </H2>
+        <ul>
+          <li  class="side_blog_titles">
+            <%= link_to @previous_post.title, {:controller => 'blog', :action => 'show', :permalink => @previous_post.permalink} %>
+          </li>
+        </ul>
+      <% end %>
+
+      <div id="bottom"></div>
+    </div>
+
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+
+

@@ -8747,3 +8747,40 @@ Rendering template within layouts/website
 Rendering website/index
 Rendered website/_header_index (0.7ms)
 Completed in 41ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-18 13:01:22) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 13:01:33) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://qameha.qameha.dev/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 13:03:12) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://qameha.qameha.dev/]

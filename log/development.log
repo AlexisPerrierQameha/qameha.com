@@ -4057,3 +4057,2617 @@ Rendering template within layouts/website
 Rendering blogs/new
 Rendered blogs/_header_new (1.6ms)
 Completed in 50ms (View: 33, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#create (for 127.0.0.1 at 2010-01-16 12:28:40) [POST]
+  Parameters: {"commit"=>"create", "post"=>{"title"=>"test", "text"=>"<p>testing</p>"}, "authenticity_token"=>"47OWaOt45ZCUZoNF0bssADjGeLXoUKyu53zABkAgA5U="}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBlog Create (0.2ms)[0m   [0;1mINSERT INTO `blogs` (`created_at`, `title`, `updated_at`, `text`, `user_id`, `published_at`) VALUES('2010-01-16 11:28:40', 'test', '2010-01-16 11:28:40', '<p>testing</p>', NULL, NULL)[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/website
+Rendering blogs/create
+
+ActionView::TemplateError (Missing template blogs/_header_create.erb in view path app/views) on line #53 of app/views/layouts/website.html.erb:
+50: 
+51:     <div id="subZone" class="clearfix">
+52:       <div class="fixedWidthContent">
+53:         <%= render :partial => "header_#{controller.action_name}"%>
+54:       </div>
+55:     </div>
+56: 
+
+    app/views/layouts/website.html.erb:53
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 12:29:06) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (315.6ms)
+Rendered blogs/_post_summary (1.9ms)
+
+ActionView::TemplateError (undefined method `to_date' for nil:NilClass) on line #11 of app/views/blogs/_post_summary.html.erb:
+8: 
+9:   <p class="post_signature">
+10:     By Qameha,
+11:     <%= l post.published_at.to_date, :format => :short %>
+12:   </p>
+13:   <div style="border-bottom: 1px dashed #CCC; width : 100%; padding : 10px 0;"></div>
+14: </div>
+
+    app/views/blogs/_post_summary.html.erb:11
+    app/views/blogs/index.html.erb:5
+    app/views/blogs/index.html.erb:4:in `each'
+    app/views/blogs/index.html.erb:4
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 12:30:20) [GET]
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.3ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (2.4ms)
+Completed in 64ms (View: 48, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-16 12:31:06) [GET]
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (2.3ms)
+Completed in 65ms (View: 48, DB: 1) | 200 OK [http://localhost/blogs/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#create (for 127.0.0.1 at 2010-01-16 12:31:47) [POST]
+  Parameters: {"commit"=>"create", "post"=>{"title"=>"La réponse innovante aux nouveaux enjeux des ressources humaines", "text"=>"<p><strong>Qameha apporte une solution aux nouveaux enjeux des ressources humaines en mati&egrave;re de recrutement </strong> <strong>Un constat</strong> : Une &eacute;volution conjoncturelle et structurelle des pratiques RH. Les entreprises continuent de recruter malgr&eacute; le contexte, en revanche elles ont all&eacute;g&eacute; les fonctions RH et ont tendance &agrave; r&eacute;internaliser les recrutements en dehors des fonctions de direction ; L'&eacute;volution des outils de type bases de donn&eacute;es de cv, r&eacute;seaux sociaux professionnels, conduit par ailleurs les cadres &agrave; s'impliquer eux-m&ecirc;mes dans le recrutement de leurs &eacute;quipes,  Ce qui a pour cons&eacute;quences :</p>\r\n<ul>\r\n<li>une dilution des responsabilit&eacute;s,</li>\r\n<li>une dispersion de l'information,</li>\r\n<li>un manque d'efficacit&eacute; dans la conduite des recrutements,</li>\r\n<li>une difficult&eacute; syst&eacute;matique de synth&egrave;se de l'information sur la gestion des recrutements men&eacute;s (co&ucirc;ts, d&eacute;lais, causes d'&eacute;checs...).</li>\r\n</ul>\r\n<p>La mobilit&eacute; interne et la gestion des potentiels devient non seulement un enjeu pour l&rsquo;entreprise mais aussi un crit&egrave;re d&rsquo;&eacute;valuation de la performance RH. Les processus d&rsquo;&eacute;valuations deviennent un outil structurant de mobilit&eacute; interne mais s&rsquo;int&egrave;grent aussi &agrave; un cadre l&eacute;gal contraignant.  <strong>Notre solution : </strong>Qameha est un outil d&rsquo;assistance au recrutement et &agrave; la mobilit&eacute; interne d&eacute;velopp&eacute; par des <strong>professionnels du recrutement</strong> permettant une mise sur le march&eacute; rapide et la ma&icirc;trise des co&ucirc;ts de d&eacute;veloppement.  Nous proposons &agrave; travers cet outil de :</p>\r\n<ul>\r\n<li> Structurer le recrutement autour du principe de gestion de projet participatif, et de pilote de projet,</li>\r\n<li> Assister le process gr&acirc;ce &agrave; un workflow intelligent, cadenc&eacute; et interactif,</li>\r\n<li> Faciliter l'administration de l'ensemble des &eacute;tapes du recrutement,</li>\r\n<li> Offrir des outils de synth&egrave;se permettant d'analyser les recrutements dans leur ensemble ou en d&eacute;tail.</li>\r\n</ul>"}, "authenticity_token"=>"47OWaOt45ZCUZoNF0bssADjGeLXoUKyu53zABkAgA5U="}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlog Create (0.3ms)[0m   [0mINSERT INTO `blogs` (`created_at`, `title`, `updated_at`, `text`, `user_id`, `published_at`) VALUES('2010-01-16 11:31:47', 'La réponse innovante aux nouveaux enjeux des ressources humaines', '2010-01-16 11:31:47', '<p><strong>Qameha apporte une solution aux nouveaux enjeux des ressources humaines en mati&egrave;re de recrutement </strong> <strong>Un constat</strong> : Une &eacute;volution conjoncturelle et structurelle des pratiques RH. Les entreprises continuent de recruter malgr&eacute; le contexte, en revanche elles ont all&eacute;g&eacute; les fonctions RH et ont tendance &agrave; r&eacute;internaliser les recrutements en dehors des fonctions de direction ; L\'&eacute;volution des outils de type bases de donn&eacute;es de cv, r&eacute;seaux sociaux professionnels, conduit par ailleurs les cadres &agrave; s\'impliquer eux-m&ecirc;mes dans le recrutement de leurs &eacute;quipes, Ce qui a pour cons&eacute;quences :</p>\r\n<ul>\r\n<li>une dilution des responsabilit&eacute;s,</li>\r\n<li>une dispersion de l\'information,</li>\r\n<li>un manque d\'efficacit&eacute; dans la conduite des recrutements,</li>\r\n<li>une difficult&eacute; syst&eacute;matique de synth&egrave;se de l\'information sur la gestion des recrutements men&eacute;s (co&ucirc;ts, d&eacute;lais, causes d\'&eacute;checs...).</li>\r\n</ul>\r\n<p>La mobilit&eacute; interne et la gestion des potentiels devient non seulement un enjeu pour l&rsquo;entreprise mais aussi un crit&egrave;re d&rsquo;&eacute;valuation de la performance RH. Les processus d&rsquo;&eacute;valuations deviennent un outil structurant de mobilit&eacute; interne mais s&rsquo;int&egrave;grent aussi &agrave; un cadre l&eacute;gal contraignant. <strong>Notre solution : </strong>Qameha est un outil d&rsquo;assistance au recrutement et &agrave; la mobilit&eacute; interne d&eacute;velopp&eacute; par des <strong>professionnels du recrutement</strong> permettant une mise sur le march&eacute; rapide et la ma&icirc;trise des co&ucirc;ts de d&eacute;veloppement. Nous proposons &agrave; travers cet outil de :</p>\r\n<ul>\r\n<li> Structurer le recrutement autour du principe de gestion de projet participatif, et de pilote de projet,</li>\r\n<li> Assister le process gr&acirc;ce &agrave; un workflow intelligent, cadenc&eacute; et interactif,</li>\r\n<li> Faciliter l\'administration de l\'ensemble des &eacute;tapes du recrutement,</li>\r\n<li> Offrir des outils de synth&egrave;se permettant d\'analyser les recrutements dans leur ensemble ou en d&eacute;tail.</li>\r\n</ul>', NULL, NULL)[0m
+  [4;36;1mSQL (26.5ms)[0m   [0;1mCOMMIT[0m
+
+NoMethodError (undefined method `published_date=' for #<Blog:0x237a2d8>):
+  app/controllers/blogs_controller.rb:27:in `create'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogs (20100116053722)
+Migrating to AddExcerptStatusToBlogs (20100116113351)
+  [4;36;1mSQL (50.5ms)[0m   [0;1mALTER TABLE `blogs` ADD `status` varchar(255) DEFAULT 'draft'[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mALTER TABLE `blogs` ADD `excerpt` text[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100116113351')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (11.6ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `blogs`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `blogs`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-16 12:39:46) [GET]
+  [4;35;1mBlog Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (1.5ms)
+Completed in 127ms (View: 109, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-16 12:40:49) [GET]
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (1.5ms)
+Completed in 60ms (View: 42, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#create (for 127.0.0.1 at 2010-01-16 12:41:06) [POST]
+  Parameters: {"commit"=>"create", "post"=>{"title"=>"title", "text"=>"text"}, "authenticity_token"=>"47OWaOt45ZCUZoNF0bssADjGeLXoUKyu53zABkAgA5U="}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Redirected to http://localhost:3000/blogs
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 12:41:06) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.0ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 53ms (View: 36, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-16 17:00:47) [GET]
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (1.6ms)
+Completed in 122ms (View: 105, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-16 17:01:06) [GET]
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (1.5ms)
+Completed in 59ms (View: 42, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-16 17:01:26) [GET]
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (1.6ms)
+Completed in 60ms (View: 42, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#create (for 127.0.0.1 at 2010-01-16 17:02:09) [POST]
+  Parameters: {"commit"=>"create", "post"=>{"title"=>"La réponse innovante aux nouveaux enjeux des ressources humaines", "excerpt"=>"Qameha est un outil d’assistance au recrutement et à la mobilité interne développé par des professionnels du recrutement permettant une mise sur le marché rapide et la maîtrise des coûts de développement.", "text"=>"<p><strong>Qameha apporte une solution aux nouveaux enjeux des ressources humaines en mati&egrave;re de recrutement </strong> <strong>Un constat</strong> : Une &eacute;volution conjoncturelle et structurelle des pratiques RH. Les entreprises continuent de recruter malgr&eacute; le contexte, en revanche elles ont all&eacute;g&eacute; les fonctions RH et ont tendance &agrave; r&eacute;internaliser les recrutements en dehors des fonctions de direction ; L'&eacute;volution des outils de type bases de donn&eacute;es de cv, r&eacute;seaux sociaux professionnels, conduit par ailleurs les cadres &agrave; s'impliquer eux-m&ecirc;mes dans le recrutement de leurs &eacute;quipes,  Ce qui a pour cons&eacute;quences :</p>\r\n<ul>\r\n<li>une dilution des responsabilit&eacute;s,</li>\r\n<li>une dispersion de l'information,</li>\r\n<li>un manque d'efficacit&eacute; dans la conduite des recrutements,</li>\r\n<li>une difficult&eacute; syst&eacute;matique de synth&egrave;se de l'information sur la gestion des recrutements men&eacute;s (co&ucirc;ts, d&eacute;lais, causes d'&eacute;checs...).</li>\r\n</ul>\r\n<p>La mobilit&eacute; interne et la gestion des potentiels devient non seulement un enjeu pour l&rsquo;entreprise mais aussi un crit&egrave;re d&rsquo;&eacute;valuation de la performance RH. Les processus d&rsquo;&eacute;valuations deviennent un outil structurant de mobilit&eacute; interne mais s&rsquo;int&egrave;grent aussi &agrave; un cadre l&eacute;gal contraignant.  <strong>Notre solution : </strong>Qameha est un outil d&rsquo;assistance au recrutement et &agrave; la mobilit&eacute; interne d&eacute;velopp&eacute; par des <strong>professionnels du recrutement</strong> permettant une mise sur le march&eacute; rapide et la ma&icirc;trise des co&ucirc;ts de d&eacute;veloppement.  Nous proposons &agrave; travers cet outil de :</p>\r\n<ul>\r\n<li> Structurer le recrutement autour du principe de gestion de projet participatif, et de pilote de projet,</li>\r\n<li> Assister le process gr&acirc;ce &agrave; un workflow intelligent, cadenc&eacute; et interactif,</li>\r\n<li> Faciliter l'administration de l'ensemble des &eacute;tapes du recrutement,</li>\r\n<li> Offrir des outils de synth&egrave;se permettant d'analyser les recrutements dans leur ensemble ou en d&eacute;tail.</li>\r\n</ul>"}, "authenticity_token"=>"47OWaOt45ZCUZoNF0bssADjGeLXoUKyu53zABkAgA5U="}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlog Create (0.4ms)[0m   [0mINSERT INTO `blogs` (`created_at`, `title`, `updated_at`, `excerpt`, `text`, `user_id`, `published_at`, `status`) VALUES('2010-01-16 16:02:09', 'La réponse innovante aux nouveaux enjeux des ressources humaines', '2010-01-16 16:02:09', 'Qameha est un outil d’assistance au recrutement et à la mobilité interne développé par des professionnels du recrutement permettant une mise sur le marché rapide et la maîtrise des coûts de développement.', '<p><strong>Qameha apporte une solution aux nouveaux enjeux des ressources humaines en mati&egrave;re de recrutement </strong> <strong>Un constat</strong> : Une &eacute;volution conjoncturelle et structurelle des pratiques RH. Les entreprises continuent de recruter malgr&eacute; le contexte, en revanche elles ont all&eacute;g&eacute; les fonctions RH et ont tendance &agrave; r&eacute;internaliser les recrutements en dehors des fonctions de direction ; L\'&eacute;volution des outils de type bases de donn&eacute;es de cv, r&eacute;seaux sociaux professionnels, conduit par ailleurs les cadres &agrave; s\'impliquer eux-m&ecirc;mes dans le recrutement de leurs &eacute;quipes, Ce qui a pour cons&eacute;quences :</p>\r\n<ul>\r\n<li>une dilution des responsabilit&eacute;s,</li>\r\n<li>une dispersion de l\'information,</li>\r\n<li>un manque d\'efficacit&eacute; dans la conduite des recrutements,</li>\r\n<li>une difficult&eacute; syst&eacute;matique de synth&egrave;se de l\'information sur la gestion des recrutements men&eacute;s (co&ucirc;ts, d&eacute;lais, causes d\'&eacute;checs...).</li>\r\n</ul>\r\n<p>La mobilit&eacute; interne et la gestion des potentiels devient non seulement un enjeu pour l&rsquo;entreprise mais aussi un crit&egrave;re d&rsquo;&eacute;valuation de la performance RH. Les processus d&rsquo;&eacute;valuations deviennent un outil structurant de mobilit&eacute; interne mais s&rsquo;int&egrave;grent aussi &agrave; un cadre l&eacute;gal contraignant. <strong>Notre solution : </strong>Qameha est un outil d&rsquo;assistance au recrutement et &agrave; la mobilit&eacute; interne d&eacute;velopp&eacute; par des <strong>professionnels du recrutement</strong> permettant une mise sur le march&eacute; rapide et la ma&icirc;trise des co&ucirc;ts de d&eacute;veloppement. Nous proposons &agrave; travers cet outil de :</p>\r\n<ul>\r\n<li> Structurer le recrutement autour du principe de gestion de projet participatif, et de pilote de projet,</li>\r\n<li> Assister le process gr&acirc;ce &agrave; un workflow intelligent, cadenc&eacute; et interactif,</li>\r\n<li> Faciliter l\'administration de l\'ensemble des &eacute;tapes du recrutement,</li>\r\n<li> Offrir des outils de synth&egrave;se permettant d\'analyser les recrutements dans leur ensemble ou en d&eacute;tail.</li>\r\n</ul>', NULL, '2010-01-16 16:02:09', 'draft')[0m
+  [4;36;1mSQL (31.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/blogs
+Completed in 61ms (DB: 33) | 302 Found [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:02:09) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (81.1ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 122ms (View: 105, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:02:58) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.9ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 63ms (View: 46, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:03:25) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.8ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 67ms (View: 49, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:03:34) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_post_summary (1.3ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 65ms (View: 48, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:03:44) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.9ms)
+Rendered blogs/_post_summary (2.2ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 71ms (View: 53, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:04:53) [GET]
+  Parameters: {"id"=>"5"}
+Rendering template within layouts/website
+Rendering blogs/show
+
+ActionView::TemplateError (undefined local variable or method `post' for #<ActionView::Base:0x234f1f0>) on line #3 of app/views/blogs/show.html.erb:
+1: <div id="blog_post" style=" width : 80%; ">
+2:   <h1>
+3:     <%= post.title %>
+4:   </h1>
+5:   <p>
+6:     <%= post.text unless post.text.blank? %>
+
+    app/views/blogs/show.html.erb:3
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (138.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:05:48) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+Rendering template within layouts/website
+Rendering blogs/show
+
+ActionView::TemplateError (Missing template blogs/_header_show.erb in view path app/views) on line #53 of app/views/layouts/website.html.erb:
+50: 
+51:     <div id="subZone" class="clearfix">
+52:       <div class="fixedWidthContent">
+53:         <%= render :partial => "header_#{controller.action_name}"%>
+54:       </div>
+55:     </div>
+56: 
+
+    app/views/layouts/website.html.erb:53
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:06:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.9ms)
+Completed in 52ms (View: 34, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:07:33) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (2.5ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+Rendering template within layouts/website
+Rendering blogs/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #20 of app/views/blogs/show.html.erb:
+17:         Previous posts
+18:       </H2>
+19:       <ul>
+20:         <% @posts.each do |post| %>
+21:           <li  class="side_blog_titles">
+22:             <%= link_to post.title, blog_path(post) %>
+23:           </li>
+
+    app/views/blogs/show.html.erb:20
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:07:57) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.3ms)
+Completed in 114ms (View: 95, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:08:10) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.9ms)
+Completed in 57ms (View: 38, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:08:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.9ms)
+Completed in 57ms (View: 38, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:08:33) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.9ms)
+Completed in 57ms (View: 38, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:09:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 59ms (View: 39, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:09:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 59ms (View: 40, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:10:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 30, DB: 2) | 200 OK [http://localhost/blogs/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:10:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.9ms)
+Completed in 121ms (View: 102, DB: 2) | 200 OK [http://localhost/blogs/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:11:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 49ms (View: 29, DB: 2) | 200 OK [http://localhost/blogs/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:12:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Blog with ID=3):
+  app/controllers/blogs_controller.rb:18:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:14:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+Redirected to http://localhost:3000/blogs
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/blogs/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:14:04) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (13.9ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 55ms (View: 38, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:14:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 4) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < NULL) ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 44ms (View: 23, DB: 2) | 200 OK [http://localhost/blogs/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:14:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBlog Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+Redirected to http://localhost:3000/blogs
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/blogs/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:14:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 48ms (View: 24, DB: 2) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:14:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+Redirected to http://localhost:3000/blogs
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/blogs/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:14:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBlog Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 54ms (View: 27, DB: 3) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:14:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+Redirected to http://localhost:3000/blogs
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/blogs/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:17:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 3) [0m
+Redirected to http://localhost:3000/blogs
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/blogs/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:17:41) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.1ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.8ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 65ms (View: 43, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:17:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+Rendering template within layouts/website
+Rendering blogs/show
+
+ActionView::TemplateError (undefined method `title' for #<Array:0x2470764>) on line #25 of app/views/blogs/show.html.erb:
+22:         </H2>
+23:         <ul>
+24:             <li  class="side_blog_titles">
+25:               <%= link_to @next_post.title, blog_path(@next_post) %>
+26:             </li>
+27:         </ul>
+28:       <% end %>
+
+    app/views/blogs/show.html.erb:25
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:18:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (16.8ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (9.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.7ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 139ms (View: 90, DB: 27) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:18:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 58ms (View: 35, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:19:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 58ms (View: 35, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:19:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 57ms (View: 34, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:20:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 59ms (View: 36, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:20:50) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 57ms (View: 34, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:21:08) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (13.9ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 53ms (View: 36, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:21:55) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.1ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 53ms (View: 36, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:21:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 60ms (View: 35, DB: 3) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:02) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.1ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 49ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 48ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 27, DB: 2) | 200 OK [http://localhost/blogs/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:08) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.1ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 48ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 48ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 27, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 124ms (View: 101, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 60ms (View: 36, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 48ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 49ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:22:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.3ms)
+Completed in 49ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-16 17:22:51) [GET]
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (1.6ms)
+Completed in 50ms (View: 32, DB: 1) | 200 OK [http://localhost/blogs/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#create (for 127.0.0.1 at 2010-01-16 17:25:20) [POST]
+  Parameters: {"commit"=>"create", "post"=>{"title"=>"Mobilité et recrutement !", "excerpt"=>"Qameha teste avant ses clients son produit, un peu, et les réalités des PMEs, beaucoup", "text"=>"<p>Qameha teste avant ses clients son produit, un peu, et les r&eacute;alit&eacute;s des<br />PMEs, beaucoup :<br /><br />- nous d&eacute;m&eacute;nageons !<br />Merci &agrave; l'incubateur T&eacute;l&eacute;com ParisTech Entrepreneurs de nous faire confiance et nous<br />accueillir. On ne va pas tr&egrave;s loin tout seul, et l'incubateur nous<br />permet de partager un espace, des id&eacute;es, des solutions, des cv, parce<br />que ...<br /><br />- nous recrutons : et recherchons des geeks ruby on rails &agrave; partir de la<br />rentr&eacute;e.<br /><br />- Qameha met la GPEC (gestion pr&eacute;visionnelle de l'emploi et des<br />comp&eacute;tences) &agrave; la port&eacute;e des PMEs, et la teste !<br />Cedric m'a appris &agrave; brancher mon ordinateur, Alexis se remet &agrave; l'anglais<br />en pr&eacute;vision de notre croissance exponentielle, et nous savons<br />maintenant tous faire fonctionner la machine &agrave; caf&eacute;.</p>"}, "authenticity_token"=>"47OWaOt45ZCUZoNF0bssADjGeLXoUKyu53zABkAgA5U="}
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBlog Create (0.3ms)[0m   [0;1mINSERT INTO `blogs` (`created_at`, `title`, `updated_at`, `excerpt`, `text`, `user_id`, `published_at`, `status`) VALUES('2010-01-16 16:25:20', 'Mobilité et recrutement !', '2010-01-16 16:25:20', 'Qameha teste avant ses clients son produit, un peu, et les réalités des PMEs, beaucoup', '<p>Qameha teste avant ses clients son produit, un peu, et les r&eacute;alit&eacute;s des<br />PMEs, beaucoup :<br /><br />- nous d&eacute;m&eacute;nageons !<br />Merci &agrave; l\'incubateur T&eacute;l&eacute;com ParisTech Entrepreneurs de nous faire confiance et nous<br />accueillir. On ne va pas tr&egrave;s loin tout seul, et l\'incubateur nous<br />permet de partager un espace, des id&eacute;es, des solutions, des cv, parce<br />que ...<br /><br />- nous recrutons : et recherchons des geeks ruby on rails &agrave; partir de la<br />rentr&eacute;e.<br /><br />- Qameha met la GPEC (gestion pr&eacute;visionnelle de l\'emploi et des<br />comp&eacute;tences) &agrave; la port&eacute;e des PMEs, et la teste !<br />Cedric m\'a appris &agrave; brancher mon ordinateur, Alexis se remet &agrave; l\'anglais<br />en pr&eacute;vision de notre croissance exponentielle, et nous savons<br />maintenant tous faire fonctionner la machine &agrave; caf&eacute;.</p>', NULL, '2010-01-16 16:25:20', 'draft')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/blogs
+Completed in 30ms (DB: 3) | 302 Found [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:25:20) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.9ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (0.3ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 57ms (View: 39, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:26:04) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.5ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 56ms (View: 38, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:26:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:26:15) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 6) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.1ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 17:26:35) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.2ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 55ms (View: 38, DB: 2) | 200 OK [http://localhost/blogs/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:26:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 47ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:26:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 48ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:26:45) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 5) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 49ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 17:26:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 6) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 57ms (View: 34, DB: 2) | 200 OK [http://localhost/blogs/6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:00:26) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mBlog Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 6) [0m
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.1ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (1.0ms)
+Completed in 321ms (View: 62, DB: 3) | 200 OK [http://localhost/blogs/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 18:00:31) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (16.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (2.4ms)
+Completed in 81ms (View: 63, DB: 2) | 200 OK [http://localhost/blogs/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:00:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:01:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 49ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 18:01:55) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 57ms (View: 40, DB: 2) | 200 OK [http://localhost/blogs/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogs (20100116053722)
+Migrating to AddExcerptStatusToBlogs (20100116113351)
+Migrating to AddPermalinkToArticle (20100116170644)
+  [4;36;1mSQL (53.0ms)[0m   [0;1mALTER TABLE `blogs` ADD `permalink` varchar(255)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100116170644')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `blogs`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `blogs`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogs (20100116053722)
+Migrating to AddExcerptStatusToBlogs (20100116113351)
+Migrating to AddPermalinkToArticle (20100116170644)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `blogs`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `blogs`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT `blogs`.id FROM `blogs` WHERE (permalink = 'laureat-du-concours-cracc-2009-cest-parti-pour-le-11me-tremplin-entreprises' and id != 1) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT `blogs`.id FROM `blogs` WHERE (permalink = 'myrhlinecom-un-nouvel-acteur-du-e-recrutement-qameha' and id != 2) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT `blogs`.id FROM `blogs` WHERE (permalink = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines' and id != 5) LIMIT 1[0m
+  [4;36;1mBlog Update (0.2ms)[0m   [0;1mUPDATE `blogs` SET `updated_at` = '2010-01-16 17:08:23', `permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines' WHERE `id` = 5[0m
+  [4;35;1mSQL (34.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT `blogs`.id FROM `blogs` WHERE (permalink = 'mobilite-et-recrutement' and id != 6) LIMIT 1[0m
+  [4;36;1mBlog Update (0.2ms)[0m   [0;1mUPDATE `blogs` SET `updated_at` = '2010-01-16 17:08:23', `permalink` = 'mobilite-et-recrutement' WHERE `id` = 6[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 18:08:36) [GET]
+  [4;36;1mBlog Load (0.6ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (181.2ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+
+ActionView::TemplateError (blog_url failed to generate from {:controller=>"blogs", :action=>"show", :id=>#<Blog id: 1, title: "Laureat du concours Cr'Acc 2009, c'est parti pour l...", text: "Aprs avoir t Laurat du concours Cr'Acc 2009 organis...", user_id: nil, published_at: "2010-01-16 06:34:50", created_at: "2010-01-16 06:32:31", updated_at: "2010-01-16 06:34:50", status: "draft", excerpt: nil, permalink: nil>}, expected: {:controller=>"blogs", :action=>"show"}, diff: {:id=>#<Blog id: 1, title: "Laureat du concours Cr'Acc 2009, c'est parti pour l...", text: "Aprs avoir t Laurat du concours Cr'Acc 2009 organis...", user_id: nil, published_at: "2010-01-16 06:34:50", created_at: "2010-01-16 06:32:31", updated_at: "2010-01-16 06:34:50", status: "draft", excerpt: nil, permalink: nil>}) on line #17 of app/views/blogs/index.html.erb:
+14:       <ul>
+15:         <% @posts.each do |post| %>
+16:         <li  class="side_blog_titles">
+17:           <%= link_to post.title, blog_path(post) %>
+18:         </li>
+19:         <% end %>
+20:       </ul>
+
+    (eval):16:in `blog_path'
+    app/views/blogs/index.html.erb:17
+    app/views/blogs/index.html.erb:15:in `each'
+    app/views/blogs/index.html.erb:15
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.7ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 18:09:08) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.8ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.8ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (2.4ms)
+Completed in 78ms (View: 61, DB: 2) | 200 OK [http://localhost/blogs/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-16 18:11:11) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.1ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 56ms (View: 39, DB: 2) | 200 OK [http://localhost/blogs/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:11:14) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 6) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (1.0ms)
+Completed in 68ms (View: 44, DB: 2) | 200 OK [http://localhost/blogs/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:11:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 52ms (View: 28, DB: 2) | 200 OK [http://localhost/blogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:11:24) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines", "id"=>"1"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 51ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/1?permalink=la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:11:26) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines", "id"=>"1"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 52ms (View: 29, DB: 2) | 200 OK [http://localhost/blogs/1?permalink=la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-16 18:11:28) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines", "id"=>"1"}
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 1) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 51ms (View: 27, DB: 2) | 200 OK [http://localhost/blogs/1?permalink=la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (76.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:41:07) [GET]
+  [4;36;1mBlog Load (194.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (42.8ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (211.6ms)
+Rendered blogs/_post_summary (2.0ms)
+Rendered blogs/_post_summary (1.9ms)
+Rendered blogs/_post_summary (2.1ms)
+Rendered blogs/_header_index (1.8ms)
+Completed in 580ms (View: 261, DB: 314) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:41:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (32.6ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+
+ActionView::TemplateError (blog_url failed to generate from {:controller=>"blogs", :action=>"show", :id=>nil}, expected: {:controller=>"blogs", :action=>"show"}, diff: {:id=>nil}) on line #29 of app/views/blogs/show.html.erb:
+26:           <li  class="side_blog_titles">
+27:             <%#= link_to @next_post.title, blog_path(@next_post.id) %>
+28:             <%#= link_to @next_post.title, {:controller => 'blogs', :action => 'show', :permalink => @next_post.permalink} %>
+29:             <%= link_to @next_post.title, blog_path(@next_post.permalink) %>
+30:           </li>
+31:         </ul>
+32:       <% end %>
+
+    (eval):16:in `blog_path'
+    app/views/blogs/show.html.erb:29
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (386.7ms)
+Rendered rescues/_request_and_response (26.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:44:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (33.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.7ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (15.7ms)
+Completed in 400ms (View: 93, DB: 35) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:45:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (6.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (6.5ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 82ms (View: 39, DB: 14) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:45:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (203.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (1.5ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 262ms (View: 30, DB: 206) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:45:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 97ms (View: 63, DB: 3) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:45:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBlog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 2) [0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2009-11-16 06:53:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2009-11-16 06:53:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.3ms)
+Completed in 134ms (View: 100, DB: 5) | 200 OK [http://localhost/blogs/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-18 05:45:23) [GET]
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (2.5ms)
+Completed in 180ms (View: 161, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:45:28) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (23.7ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (12.7ms)
+Completed in 122ms (View: 103, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:45:49) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.7ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 67ms (View: 49, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:46:01) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 0) [0m
+Redirected to http://localhost:3000/blogs
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:46:01) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.2ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 58ms (View: 40, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:46:07) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`id` = 0) [0m
+Redirected to http://localhost:3000/blogs
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:46:07) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.0ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 57ms (View: 40, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:46:25) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.6ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 58ms (View: 40, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:46:28) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+Redirected to http://localhost:3000/blogs
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:46:28) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (14.8ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 59ms (View: 40, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:47:05) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (68.0ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` IS NULL) LIMIT 1[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 120ms (View: 26, DB: 70) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:47:14) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` IS NULL) LIMIT 1[0m
+  [4;35;1mBlog Load (2.8ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 06:34:50') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 06:34:50') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 63ms (View: 31, DB: 5) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:48:06) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (16.3ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 59ms (View: 40, DB: 3) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:48:09) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+Redirected to http://localhost:3000/blogs
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:48:09) [GET]
+  [4;35;1mBlog Load (0.5ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.3ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 58ms (View: 40, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-01-18 05:48:20) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+
+SyntaxError (/Users/alexisperrier/NetBeansProjects/qameha.com/app/controllers/blogs_controller.rb:46: syntax error, unexpected kEND, expecting $end):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.3ms)
+Rendered rescues/_request_and_response (2.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:48:29) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+
+ActiveRecord::RecordNotFound (Couldn't find Blog without an ID):
+  app/controllers/blogs_controller.rb:19:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (146.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:49:32) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+
+ActiveRecord::RecordNotFound (Couldn't find Blog without an ID):
+  app/controllers/blogs_controller.rb:24:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.1ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:50:15) [GET]
+  [4;36;1mBlog Load (1.0ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (264.3ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (2.4ms)
+Completed in 391ms (View: 369, DB: 3) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:50:17) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+
+ActiveRecord::RecordNotFound (Couldn't find Blog without an ID):
+  app/controllers/blogs_controller.rb:24:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:54:43) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+
+ActiveRecord::RecordNotFound (Couldn't find Blog without an ID):
+  app/controllers/blogs_controller.rb:24:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.9ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 05:54:48) [GET]
+  [4;36;1mBlog Load (0.6ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (186.2ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (3.0ms)
+Completed in 306ms (View: 288, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:54:50) [GET]
+  Parameters: {"id"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+
+ActiveRecord::RecordNotFound (Couldn't find Blog without an ID):
+  app/controllers/blogs_controller.rb:24:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (89.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:57:32) [GET]
+  Parameters: {"id"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (22.8ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (22.5ms)
+Completed in 207ms (View: 67, DB: 25) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:57:44) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement", "id"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.7ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 59ms (View: 28, DB: 3) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines?permalink=mobilite-et-recrutement]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:58:26) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement", "id"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 66ms (View: 38, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines?permalink=mobilite-et-recrutement]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:58:42) [GET]
+  Parameters: {"id"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 55ms (View: 29, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:58:47) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 124ms (View: 29, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:58:49) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (39.4ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 93ms (View: 28, DB: 41) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 05:59:01) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines", "id"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (1.5ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 55ms (View: 27, DB: 4) | 200 OK [http://localhost/blogs/mobilite-et-recrutement?permalink=la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+  [4;35;1mBlog Columns (7.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (48.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlog Load (144.7ms)[0m   [0mSELECT `blogs`.id FROM `blogs` WHERE (permalink = 'laureat-du-concours-cracc-2009-cest-parti-pour-le-11me-tremplin-entreprises' and id != 1) LIMIT 1[0m
+  [4;36;1mSQL (27.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBlog Load (22.9ms)[0m   [0;1mSELECT `blogs`.id FROM `blogs` WHERE (permalink = 'myrhlinecom-un-nouvel-acteur-du-e-recrutement-qameha' and id != 2) LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (9.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:00:26) [GET]
+  [4;36;1mBlog Load (40.9ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (21.1ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (238.9ms)
+Rendered blogs/_post_summary (1.7ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_post_summary (1.4ms)
+Rendered blogs/_header_index (2.4ms)
+Completed in 427ms (View: 348, DB: 62) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:01:06) [GET]
+  [4;36;1mBlog Load (0.6ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (19.6ms)
+Rendered blogs/_post_summary (1.9ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_post_summary (1.7ms)
+Rendered blogs/_header_index (1.7ms)
+Completed in 75ms (View: 52, DB: 4) | 200 OK [http://localhost/blogs]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBlog Destroy (124.5ms)[0m   [0;1mDELETE FROM `blogs` WHERE `id` = 1[0m
+  [4;35;1mSQL (148.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBlog Destroy (0.2ms)[0m   [0mDELETE FROM `blogs` WHERE `id` = 2[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:02:41) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (19.3ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (1.6ms)
+Completed in 67ms (View: 36, DB: 6) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:02:47) [GET]
+  Parameters: {"id"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (93.3ms)
+Completed in 266ms (View: 137, DB: 3) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:03:27) [GET]
+  Parameters: {"id"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (1.0ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 64ms (View: 30, DB: 3) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:06:19) [GET]
+  [4;36;1mBlog Load (0.7ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (131.7ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (1928.7ms)
+Rendered blogs/_post_summary (3.4ms)
+Rendered blogs/_header_index (2.6ms)
+Completed in 2208ms (View: 2058, DB: 133) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:06:26) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` IS NULL) LIMIT 1[0m
+
+NoMethodError (undefined method `published_at' for nil:NilClass):
+  app/controllers/blogs_controller.rb:22:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.6ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:08:04) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (192.6ms)
+Rendered blogs/_post_summary (1.7ms)
+Rendered blogs/_header_index (2.5ms)
+Completed in 308ms (View: 290, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:08:07) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (12.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` IS NULL) LIMIT 1[0m
+
+NoMethodError (undefined method `published_at' for nil:NilClass):
+  app/controllers/blogs_controller.rb:22:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.3ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:08:39) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (19.4ms)
+Completed in 134ms (View: 60, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:08:42) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 51ms (View: 26, DB: 3) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:08:44) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.1ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 53ms (View: 27, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:08:45) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 50ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:08:49) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 51ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:09:12) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (59.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.8ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 110ms (View: 24, DB: 61) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:09:17) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;36;1mBlog Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (1.1ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 72ms (View: 31, DB: 3) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:09:25) [GET]
+  Parameters: {"permalink"=>"new"}
+  [4;36;1mBlog Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'new') LIMIT 1[0m
+
+NoMethodError (undefined method `published_at' for nil:NilClass):
+  app/controllers/blogs_controller.rb:22:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-18 06:09:57) [GET]
+
+ActionController::RoutingError (No route matches "/blogs/new" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:11:21) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;36;1mBlog Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.9ms)
+Completed in 310ms (View: 60, DB: 3) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#new (for 127.0.0.1 at 2010-01-18 06:11:44) [GET]
+  [4;36;1mBlog Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendering template within layouts/website
+Rendering blogs/new
+Rendered blogs/_header_new (2.5ms)
+Completed in 128ms (View: 110, DB: 2) | 200 OK [http://localhost/blogs/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:13:59) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (196.4ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_header_index (2.5ms)
+Completed in 260ms (View: 241, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:15:26) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (16.8ms)
+Rendered blogs/_post_summary (1.6ms)
+Rendered blogs/_header_index (1.5ms)
+Completed in 60ms (View: 43, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:16:16) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (15.5ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (1.3ms)
+Completed in 53ms (View: 35, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:17:30) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (16.5ms)
+Rendered blogs/_post_summary (1.5ms)
+Rendered blogs/_header_index (0.6ms)
+Completed in 56ms (View: 37, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2010-01-18 06:18:18) [GET]
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blogs/index
+  [4;36;1mBlog Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+Rendered blogs/_post_summary (17.0ms)
+Rendered blogs/_post_summary (2.6ms)
+Rendered blogs/_header_index (0.7ms)
+Completed in 70ms (View: 52, DB: 2) | 200 OK [http://localhost/blogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:18:26) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (1.0ms)
+Completed in 81ms (View: 42, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:18:32) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 52ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:19:08) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 52ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:19:23) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 116ms (View: 91, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:20:37) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 81ms (View: 54, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:20:49) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 5[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 52ms (View: 27, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:21:37) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.1ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 59ms (View: 34, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:21:51) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (23.9ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.3ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.3ms)
+Completed in 84ms (View: 36, DB: 25) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:21:54) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 52ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:21:55) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.4ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 54ms (View: 28, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:21:56) [GET]
+  Parameters: {"permalink"=>"la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines"}
+  [4;35;1mBlog Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:02:09') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:02:09') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 51ms (View: 26, DB: 2) | 200 OK [http://localhost/blogs/la-reponse-innovante-aux-nouveaux-enjeux-des-ressources-humaines]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:21:57) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.3ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 51ms (View: 25, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 06:44:59) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.2ms)
+Completed in 141ms (View: 116, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogsController#show (for 127.0.0.1 at 2010-01-18 07:08:19) [GET]
+  Parameters: {"permalink"=>"mobilite-et-recrutement"}
+  [4;35;1mBlog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (`blogs`.`permalink` = 'mobilite-et-recrutement') LIMIT 1[0m
+  [4;35;1mBlog Load (0.2ms)[0m   [0mSELECT * FROM `blogs` WHERE (published_at < '2010-01-16 16:25:20') ORDER BY published_at desc LIMIT 1[0m
+  [4;36;1mBlog Load (0.2ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (published_at > '2010-01-16 16:25:20') ORDER BY published_at asc LIMIT 1[0m
+Rendering template within layouts/website
+Rendering blogs/show
+Rendered blogs/_header_show (0.3ms)
+Completed in 192ms (View: 164, DB: 2) | 200 OK [http://localhost/blogs/mobilite-et-recrutement]

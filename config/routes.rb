@@ -9,9 +9,13 @@ ActionController::Routing::Routes.draw do |map|
   map.mobility "mobility", :controller => "website", :action => "mobility"
   map.recruitment_agencies "recruitment-agencies", :controller => "website", :action => "recruitment_agencies"
 
-  map.root :controller => "website"
-  map.resources :blogs
 
+  map.root :controller => "website"
+#  map.resources :blogs
+
+  map.blogs "blogs", :controller => "blogs", :action => "index"
+  map.blogs "blogs/new", :controller => "blogs", :action => "new"
+  map.connect 'blogs/:permalink', :controller => 'blogs', :action => 'show'
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

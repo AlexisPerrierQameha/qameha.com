@@ -15,6 +15,13 @@ class BlogsController < ApplicationController
   end
 
   def show
+    begin
+      @post = Blog.find_by_permalink(params[:permalink])
+      @previous_post = Blog.find :first, :conditions => ["published_at < ?",@post.published_at], :order => "published_at desc", :limit => 5
+      @next_post = Blog.find :first, :conditions => ["published_at > ?",@post.published_at], :order => "published_at asc"
+    rescue
+      redirect_to blogs_path
+    end
   end
 
   def new
@@ -22,12 +29,13 @@ class BlogsController < ApplicationController
   end
 
   def create
+
+    @post = Blog.create(params[:post])
+    @post.published_at = DateTime.now
+    @post.status = "draft"
+    @post.save
+    redirect_to blogs_path
   end
 
-  def update
-  end
-
-  def destroy
-  end
 
 end

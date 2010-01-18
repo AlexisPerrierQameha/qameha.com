@@ -142,3 +142,5 @@ en:
     blog header index intro text: "Infos, actualités, nouvelles fonctionnalités"
     next post: "Article suivant"
     previous post: "Article précédent"
+    blog header new title: "Ajouter un article"
+    blog header new intro text: "L'article n'apparaîtra en ligne qu'après validation."

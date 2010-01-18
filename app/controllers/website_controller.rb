@@ -4,12 +4,15 @@ class WebsiteController < ApplicationController
   end
   
   def team
+    @display_promo = true
   end
 
   def contact
+    @display_promo = true
   end
   
   def jobs
+    @display_promo = true
   end
   
   def recruiting
@@ -17,9 +20,11 @@ class WebsiteController < ApplicationController
   end
   
   def evaluation
+    @display_promo = true
   end
   
   def mobility
+    @display_promo = true
   end
   
   def recruitment_agencies

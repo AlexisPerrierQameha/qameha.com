@@ -1,15 +1,16 @@
 var current = 0;
-var size = 2;
+// CHANGE THIS TO ADD SOME QUOTES !
+var size = 1;
 
 jQuery(function(){
-	initTwitter();
-	initCaroussel();
+  initTwitter();
+  initCaroussel();
 });
 
 function initTwitter(){
-	if( jQuery("#twitter").length > 0){
-		$date = jQuery("#twitterDate");
-		$content = jQuery("#twitterContent");
+  if( jQuery("#twitter").length > 0){
+    $date = jQuery("#twitterDate");
+    $content = jQuery("#twitterContent");
 		
 		$.getJSON("http://twitter.com/statuses/user_timeline/qameha.json?count=1&callback=?",
 		    function(data){
@@ -38,7 +39,6 @@ function initCaroussel(){
 }
 
 function displayCurrent(direction){
-	// Managing testimonials
 
 	if(direction=="next"){
 		jQuery(".quote:visible").hide("slide", { direction: "right" }, 1000);
@@ -48,12 +48,8 @@ function displayCurrent(direction){
 		setTimeout('jQuery("#quote_"+current).show("slide", { direction: "right" }, 1000);', 1000);
 	}
 	
-	
-	// Managing clients
 	jQuery(".client:visible").fadeOut(1000);
 	setTimeout('jQuery("#client_"+current).fadeIn(1000);', 1000);
 	
-	// Managing quotes
-	
-	jQuery("#testimonialsCount").html(current + 1);
+  	jQuery("#testimonialsCount").html(current + 1);
 }

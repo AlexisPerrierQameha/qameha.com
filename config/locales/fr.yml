@@ -49,7 +49,7 @@ en:
     
     # JOBS
     join_us: "Rejoignez-nous !"
-    jobs_introduction: "H&eacute;berg&eacute;s au&nbsp;sein de l’incubateur T&eacute;l&eacute;com ParisTech, nous&nbsp;cherchons aujourd’hui à&nbsp;nous&nbsp;d&eacute;velopper et nous&nbsp;recrutons :"
+    jobs_introduction: "H&eacute;berg&eacute;s au&nbsp;sein de l’incubateur T&eacute;l&eacute;com ParisTech, nous&nbsp;cherchons aujourd’hui à&nbsp;nous&nbsp;d&eacute;velopper et nous&nbsp;recrutons."
     technical_content: "Contenu technique"
     required_skills: "Comp&eacute;tences requises"
     english_required: "Bonne maîtrise de&nbsp;l’anglais imp&eacute;rative"
@@ -85,13 +85,13 @@ en:
     web_marketer_content: "Nous recherchons un web marketeur en CDI. Contactez-nous à&nbsp;l'adresse suivante : "
     
     # CONTACT US 
-    contact_us: "Contactez nous"
-    contact_for: "Vous souhaitez en apprendre plus sur Qameha&nbsp;? Vous souhaitez une d&eacute;monstration&nbsp;? "
+    contact_us: "Contactez-nous"
+    contact_for: "Vous souhaitez en apprendre plus sur Qameha&nbsp;?<br /> Vous souhaitez une d&eacute;monstration&nbsp;? "
     phone: "T&eacute;l&eacute;phone"
     email: "Email"
     where_we_are: "Nous sommes dans l’incubateur T&eacute;l&eacute;com ParisTech,<br /> 9 rue Dareau 75014 Paris."
     team_page: "la&nbsp;page de&nbsp;l'&eacute;quipe"
-    contact_the_team: "Vous pouvez &eacute;galement contacter individuellement les membres de Qameha via linkedin depuis"
+    contact_the_team facebook_link twitter_link: "Vous pouvez &eacute;galement rejoindre notre <a href='{{facebook_link}}' target='_blank'>groupe Facebook</a> ou nous suivre sur <a href='{{twitter_link}}' target='_blank'>twitter</a>."
     
     # MODULES
     saas_assets_intro: "B&eacute;n&eacute;ficiez des avantages d'une application internet"
@@ -144,3 +144,5 @@ en:
     blog header index intro text: "Infos, actualités, nouvelles fonctionnalités"
     next post: "Article suivant"
     previous post: "Article précédent"
+    blog header new title: "Ajouter un article"
+    blog header new intro text: "L'article n'apparaîtra en ligne qu'après validation."

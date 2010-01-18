@@ -41,8 +41,8 @@
           <%= link_to t("contact"), contact_path %> |
           <%= link_to t("team"), team_path %> |
           <%= link_to t("join"), jobs_path %>
-<%#*|%>
-<%#= link_to t("blog"), "/blog" %>
+          |
+          <%= link_to t("blog"), "/blog" %>
         </div>
       </div>
     </div>
@@ -73,9 +73,9 @@
             <li>
               <%= link_to t("join"), jobs_path %>
             </li>
-<%#*<li>%>
-<%#= link_to t("blog"), "/blog" %>
-<%#*</li>%>
+<li>
+<%= link_to t("blog"), "/blog" %>
+</li>
           </ul>
           <%= link_to image_tag("logo_telecomparis.gif", :width => 50, :alt=> "Telecom ParisTech Incubateur"), "http://entrepreneurs.telecom-paristech.fr", :target =>"_blank", :title => "L'incubateur de Telecom ParisTech" %>
           <%= link_to image_tag("scientipole.jpg", :width => 50, :alt=> "Scientipole Initiative"), "http://www.scientipole-initiative.org/", :target =>"_blank", :title => "Scientipole Initiative" %>

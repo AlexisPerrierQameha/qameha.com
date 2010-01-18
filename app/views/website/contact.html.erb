@@ -1,26 +1,35 @@
 <div id="contactContent" class="clearfix pageContent classicHtml">
-	<div class="fixedWidthContent">		
-		<h2><%= t "contact_us"%></h2>
-		<div class="halfZone">
-			<p>
-				<%= t "contact_for"%>
-			</p>
-			<p>
-				 <strong><%= image_tag "phone.png" %> <%= t "phone" %>: +33 (0) 1 45 81 82 59</strong>
-			</p>
-			<p>
-				 <strong><%= image_tag "email.png" %> <%= t "email" %>: <%= link_to "contact@qameha.com", "mailto:contact@qameha.com"%></strong>
-			</p>
-			<p>
-				<%= t "contact_the_team"%> <%= link_to t("team_page"), team_path %>.
-			</p>
-		</div>
-		
-		<div class="halfZone">
-			<p>
-				<%= t "where_we_are" %>
-			</p>
-			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14" style="color:#0000FF;text-align:left">Agrandir</a></small>
-		</div>
-	</div>
+  <div class="fixedWidthContent">
+    <div class="halfZone">
+      <p>
+        <%= t "contact_for"%>
+      </p>
+      <p>
+        <strong><%= image_tag "phone.png" %> <%= t "phone" %>: +33 (0) 1 45 81 82 59</strong>
+      </p>
+      <p>
+        <strong><%= image_tag "email.png" %> <%= t "email" %>: <%= link_to "contact@qameha.com", "mailto:contact@qameha.com"%></strong>
+      </p>
+      <p>
+        <%= t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834" %>
+      </p>
+      <div id="twitter">
+        <div id="twitter_logo" style="float:left; margin-right :10px;">
+          <%= link_to image_tag("twitter.png", :width => "64"), "http://twitter.com/qameha",:target => "_blank" %>
+        </div>
+        <%= link_to "@Qameha,  (Fr)", "http://twitter.com/qameha", :target => "_blank" %>
+        <br />
+        <%= link_to "@Qameha_HR, (En)", "http://twitter.com/Qameha_HR", :target => "_blank" %>
+        <br />
+        <%= link_to "@alexip, Alexis Perrier", "http://twitter.com/alexip", :target => "_blank" %>
+      </div>
+    </div>
+
+    <div class="halfZone">
+      <p>
+        <%= t "where_we_are" %>
+      </p>
+      <iframe width="325" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14" style="color:#0000FF;text-align:left">Agrandir</a></small>
+    </div>
+  </div>
 </div>

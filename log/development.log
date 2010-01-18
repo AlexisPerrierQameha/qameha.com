@@ -7231,3 +7231,1235 @@ Rendering template within layouts/website
 Rendering website/contact
 Rendered website/_header_contact (0.7ms)
 Completed in 73ms (View: 66, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:06:38) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.2ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-01-18 11:06:40) [GET]
+  [4;36;1mBlog Load (0.5ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (status = 'published') ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blog/index
+  [4;35;1mBlog Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blog/_post_summary (17.4ms)
+Rendered blog/_post_summary (2.9ms)
+Rendered blog/_header_index (0.6ms)
+Completed in 57ms (View: 39, DB: 3) | 200 OK [http://localhost/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-01-18 11:06:45) [GET]
+  [4;36;1mBlog Load (0.4ms)[0m   [0;1mSELECT * FROM `blogs` WHERE (status = 'published') ORDER BY published_at desc[0m
+Rendering template within layouts/website
+Rendering blog/index
+  [4;35;1mBlog Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+Rendered blog/_post_summary (16.6ms)
+Rendered blog/_post_summary (2.9ms)
+Rendered blog/_header_index (0.6ms)
+Completed in 128ms (View: 110, DB: 2) | 200 OK [http://localhost/blog]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:07:03) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.2ms)
+Completed in 32ms (View: 24, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:07:23) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:07:24) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.8ms)
+Completed in 59ms (View: 52, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:08:01) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.8ms)
+Completed in 48ms (View: 40, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:08:11) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (1.6ms)
+Completed in 62ms (View: 54, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:08:54) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 114ms (View: 106, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:08:57) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.8ms)
+Completed in 48ms (View: 40, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:09:07) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.8ms)
+Completed in 59ms (View: 43, DB: 1) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:09:20) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#team (for 127.0.0.1 at 2010-01-18 11:09:27) [GET]
+Rendering template within layouts/website
+Rendering website/team
+Rendered website/_header_team (0.2ms)
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:09:28) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.5ms)
+Completed in 40ms (View: 33, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:09:50) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.2ms)
+Completed in 60ms (View: 53, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:10:00) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.1ms)
+Completed in 127ms (View: 120, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:10:55) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (1.1ms)
+Completed in 39ms (View: 32, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:11:28) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.1ms)
+Completed in 46ms (View: 39, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:11:38) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.2ms)
+Completed in 48ms (View: 41, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#jobs (for 127.0.0.1 at 2010-01-18 11:12:18) [GET]
+Rendering template within layouts/website
+Rendering website/jobs
+Rendered website/_header_jobs (2.1ms)
+Completed in 47ms (View: 40, DB: 0) | 200 OK [http://localhost/jobs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:13:20) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.2ms)
+Completed in 31ms (View: 24, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:14:20) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (1.7ms)
+Completed in 118ms (View: 111, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:14:26) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (1.1ms)
+Completed in 40ms (View: 32, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:14:41) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (1.2ms)
+Completed in 38ms (View: 31, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:15:04) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.5ms)
+Completed in 32ms (View: 25, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:15:48) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 31ms (View: 24, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:17:50) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 40ms (View: 33, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:19:27) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 42ms (View: 35, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:20:13) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.5ms)
+Completed in 42ms (View: 35, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:20:28) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#index (for 127.0.0.1 at 2010-01-18 11:21:27) [GET]
+Rendering template within layouts/website
+Rendering website/index
+Rendered website/_header_index (0.7ms)
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:21:37) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.5ms)
+Completed in 45ms (View: 38, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:24:40) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 42ms (View: 34, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:25:10) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:25:22) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 43ms (View: 35, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:25:38) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:26:30) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:27:14) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:27:24) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:27:55) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:28:02) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 47ms (View: 39, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:28:15) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:28:26) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 46ms (View: 38, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:28:47) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:28:56) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:29:03) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 45ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:29:15) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 45ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:29:28) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:31:53) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:32:43) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:33:09) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:33:22) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:33:43) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:33:44) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:34:00) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 45ms (View: 38, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:34:06) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:34:14) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 45ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:34:26) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.5ms)
+Completed in 45ms (View: 38, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:34:40) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:35:49) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.5ms)
+Completed in 56ms (View: 44, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:36:09) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 44ms (View: 36, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:40:01) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 45ms (View: 38, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-18 11:40:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/facebook.png" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:41:10) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 113ms (View: 106, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:44:32) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+ERROR: compiling _run_erb_app47views47website47contact46html46erb RAISED compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47website47contact46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"contactContent\" class=\"clearfix pageContent classicHtml\">\n  <div class=\"fixedWidthContent\">\n    <div class=\"halfZone\">\n      <p>\n        "
+
+
+
+; @output_buffer.concat(( t "contact_for").to_s); @output_buffer.concat "\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "phone.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "phone" ).to_s); @output_buffer.concat ": +33 (0) 1 45 81 82 59</strong>\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "email.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "email" ).to_s); @output_buffer.concat ": "; @output_buffer.concat(( link_to "contact@qameha.com", "mailto:contact@qameha.com").to_s); @output_buffer.concat "</strong>\n      </p>\n      <p>\n        "
+
+
+; @output_buffer.concat(( t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", ).to_s); @output_buffer.concat "\n      </p>\n      <div id=\"twitter\">\n        <div id=\"twitter_logo\" style=\"float:left; margin-right :10px;\"\n        "
+
+
+
+; @output_buffer.concat(( link_to image_tag("twitter.png", :width => "64"), "http://twitter.com/qameha",:target => "_blank" ).to_s); @output_buffer.concat "\n      </div>\n      "
+
+; @output_buffer.concat(( link_to "@Qameha,  (Fr)", "http://twitter.com/qameha", :target => "_blank" ).to_s); @output_buffer.concat "\n      <br />\n      "
+
+; @output_buffer.concat(( link_to "@Qameha_HR, (En)", "http://twitter.com/Qameha_HR", :target => "_blank" ).to_s); @output_buffer.concat "\n      <br />\n      "
+
+; @output_buffer.concat(( link_to "@alexip, Alexis Perrier", "http://twitter.com/alexip", :target => "_blank" ).to_s); @output_buffer.concat "\n    </div>\n  </div>\n</div>\n\n</div>\n\n<div class=\"halfZone\">\n  <p>\n    "
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( t "where_we_are" ).to_s); @output_buffer.concat "\n  </p>\n  <iframe width=\"325\" height=\"250\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14\" style=\"color:#0000FF;text-align:left\">Agrandir</a></small>\n</div>\n</div>\n</div>"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:41:in `compile!'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^) on line #14 of app/views/website/contact.html.erb:
+11:         <strong><%= image_tag "email.png" %> <%= t "email" %>: <%= link_to "contact@qameha.com", "mailto:contact@qameha.com"%></strong>
+12:       </p>
+13:       <p>
+14:         <%= t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", %>
+15:       </p>
+16:       <div id="twitter">
+17:         <div id="twitter_logo" style="float:left; margin-right :10px;"
+
+    app/views/website/contact.html.erb:41:in `compile!'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.7ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:45:22) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+ERROR: compiling _run_erb_app47views47website47contact46html46erb RAISED compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47website47contact46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"contactContent\" class=\"clearfix pageContent classicHtml\">\n  <div class=\"fixedWidthContent\">\n    <div class=\"halfZone\">\n      <p>\n        "
+
+
+
+; @output_buffer.concat(( t "contact_for").to_s); @output_buffer.concat "\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "phone.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "phone" ).to_s); @output_buffer.concat ": +33 (0) 1 45 81 82 59</strong>\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "email.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "email" ).to_s); @output_buffer.concat ": "; @output_buffer.concat(( link_to "contact@qameha.com", "mailto:contact@qameha.com").to_s); @output_buffer.concat "</strong>\n      </p>\n      <p>\n        "
+
+
+; @output_buffer.concat(( t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", ).to_s); @output_buffer.concat "\n      </p>\n      <div id=\"twitter\">\n        <div id=\"twitter_logo\" style=\"float:left; margin-right :10px;\">\n          "
+
+
+
+; @output_buffer.concat(( link_to image_tag("twitter.png", :width => "64"), "http://twitter.com/qameha",:target => "_blank" ).to_s); @output_buffer.concat "\n        </div>\n        "
+
+; @output_buffer.concat(( link_to "@Qameha,  (Fr)", "http://twitter.com/qameha", :target => "_blank" ).to_s); @output_buffer.concat "\n        <br />\n        "
+
+; @output_buffer.concat(( link_to "@Qameha_HR, (En)", "http://twitter.com/Qameha_HR", :target => "_blank" ).to_s); @output_buffer.concat "\n        <br />\n        "
+
+; @output_buffer.concat(( link_to "@alexip, Alexis Perrier", "http://twitter.com/alexip", :target => "_blank" ).to_s); @output_buffer.concat "\n      </div>\n    </div>\n\n    <div class=\"halfZone\">\n      <p>\n        "
+
+
+
+
+
+; @output_buffer.concat(( t "where_we_are" ).to_s); @output_buffer.concat "\n      </p>\n      <iframe width=\"325\" height=\"250\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14\" style=\"color:#0000FF;text-align:left\">Agrandir</a></small>\n    </div>\n  </div>\n</div>"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:38:in `compile!'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^) on line #14 of app/views/website/contact.html.erb:
+11:         <strong><%= image_tag "email.png" %> <%= t "email" %>: <%= link_to "contact@qameha.com", "mailto:contact@qameha.com"%></strong>
+12:       </p>
+13:       <p>
+14:         <%= t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", %>
+15:       </p>
+16:       <div id="twitter">
+17:         <div id="twitter_logo" style="float:left; margin-right :10px;">
+
+    app/views/website/contact.html.erb:38:in `compile!'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:45:26) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+ERROR: compiling _run_erb_app47views47website47contact46html46erb RAISED compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47website47contact46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"contactContent\" class=\"clearfix pageContent classicHtml\">\n  <div class=\"fixedWidthContent\">\n    <div class=\"halfZone\">\n      <p>\n        "
+
+
+
+; @output_buffer.concat(( t "contact_for").to_s); @output_buffer.concat "\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "phone.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "phone" ).to_s); @output_buffer.concat ": +33 (0) 1 45 81 82 59</strong>\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "email.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "email" ).to_s); @output_buffer.concat ": "; @output_buffer.concat(( link_to "contact@qameha.com", "mailto:contact@qameha.com").to_s); @output_buffer.concat "</strong>\n      </p>\n      <p>\n        "
+
+
+; @output_buffer.concat(( t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", ).to_s); @output_buffer.concat "\n      </p>\n      <div id=\"twitter\">\n        <div id=\"twitter_logo\" style=\"float:left; margin-right :10px;\">\n          "
+
+
+
+; @output_buffer.concat(( link_to image_tag("twitter.png", :width => "64"), "http://twitter.com/qameha",:target => "_blank" ).to_s); @output_buffer.concat "\n        </div>\n        "
+
+; @output_buffer.concat(( link_to "@Qameha,  (Fr)", "http://twitter.com/qameha", :target => "_blank" ).to_s); @output_buffer.concat "\n        <br />\n        "
+
+; @output_buffer.concat(( link_to "@Qameha_HR, (En)", "http://twitter.com/Qameha_HR", :target => "_blank" ).to_s); @output_buffer.concat "\n        <br />\n        "
+
+; @output_buffer.concat(( link_to "@alexip, Alexis Perrier", "http://twitter.com/alexip", :target => "_blank" ).to_s); @output_buffer.concat "\n      </div>\n    </div>\n\n    <div class=\"halfZone\">\n      <p>\n        "
+
+
+
+
+
+; @output_buffer.concat(( t "where_we_are" ).to_s); @output_buffer.concat "\n      </p>\n      <iframe width=\"325\" height=\"250\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14\" style=\"color:#0000FF;text-align:left\">Agrandir</a></small>\n    </div>\n  </div>\n</div>"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:38:in `compile!'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^) on line #14 of app/views/website/contact.html.erb:
+11:         <strong><%= image_tag "email.png" %> <%= t "email" %>: <%= link_to "contact@qameha.com", "mailto:contact@qameha.com"%></strong>
+12:       </p>
+13:       <p>
+14:         <%= t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", %>
+15:       </p>
+16:       <div id="twitter">
+17:         <div id="twitter_logo" style="float:left; margin-right :10px;">
+
+    app/views/website/contact.html.erb:38:in `compile!'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:45:28) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+ERROR: compiling _run_erb_app47views47website47contact46html46erb RAISED compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47website47contact46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"contactContent\" class=\"clearfix pageContent classicHtml\">\n  <div class=\"fixedWidthContent\">\n    <div class=\"halfZone\">\n      <p>\n        "
+
+
+
+; @output_buffer.concat(( t "contact_for").to_s); @output_buffer.concat "\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "phone.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "phone" ).to_s); @output_buffer.concat ": +33 (0) 1 45 81 82 59</strong>\n      </p>\n      <p>\n        <strong>"
+
+
+; @output_buffer.concat(( image_tag "email.png" ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t "email" ).to_s); @output_buffer.concat ": "; @output_buffer.concat(( link_to "contact@qameha.com", "mailto:contact@qameha.com").to_s); @output_buffer.concat "</strong>\n      </p>\n      <p>\n        "
+
+
+; @output_buffer.concat(( t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", ).to_s); @output_buffer.concat "\n      </p>\n      <div id=\"twitter\">\n        <div id=\"twitter_logo\" style=\"float:left; margin-right :10px;\">\n          "
+
+
+
+; @output_buffer.concat(( link_to image_tag("twitter.png", :width => "64"), "http://twitter.com/qameha",:target => "_blank" ).to_s); @output_buffer.concat "\n        </div>\n        "
+
+; @output_buffer.concat(( link_to "@Qameha,  (Fr)", "http://twitter.com/qameha", :target => "_blank" ).to_s); @output_buffer.concat "\n        <br />\n        "
+
+; @output_buffer.concat(( link_to "@Qameha_HR, (En)", "http://twitter.com/Qameha_HR", :target => "_blank" ).to_s); @output_buffer.concat "\n        <br />\n        "
+
+; @output_buffer.concat(( link_to "@alexip, Alexis Perrier", "http://twitter.com/alexip", :target => "_blank" ).to_s); @output_buffer.concat "\n      </div>\n    </div>\n\n    <div class=\"halfZone\">\n      <p>\n        "
+
+
+
+
+
+; @output_buffer.concat(( t "where_we_are" ).to_s); @output_buffer.concat "\n      </p>\n      <iframe width=\"325\" height=\"250\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9+Rue+Dareau,+75014+Paris,+France&amp;sll=48.856667,2.350987&amp;sspn=0.32844,0.696945&amp;ie=UTF8&amp;hq=&amp;hnear=9+Rue+Dareau,+75014+Paris,+Ile-de-France,+France&amp;ll=48.831511,2.3385&amp;spn=0.041076,0.087118&amp;z=14\" style=\"color:#0000FF;text-align:left\">Agrandir</a></small>\n    </div>\n  </div>\n</div>"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:38:in `compile!'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/alexisperrier/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/alexisperrier/NetBeansProjects/qameha.com/app/views/website/contact.html.erb:14: syntax error, unexpected ')'
+...ef=search&gid=251075620834", ).to_s); @output_buffer.concat ...
+                              ^) on line #14 of app/views/website/contact.html.erb:
+11:         <strong><%= image_tag "email.png" %> <%= t "email" %>: <%= link_to "contact@qameha.com", "mailto:contact@qameha.com"%></strong>
+12:       </p>
+13:       <p>
+14:         <%= t "contact_the_team facebook_link twitter_link", :twitter_link => "http://twitter.com/qameha", :facebook_link => "http://www.facebook.com/search/?q=qameha&init=quick#/group.php?v=wall&ref=search&gid=251075620834", %>
+15:       </p>
+16:       <div id="twitter">
+17:         <div id="twitter_logo" style="float:left; margin-right :10px;">
+
+    app/views/website/contact.html.erb:38:in `compile!'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (148.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:45:40) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 45ms (View: 37, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:46:55) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WebsiteController#contact (for 127.0.0.1 at 2010-01-18 11:47:16) [GET]
+Rendering template within layouts/website
+Rendering website/contact
+Rendered website/_header_contact (0.4ms)
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://localhost/contact]

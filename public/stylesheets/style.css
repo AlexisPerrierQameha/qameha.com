@@ -156,6 +156,10 @@ margin-left: -15px;
   background-color: #2d2c2e;
   padding-bottom: 15px;
 }
+#subZone li{
+	margin-top: 10px;
+	list-style: circle;
+}
 #subZone .fixedWidthContent{
   position: relative;
 }

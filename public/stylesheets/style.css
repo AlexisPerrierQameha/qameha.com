@@ -115,6 +115,14 @@ margin-left: -15px;
   padding-top: 15px;
   font-style: italic;
 }
+#headest a{
+	color: #fff;
+	border-bottom: 1px solid #666666;
+}
+#headest a:hover{
+	border-bottom: 1px solid #fff;
+	text-decoration:none;
+}
 #bottomLoop{
   height:12px;
   background:url("/images/bottom_loop.png") repeat-x;

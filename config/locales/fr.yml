@@ -31,16 +31,21 @@ en:
     mobility_bullet_3: "Fluidifie"
     learn_more: "En savoir plus"
         # Reviews
-    client_0: "Groupe Hubert"
-    client_1: "Groupe Hubert 2"
-    client_2: "Groupe Hubert 3"
-    client_3: "Groupe Hubert 4"
-    client_4: "Groupe Hubert 5"
-    quote_0: "Qameha est une solution compl&egrave;te de gestion des recrutements conçue et r&eacute;alis&eacute;e par des op&eacute;rationnels des Ressources Humaines."
-    quote_1: "Yet another quote"
-    quote_2: "Yet another quote"
+#    quote_0: "Qameha est une solution compl&egrave;te de gestion des recrutements conçue et r&eacute;alis&eacute;e par des op&eacute;rationnels des Ressources Humaines."
+#    quote_0: "Qameha nous permet de gérer l'ensemble des recrutements dans notre environnement multi-sites avec  la réactivité et la collégialité dont nous avons besoin, en offrant à chaque niveau de responsabilité - DRH, DG, Directions opérationnelles - le bon niveau d'informations et d'indicateurs"
+    quote_0: "Qameha permet de&nbsp;gérer l'ensemble des recrutements dans notre environnement multi-sites avec la&nbsp;réactivité dont nous avons besoin, en&nbsp;offrant à&nbsp;chaque niveau de&nbsp;responsabilité le&nbsp;bon niveau d'informations"
+    quote_1: "Qameha est un&nbsp;outil simple à&nbsp;intégrer et à&nbsp;déployer qui permet de&nbsp;baliser, de&nbsp;simplifier, de&nbsp;fluidifier et de&nbsp;sécuriser la&nbsp;gestion des&nbsp;candidatures"
+    quote_2: "<br />Qameha est&nbsp;l'un des&nbsp;meilleurs outils de&nbsp;recrutement que&nbsp;j'ai&nbsp;vu, il&nbsp;est simple et&nbsp;complet.<br /><br />"
     quote_3: "Yet another quote"    
     quote_4: "Yet another quote"
+
+    client_0: "Philippe Boudard,<br /> DRH Groupe Hubert"
+    client_1: "Didier Etheve,<br /> DRH Institut de Soudure"
+    client_2: "Pierre Coquillat,<br /> DRH Amadeus France"
+    client_3: "Groupe Hubert 4"
+    client_4: "Groupe Hubert 5"
+
+
         # Actu
     loading_tweet: "Chargement du dernier tweet"
     news: "Actu"

@@ -1,6 +1,6 @@
 var current = 0;
-// CHANGE THIS TO ADD SOME QUOTES !
-var size = 1;
+// NUMBER OF QUOTES TO BE DISPLAYED
+var size = 3;
 
 jQuery(function(){
   initTwitter();
@@ -41,15 +41,20 @@ function initCaroussel(){
 function displayCurrent(direction){
 
 	if(direction=="next"){
-		jQuery(".quote:visible").hide("slide", { direction: "right" }, 1000);
-		setTimeout('jQuery("#quote_"+current).show("slide", { direction: "left" }, 1000);', 1000);
+		jQuery(".quote:visible").hide("slide", { direction: "right" }, 100);
+		setTimeout('jQuery("#quote_"+current).show("slide", { direction: "left" }, 100);', 100);
+        jQuery(".client:visible").hide("slide", { direction: "right" }, 100);
+        setTimeout('jQuery("#client_"+current).show("slide", { direction: "left" }, 100);', 100);
 	}else{
-		jQuery(".quote:visible").hide("slide", { direction: "left" }, 1000);
-		setTimeout('jQuery("#quote_"+current).show("slide", { direction: "right" }, 1000);', 1000);
+		jQuery(".quote:visible").hide("slide", { direction: "left" }, 100);
+		setTimeout('jQuery("#quote_"+current).show("slide", { direction: "right" }, 100);', 100);
+    	jQuery(".client:visible").hide("slide", { direction: "left" }, 100);
+        setTimeout('jQuery("#client_"+current).show("slide", { direction: "right" }, 100);', 100);
 	}
 	
-	jQuery(".client:visible").fadeOut(1000);
-	setTimeout('jQuery("#client_"+current).fadeIn(1000);', 1000);
+//	jQuery(".client:visible").fadeOut(1000);
+//	setTimeout('jQuery("#client_"+current).fadeIn(1000);', 1000);
 	
+
   	jQuery("#testimonialsCount").html(current + 1);
 }

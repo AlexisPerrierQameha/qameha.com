@@ -373,8 +373,9 @@ margin-left: -5px;
 #testimonials p{
   padding: 10px 25px 0px 25px;
   color: #eeeeee;
-  font-size: 21px;
-  line-height:24px;
+  /*font-size: 21px;*/
+  font-size: 16px;
+  line-height:20px;
   font-style:italic;
   margin-bottom:50px;
 }

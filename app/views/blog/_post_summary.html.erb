@@ -1,7 +1,6 @@
 <div id="blog_post" style=" width : 80%; ">
   <h1>
-    <%= link_to post.title, {:controller => 'blogs', :action => 'show', :permalink => post.permalink} %>
-<%#= post.title %>
+    <%= link_to post.title, {:controller => 'blog', :action => 'show', :permalink => post.permalink} %>
   </h1>
   <p>
     <%= post.excerpt unless post.excerpt.blank? %>

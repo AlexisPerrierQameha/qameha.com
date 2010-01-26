@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
 
   #TO_REFACTOR so fucking ugly !
+  map.enquete "enquete-performance-RH", :controller => "website", :action => "enquete"
   map.team "team", :controller => "website", :action => "team"
   map.contact "contact", :controller => "website", :action => "contact"
   map.jobs "jobs", :controller => "website", :action => "jobs"

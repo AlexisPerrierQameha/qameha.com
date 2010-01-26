@@ -27,6 +27,10 @@ class WebsiteController < ApplicationController
     @display_promo = true
   end
   
+  def enquete
+    @display_promo = true
+  end
+
   def recruitment_agencies
     @display_promo = true
   end

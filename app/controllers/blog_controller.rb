@@ -33,7 +33,12 @@ class BlogController < ApplicationController
     @post = Blog.create(params[:post])
     @post.published_at = DateTime.now
     @post.status = "draft"
-    @post.save
+    if @post.save
+      logger.info("post has been saved")
+    else
+      logger.info("ERROR POST HAS NOT BEEN SAVED")
+    end
+
     redirect_to blogs_path
   end
 

@@ -19,6 +19,7 @@ a{
   color: #656566;
   text-decoration:none;
 }
+
 a:hover{
   color: #000;
   text-decoration:underline;
@@ -399,6 +400,22 @@ margin-left: -5px;
   font-style:normal;
 }
 
+#testimonials p.text{
+  font-size: 14px;
+  line-height:20px;
+  font-style:normal;
+  margin:0px;
+  padding:  0px 0px 0px 25px  ;
+}
+
+#testimonials h2.text{
+  padding: 20px 25px 0px 25px;
+  font-size: 12px;
+  line-height:14px;
+  font-style:normal;
+}
+
+
 
 #testimonials p img{
   width: 30%;
@@ -710,4 +727,14 @@ margin-top: -5px;
   
 }
 
+#blog_post p{
+  margin : 15px auto;
+}
 
+#blog_post a{
+  color: #6565AA;
+}
+
+a.link{
+  color: #6565AA;
+}

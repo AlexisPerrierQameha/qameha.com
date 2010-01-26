@@ -1,3 +1,29 @@
+
+blog = Blog.create! :status => "draft", :published_at => "2010-01-25 11:54:01",:permalink => "la-fidelite-du-ver-a-soie",:title => "La fidélité du ver à soie",:excerpt => "new post",:text => "new text"
+
+
+blog.update_attributes :excerpt =>  "<p>Nous sommes bien placés pour le voir, l'activité de recrutement redémarre en France, avec un évident effet de ciseaux entre plusieurs plans de réductions d'effectifs à venir et une progression constante des postes ouverts.</p><p>Au-delà des effets classiques de retournement du marché de l'emploi (peu de postes mais candidats très réticents à se mettre en danger), la situation actuelle appelle deux réflexions :</p>"
+
+blog.update_attributes :text => "<p><b>Nous sommes bien placés pour le voir, l'activité de recrutement redémarre en France, avec un évident effet de ciseaux entre plusieurs plans de réductions d'effectifs à venir et une progression constante des postes ouverts.</b></p>\
+<p>Au-delà des effets classiques de retournement du marché de l'emploi (peu de postes mais candidats très réticents à se mettre en danger), la situation actuelle appelle deux réflexions :</p>\
+<ol><li> Comme chaque période de tension (manque de visibilité, inquiétudes), la crise financière et ses répercussions économiques ont cristallisé les attitudes des employeurs et exprimé les valeurs réelles de ceux-ci. Là où tel cabinet d'audit et conseil serre les dents, explique, mais garde tout le monde à bord, tel autre dégraisse massivement.\
+<br/>Là où un management de qualité reconstruit son projet d'entreprise en fonction de la situation, d'autres ne font que répercuter sans discernement, ni grand effet, la pression venue de leurs actionnaires.\
+<br/>On se prend à espérer que les uns et les autres, employés, managers, employeurs, garderont mémoire de tout cela,\
+</li>\
+<li> Qui a raison ? Quel est la bonne pratique ?\
+<br/>Du point de vue moral, affronter la tempête en sauvant l'équipage est sans doute la seule attitude estimable. C'est d'ailleurs globalement celle des groupes à capitaux familiaux.\
+<br/>Du point de vue pratique, ou du point de vue du manager redevable de la meilleure gestion des capitaux investis, la réponse est peut être différente.\
+</li>\
+</ol>\
+<p>La vision de l'entreprise développée par les nouvelles générations, dites y, semble peu basée sur l'implication durable dans un projet d'entreprise mais plus sur des principes d'indépendance, d'employabilité, de rémunération directe.</p>\
+<p>L'entreprise, oh surprise, n'est plus une magnanerie ou chaleur et nourriture garantissent la production du ver à soie. Hélas, les salariés risquent d'être de moins en moins des vers à soie, ce qui est en un sens dommage, et entraîne deux effets :</p>\
+<ul><li> L'employeur n'a plus de raison, autre que de morale personnelle, de se montrer fidèle envers et contre tout : à peine la reprise venue, ses collaborateurs partiront quand même pour peu que l'herbe soit momentanément plus verte ailleurs. En ce sens, la comparaison avec le ver à soie reste pertinente, pour peu que l'on envisage sa mobilité !</li>\
+<li> Du coup, l'employeur responsable devient celui qui ne s'encombre pas d'états d'âmes jamais récompensés, mais celui qui sait obtenir le meilleur équilibre de confort professionnel, i.e. répondre au mieux aux aspirations de reconnaissance, d'indépendance, de développement personnel et professionnel de ses collaborateurs.</li>\
+</ul>\
+<p>Plus que jamais la coordination entre la stratégie RH globale et sa concrétisation sur le terrain, son déploiement par les managers de proximité, est donc un enjeu pour garantir une implication durable des salariés dans l'entreprise et avec l'entreprise. </p>
+<p style='text-align:right; font-weight : bold; margin: 10px;'>Léonard Briot de La Crochais</p>"
+
+
 Blog.create! :status => "published", :published_at => "2009-07-09 13:54:01",
 :permalink => "test", :title => "évaluation", :excerpt => "l'entretien d'évolution",
 :text => "publié dans FocusRH."
@@ -28,5 +54,11 @@ Blog.create! :status => "published", :published_at => "2009-10-08 11:10:39",:per
 #'2009-11-10 13:26:06', 'lentretien-devaluation-une-etape-cruciale-en-periode-de-crise', 'L'entretien d'évaluation : une étape cruciale en période de crise', ', 'L'entretien d'évaluation est bien souvent vécu comme un challenge - de surcroît en la période actuelle. Ce point d'étape est le moment idéal pour dresser un bilan sur le travail effectué, parler des satisfactions, des attentes – dans la mesure du raisonnable – et pour fixer les objectifs pour la nouvelle année.  Retrouver tout l'article  <strong>"<a href="http://www.jobeticrh.net/L-entretien-d-evaluation-une-etape-cruciale-en-periode-de-crise_a256.html" target="_blank">L'entretien d'évaluation : une étape cruciale en période de crise</a>" publié sur Jobetic.Rh</strong>');
 #'2009-11-10 13:32:21', 'conserver-ses-talents-en-periode-de-crise', 'Conserver ses talents en période de crise', ', 'Préserver vos collaborateurs talentueux est essentiel pour passer la crise et être prêt lors de la reprise économique.  Retrouver l'ensemble de l'article "<a href="http://www.journaldunet.com/management/ressources-humaines/conseil/conserver-les-talents-dans-son-equipe/conserver-ses-talents-en-periode-de-crise.shtml" target="_blank">Conserver ses talents en période de crise</a>" publié sur Le Journal du Net');
 #'2009-12-09 15:09:01', 'de-limportance-des-comptes-rendus-dentretien-devaluation', 'De l'importance des comptes rendus d'entretien d'évaluation', ', 'Avec la fin de l'année qui approche, les entretiens annuels d'évaluation s'organisent. Certains peuvent être tentés d'en faire un simple rendez-vous formel. Pourtant la jurisprudence vient encore de rappeler que cette entrevue ne doit pas être prise à la légère, ni par l'employeur ni par le salarié.  Retrouver <a href="http://www.lentreprise.com/3/1/4/article.asp?ida=22027">l'article complet</a> publié le 7 décembre 2009 sur www.lentreprise.com');
-#'2010-01-06 12:10:16', 'recherchons-ruby-on-rails-jedi-master', 'Recherchons Ruby on Rails Jedi Master', ', 'Qameha Meha, Railers et Rubyists !\n\nNous cherchons un développeur Ruby + Rails de 4 - 5 ans d'experience :\n- qui soit ceinture noire en langages objets\n- qui ne puisse coder sans d'abord écrire les tests\n- qui vendrai son âme pour pouvoir pair programmer\n\nL'équipe IT est actuellement composée de 3 personnes et communique principalement en anglais.\n\nPoste basé à Paris, rémunération selon expérience, ...\nContact : ror.qameha@qameha.net\n@qameha / @alexip \n');
+'2010-01-06 12:10:16', '
+recherchons-ruby-on-rails-jedi-master', 'Recherchons Ruby on Rails Jedi Master', ', '
+Qameha Meha, Railers et Rubyists !
+
+
+Nous cherchons un développeur Ruby + Rails de 2 - 5 ans d'experience :
+- qui soit ceinture noire en langages objets\n- qui ne puisse coder sans d'abord écrire les tests\n- qui vendrai son âme pour pouvoir pair programmer\n\nL'équipe IT est actuellement composée de 3 personnes et communique principalement en anglais.\n\nPoste basé à Paris, rémunération selon expérience, ...\nContact : ror.qameha@qameha.net\n@qameha / @alexip \n');
 

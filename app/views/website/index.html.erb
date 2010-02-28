@@ -1,52 +1,65 @@
 <div class="clearfix pageContent">
   <div class="fixedWidthContent">
     <div class="moduleBlock" id="recruiting">
-      <%= link_to "<h1>#{t('recruiting')}</h1>", recruiting_path, :class => "moduleTitleLink" %>
+      <%= link_to "<h2 class='index_3cols'>Simple</h2>", "http://qameha.net", :class => "moduleTitleLink" %>
       <p>
-        <%= t "recruiting_speech" %>
+        Keeping it simple is a constant challenge. We want Qameha to be so natural to use that you'll wonder how you recruited anyone without it before.
+        <br />
+        It's web based which means, no IT, no upgrades, no installation.
       </p>
       <ul>
-        <li><%= t "recruiting_bullet_1" %></li>
-        <li><%= t "recruiting_bullet_2" %></li>
-        <li><%= t "recruiting_bullet_3" %></li>
+        <li>Structured</li>
+        <li>Fast-paced</li>
+        <li>Process Driven</li>
       </ul>
-      <%= link_to t("learn_more"), recruiting_path, :class => "arrowLink" %>
+      <%= link_to "More", "http://qameha.net", :class => "arrowLink" %>
     </div>
-    <div class="verticalSeparator"></div>
-    <div class="moduleBlock" id="evaluation">
-      <%= link_to "<h1>#{t('evaluation')}</h1>", evaluation_path, :class => "moduleTitleLink"  %>
-      <p>
-        <%= t "evaluation_speech" %>
-      </p>
-      <ul>
-        <li><%= t "evaluation_bullet_1" %></li>
-        <li><%= t "evaluation_bullet_2" %></li>
-        <li><%= t "evaluation_bullet_3" %></li>
-      </ul>
-      <%= link_to t("learn_more"), evaluation_path, :class => "arrowLink" %>
-    </div>
-    
+
+
     <div class="verticalSeparator"></div>
     <div class="moduleBlock" id="mobility">
-      <%= link_to "<h1>#{t('mobility')}</h1>", mobility_path, :class => "moduleTitleLink"  %>
+      <%= link_to "<h2 class='index_3cols'>Smart</h2>", "http://qameha.net", :class => "moduleTitleLink" %>
       <p>
-        <%= t "mobility_speech" %>
+        At the core we are an HR company. Just check the profile of our
+        <%= link_to "team members", team_path %>.
+        <br />
+        <br />
+        Qameha's workflow gives you the know how of experienced HR professionnals.
       </p>
       <ul>
-        <li><%= t "mobility_bullet_1" %></li>
-        <li><%= t "mobility_bullet_2" %></li>
-        <li><%= t "mobility_bullet_3" %></li>
+        <li>Intelligent</li>
+        <li>Lean</li>
+        <li>Knowledge based</li>
       </ul>
-      <%= link_to t("learn_more"), mobility_path, :class => "arrowLink" %>
+      <%= link_to "More", "http://qameha.net", :class => "arrowLink" %>
     </div>
+
+
+    <div class="verticalSeparator"></div>
+    <div class="moduleBlock" id="evaluation">
+      <%= link_to "<h2 class='index_3cols'>Secure</h2>", "http://qameha.net", :class => "moduleTitleLink" %>
+      <p>
+Your data is confidential and YOU OWN IT. We use the best hosting solutions and security measures for all accounts.
+<br /><br />You remain in control of all your data all the time.
+      </p>
+      <ul>
+        <li style="font-size:14px;">Backup your data in a click</li>
+        <li>SSH connection</li>
+        <li>Daily remote backups</li>
+      </ul>
+      <%= link_to "More", "http://qameha.net", :class => "arrowLink" %>
+    </div>
+
+
+
     <div id="testimonials">
       <div id="top"></div>
       <p> 
-		<%= image_tag "open_quote.jpg" %>
+        <%= image_tag "open_quote.jpg" %>
         <span id="quote_0" class="quote"><%= t "quote_0" %></span>
         <span id="quote_1" class="quote" style="display:none;"><%= t "quote_1" %></span>
         <span id="quote_2" class="quote" style="display:none;"><%= t "quote_2" %></span>
-		<%= image_tag "close_quote.jpg", :id => "closeQuote" %>
+        <%= image_tag "close_quote.jpg", :id => "closeQuote" %>
       </p>
       <div id="client">
         <span class="client" id="client_0"><%= t "client_0" %></span>
@@ -67,28 +80,28 @@
     <div id="twitter">
       <h2>Twitter</h2>
       <p id="twitterContent">
-        <%= t "loading_tweet" %> &nbsp;&nbsp;<%= image_tag "ajax-loader.gif" %>
+        <%= "loading tweet" %> &nbsp;&nbsp;<%= image_tag "ajax-loader.gif" %>
       </p>
       <div id="twitterDate"></div>
-      <%= link_to "Nous suivre sur Twitter", "http://twitter.com/qameha", :id => "followUs", :title => "@qameha", :target => "_blank" %>
+      <%= link_to "Follow us on Twitter", "http://twitter.com/qameha_HR", :id => "followUs", :title => "@qameha_HR", :target => "_blank" %>
     </div>
     <div id="news">
       <h2><%= t "news" %></h2>
       <p>
-        <%= t "news_main"%>
+          Meet us at the Salon des&nbsp;Solutions Ressources&nbsp;Humaines
         <em>
-          <%= t "news_minor" %>
+          Porte de Versailles, Paris, March 9-11 2010, Booth E25
         </em>
       </p>
-	<!--[if lt IE 7]>
-		<%= image_tag "q.jpg" %>
+      <!--[if lt IE 7]>
+      <%= image_tag "q.jpg" %>
 	<![endif]-->
-     <!--[if gt IE 6]>
-		<%= image_tag "q.png" %>
+      <!--[if gt IE 6]>
+      <%= image_tag "q.png" %>
 	<![endif]-->
-	<!--[if !IE]><!-->
-	<%= image_tag "q.png" %>
-	<!--<![endif]-->
+      <!--[if !IE]><!-->
+      <%= image_tag "q.png" %>
+      <!--<![endif]-->
 
     </div>
   </div>

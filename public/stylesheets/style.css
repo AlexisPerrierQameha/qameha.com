@@ -17,13 +17,16 @@ body{
 }
 a{
   color: #656566;
+  color: #6565AA;
   text-decoration:none;
 }
 
 a:hover{
   color: #000;
+  color: #656566;
   text-decoration:underline;
 }
+
 .classicHtml h2{
   font-size: 19px;
   margin-bottom: 10px;
@@ -164,18 +167,13 @@ margin-left: -15px;
 #subZone .fixedWidthContent{
   position: relative;
 }
-#subZone #cubes{
-  background: url(/images/cubes.png);
-  height:77px;
-  width: 203px;
-  position: absolute;
-  top: 15px;
-  left: 600px;
-}
+
+
 .fr #subZone #rmfTitle{
   background: url(/images/fr/rmf.png) no-repeat;
 }
-#subZone #contactUs{
+
+/*#subZone #contactUs{
   float:right;
   background:url("/images/call_to_action_button.png");
   width: 213px;
@@ -188,6 +186,58 @@ margin-left: -15px;
   font-size: 20px;
   display: block;
 }
+
+#subZone #cubes{
+  background: url(/images/cubes.png);
+  height:77px;
+  width: 203px;
+  position: absolute;
+  top: 15px;
+  left: 600px;
+}
+*/
+#subZone #header_right{
+  float:right;
+  width: 253px;
+  height:150px;
+  display: block;
+  /*border : 1px solid #00F;*/
+  margin-top: 20px;
+}
+
+#header_right #cubes{
+  background: url(/images/cubes.png);
+  height:77px;
+  width: 203px;
+  /*position: absolute;*/
+  /*top: 15px;*/
+  /*left: 600px;*/
+}
+
+#header_right #recruitingLogo{
+  background: url("/images/recruiting_logo_header.png");
+  width:193px;
+  height: 74px;
+/*  position: absolute;
+  top: 15px;
+  right: 0px;
+*/}
+
+
+#header_right #contactUs{
+  background:url("/images/call_to_action_button.png");
+  width: 213px;
+  height:32px;
+  padding-top: 16px;
+  text-align:center;
+  color:#fff;
+  margin-top: 25px;
+  font-style:normal;
+  font-size: 20px;
+  display: block;
+}
+
+
 .pageContent{
   margin: auto;
   padding: 15px 0px;
@@ -619,7 +669,8 @@ margin-top: -5px;
 .fr #subZone #recruitingTitle{
   background:url("/images/fr/recruiting.png") no-repeat;
 }
-#subZone #recruitingLogo{
+
+/*#subZone #recruitingLogo{
   background: url("/images/recruiting_logo_header.png");
   width:193px;
   height: 74px;
@@ -627,6 +678,7 @@ margin-top: -5px;
   top: 15px;
   right: 0px;
 }
+*/
 .recruitingModule .saasAsset h2{
 	margin-left: -10px;
   background:url("/images/recruiting_saas_asset_bullet.jpg") no-repeat;
@@ -738,3 +790,15 @@ margin-top: -5px;
 a.link{
   color: #6565AA;
 }
+
+.index_3cols{
+  font-size : 24px;
+  line-height: 130%;
+  font-style: italic;
+  padding-bottom : 5px;
+}
+.h2_header{
+  font-size : 36px;
+  line-height: 130%;
+}
+

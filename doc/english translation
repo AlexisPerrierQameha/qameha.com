@@ -1,7 +1,81 @@
-en:
-  language_class: "en"
-  # CROSS PAGE TITLES
-  website_title: "Recruitment Performance Reviews Qameha"
+Simple Secure Smart
+
+The organic supply chain of your recruitment process !
+From the job definition to the integration of the candidate.
+Set up a team, track and select candidates, interview, assess and Integrate.
+
+Simple : It's a constant struggle to simplify. We want Qameha to be so obvious and natural to use that you will wonder how you managed to recruit anyone without it. 
+It's web based which means, no IT, no upgrades, no installation.
+
+Smart: At the core we are an HR company. Just check our team members. Qameha's workflow gives you the know how of experienced HR professionnals. 
+
+Secure: Your data is confidential and YOU OWN IT. We use the best hosting solutions and security measures for all accounts. You remain in control of all your data all the time.
+
+Recruiting page
+
+Qameha boosts team work, handles repetitive tasks. Time is saved, Quality is improved at each step of the process. 
+
+Each job opening is setup as a mission with clearly defined roles: a mission owner, a manager and interviewers.
+
+Alerts and stats help you quickly identify risks: candidate sourcing quality and volume, pace of the recruiting process, ....
+
+Know where your candidates come from
+
+There is no waste of time. The workflow rolls on. The next step is always suggested.
+
+The interface is designed to let filter high volumes of applications easily.
+
+You build your own candidate base and become less dependant on job boards
+
+Mission team members from third party companies have a restricted need-to-know only access to the candidates and job openings. 
+
+Qameha is so simple to use that you do not need to train your employees. If they are on Facebook or twitter, they'll know what to do straight away.
+
+
+
+Your IT department involvment is not required.
+
+You can access your candidates from any location at any time with a simple internet connection. It works on your mobile phone.
+
+There are no upgrades, no installation., no maintenance.
+
+Your data is backed up everyday on remote location servers
+
+You can back up your data anytime with a simple click.
+
+Our servers are based in Europe.
+
+All accounts have a secure SSH connection.
+
+All accounts have a 30 days free trial period.
+
+
+
+
+
+Team Work
+
+Workflow
+
+Project based
+
+  quote_0: Qameha enables us to manage all our recruitments in a multi site environment. It gived each actor the info required for his level of implication.
+  
+
+  quote_1: Qameha is easy to use. It simplifies, tags and secures the recruitment process.
+  
+  quote_2: Qameha is one of the best recruiting tools I have seen. It's simple and complete
+  
+  client_0: "Philippe Boudard,<br /> HR Groupe Hubert"
+  client_1: "Didier Etheve,<br /> HR Institut de Soudure"
+  client_2: "Pierre Coquillat,<br /> HR Amadeus"
+
+
+
+
+
+
+  website_title: "Recruitment and Performance Reviews Qameha"
   qameha_baseline: "Qameha &nbsp; | &nbsp; Recruitment &nbsp; Performance Reviews"
 
   # NAVIGATION
@@ -10,80 +84,41 @@ en:
   join: "Join-us"
   blog: "Blog"
   recruiting: "Recruitment"
-  evaluation: "Performance"
+  evaluation: "Performance Reviews"
   mobility: ""
   contact_us_to_know_more: "Contact-us"
 
   # INDEX
   # Modules
-  recruiting_speech: "G&egrave;re le&nbsp;recrutement depuis la&nbsp;d&eacute;finition de&nbsp;poste jusqu'à l'int&eacute;gration du candidat. Participatif, Qameha implique les op&eacute;rationnels, automatise les relances et fait gagner temps et qualit&eacute; à&nbsp;chaque &eacute;tape."
-  evaluation_speech: "R&eacute;pond aux&nbsp;obligations r&eacute;glementaires et sociales et d&eacute;ploie les&nbsp;objectifs de&nbsp;management. Qameha &eacute;valuations automatise les&nbsp;relances des&nbsp;op&eacute;rationnels et g&eacute;n&egrave;re les&nbsp;statistiques d'&eacute;valuation."
-  mobility_speech: "Relie comp&eacute;tences, aspirations, besoin pour donner du&nbsp;sens aux &eacute;valuations, responsabiliser les&nbsp;managers et faciliter la&nbsp;mobilit&eacute;."
+  recruiting_speech: Handles the recruitment process from the job definition to the integration of the candidate. Qameha boosts team work, handles repetitive tasks. Time is saved, Quality is improved at each step of the process
+  
   recruiting_bullet_1: "Structure"
-  recruiting_bullet_2: "Cadence"
-  recruiting_bullet_3: "Pilote"
-  evaluation_bullet_1: "Simplifie"
-  evaluation_bullet_2: "Automatise"
-  evaluation_bullet_3: "G&egrave;re les&nbsp;acc&egrave;s"
-  mobility_bullet_1: "Fid&eacute;lise"
-  mobility_bullet_2: "Capitalise"
-  mobility_bullet_3: "Fluidifie"
+  recruiting_bullet_2: "Rythm"
+  recruiting_bullet_3: "Drive"
+  evaluation_bullet_1: "Simplify"
+  evaluation_bullet_2: "Streamline"
+  evaluation_bullet_3: "Access policy"
+  mobility_bullet_1: "TODO_FR Fid&eacute;lise"
+  mobility_bullet_2: "TODO_FR Capitalise"
+  mobility_bullet_3: "TODO_FR Fluidifie"
   learn_more: "More"
-  # Reviews
-  quote_0: "Qameha permet de&nbsp;gérer l'ensemble des recrutements dans notre environnement multi-sites avec la&nbsp;réactivité dont nous avons besoin, en&nbsp;offrant à&nbsp;chaque niveau de&nbsp;responsabilité le&nbsp;bon niveau d'informations"
-  quote_1: "Qameha est un&nbsp;outil simple à&nbsp;intégrer et à&nbsp;déployer qui permet de&nbsp;baliser, de&nbsp;simplifier, de&nbsp;fluidifier et de&nbsp;sécuriser la&nbsp;gestion des&nbsp;candidatures"
-  quote_2: "<br />Qameha est&nbsp;l'un des&nbsp;meilleurs outils de&nbsp;recrutement que&nbsp;j'ai&nbsp;vu, il&nbsp;est simple et&nbsp;complet.<br /><br />"
 
-  client_0: "Philippe Boudard,<br /> DRH Groupe Hubert"
-  client_1: "Didier Etheve,<br /> DRH Institut de Soudure"
-  client_2: "Pierre Coquillat,<br /> DRH Amadeus France"
 
 
   # Actu
   loading_tweet: "Latest tweet"
   news: "News"
-  news_main: "Retrouvez-nous au&nbsp;Salon des&nbsp;Solutions Ressources&nbsp;Humaines"
-  news_minor: "Porte de Versailles du 9 au 11 mars 2010 - Stand E25"
+  news_main: Meet us at the Salon des&nbsp;Solutions Ressources&nbsp;Humaines
+  news_minor: "Porte de Versailles, March 9 to 11 du 9 2010 - Stand E25"
 
   # JOBS
-  join_us: "Join us!"
-  jobs_introduction: "H&eacute;berg&eacute;s au&nbsp;sein de l’incubateur T&eacute;l&eacute;com ParisTech, nous&nbsp;cherchons aujourd’hui à&nbsp;nous&nbsp;d&eacute;velopper et nous&nbsp;recrutons."
-  technical_content: "Contenu technique"
-  required_skills: "Comp&eacute;tences requises"
-  english_required: "Bonne maîtrise de&nbsp;l’anglais imp&eacute;rative"
-  if_interested: "Si vous &ecirc;tes int&eacute;ress&eacute;(e) n’h&eacute;sitez pas à&nbsp;nous&nbsp;envoyer votre&nbsp;candidature à&nbsp;l’adresse suivante"
-  # Developer
-  developer_rails: "D&eacute;veloppeur Ruby&nbsp;on&nbsp;Rails"
-  developer_rails_looking_for: "Deux d&eacute;veloppeurs Ruby on Rails / CDI / Paris 14&egrave;me / R&eacute;mun&eacute;ration selon exp&eacute;rience."
-  developer_rails_context: "Au sein d’une &eacute;quipe de trois associ&eacute;s fondateurs, vous &ecirc;tes compl&egrave;tement associ&eacute;(e) au d&eacute;veloppement de l’entreprise. Vous reportez à l’associ&eacute; en charge des IT et prenez en charge le d&eacute;veloppement de modules fonctionnels, de l’&eacute;criture du code aux test et d&eacute;ploiement. Vous &eacute;voluez au rythme de la soci&eacute;t&eacute; soit en management (croissance de l’&eacute;quipe IT), soit vers des axes de recherches (partenariats laboratoires), soit de web marketing."
-  developer_rails_technical_bullet_0: "Conception de solution web en ruby on rails"
-  developer_rails_technical_bullet_1: "D&eacute;veloppement de solution open source Web en ruby on rails"
-  developer_rails_technical_bullet_2: "Mod&eacute;lisation des Bases de donn&eacute;es"
-  developer_rails_technical_bullet_3: "R&eacute;cup&eacute;ration des sp&eacute;cifications fonctionnelles"
-  developer_rails_technical_bullet_4: "R&eacute;daction des sp&eacute;cifications techniques"
-  developer_rails_required_bullet_0: "Connaissance de Ruby on Rails obligatoire."
-  developer_rails_required_bullet_1: "Connaissance des mod&egrave;les MVC"
-  developer_rails_required_bullet_2: "Connaissances des webservices"
-  developer_rails_required_bullet_3: "Connaissance des SGBD MySQL obligatoire (D&eacute;veloppement, Conception, …)"
-  # Engineer
-  software_engineer: "Ing&eacute;nieur Informaticien"
-  software_engineer_looking_for: "Nous recherchons un d&eacute;veloppeur sur Ruby on Rails / Stage long ou apprentissage (pr&eacute;-embauche possible) / Paris 14&egrave;me"
-  software_engineer_context: "Au sein d’une &eacute;quipe de trois associ&eacute;s fondateurs, vous &ecirc;tes compl&egrave;tement associ&eacute;(e) au d&eacute;veloppement de l’entreprise.Vous reportez à l’associ&eacute; en charge des IT et prenez en charge le d&eacute;veloppement de modules fonctionnels, de l’&eacute;criture du code aux test et d&eacute;ploiement."
-  software_engineer_technical_bullet_0: "Conception de solution web en ruby on rails"
-  software_engineer_technical_bullet_1: "D&eacute;veloppement de solution open source Web en ruby on rails"
-  software_engineer_technical_bullet_2: "Mod&eacute;lisation des Bases de donn&eacute;es"
-  software_engineer_technical_bullet_3: "R&eacute;cup&eacute;ration des sp&eacute;cifications fonctionnelles"
-  software_engineer_technical_bullet_4: "R&eacute;daction des sp&eacute;cifications techniques"
-  software_engineer_required_bullet_0: "Connaissance de Ruby on Rails obligatoire."
-  software_engineer_required_bullet_1: "Connaissance des mod&egrave;les MVC"
-  software_engineer_required_bullet_2: "Connaissances des webservices"
-  software_engineer_required_bullet_3: "Connaissance des SGBD MySQL obligatoire (D&eacute;veloppement, Conception, …)"
-  # Web Marketer
-  web_marketer: "Web Marketeur"
-  web_marketer_content: "Nous recherchons un web marketeur en CDI. Contactez-nous à&nbsp;l'adresse suivante : "
+  join_us: "We're hiring"
+  jobs_introduction: We are looking for talented people.
+
+  technical_content: "Technical skills"
 
   # CONTACT US
-  contact_us: "Contactez-nous"
+  contact_us: "Contact us"
   contact_for: "Vous souhaitez en apprendre plus sur Qameha&nbsp;?<br /> Vous souhaitez une d&eacute;monstration&nbsp;? "
   phone: "T&eacute;l&eacute;phone"
   email: "Email"
@@ -92,10 +127,12 @@ en:
   contact_the_team facebook_link twitter_link: "Vous pouvez &eacute;galement rejoindre notre <a href='{{facebook_link}}' target='_blank'>groupe Facebook</a> ou nous suivre sur <a href='{{twitter_link}}' target='_blank'>twitter</a>."
 
   # MODULES
-  saas_assets_intro: "B&eacute;n&eacute;ficiez des avantages d'une application internet"
+  saas_assets_intro: Enjoy the numerous advantages of an Internet based application
+
   saas_asset_1: "<ul><li>Les donn&eacute;es sont crypt&eacute;es</li><li>Les sauvegardes sont quotidiennes, r&eacute;alis&eacute;es sur des serveurs distincts</li><li>Les serveurs sont bas&eacute;s en Europe (respect des obligations CNIL)</li></ul>"
   saas_asset_2: "<ul><li>Les donn&eacute;es vous appartiennent et peuvent &ecirc;tre extraites en un seul clic</li><li>Le mode Saas vous autorise un acc&egrave;s partout où vous disposez d'une connexion internet</li><li>Le nombre d'utilisateur n'est pas limit&eacute;</li></ul>"
   saas_asset_3: "<ul><li>Pas de logiciel, pas d'installation, pas de formation n&eacute;cessaire</li><li>L'ergonomie reconnue de Qameha offre une grande facilit&eacute; d'utilisation</li><li>Les 'infos bulles' guident l'utilisateur lors de ses premiers pas</li></ul>"
+  
   saas_asset_title_1: "S&eacute;curit&eacute;"
   saas_asset_title_2: "Souplesse"
   saas_asset_title_3: "Simplicity"

@@ -1,4 +1,5 @@
 class WebsiteController < ApplicationController
+
   def index
     @display_promo = true
   end
@@ -8,6 +9,12 @@ class WebsiteController < ApplicationController
   end
 
   def contact
+    if params[:message]
+      @message = params[:message]
+      QamehaMailer.deliver_contact(@message)
+      render :action => "contact"
+
+    end
     @display_promo = true
   end
   

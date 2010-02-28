@@ -12,7 +12,7 @@ function initTwitter(){
     $date = jQuery("#twitterDate");
     $content = jQuery("#twitterContent");
 		
-		$.getJSON("http://twitter.com/statuses/user_timeline/qameha.json?count=1&callback=?",
+		$.getJSON("http://twitter.com/statuses/user_timeline/qameha_HR.json?count=1&callback=?",
 		    function(data){
 				$content.html(data[0].text);
 				$date.html(data[0].created_at.replace("+0000 2010",""));

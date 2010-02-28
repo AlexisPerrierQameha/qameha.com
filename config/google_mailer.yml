@@ -1,0 +1,27 @@
+development:
+  type: IMAP
+  server: "imap.gmail.com"
+  port: 993
+  ssl: yes
+  username: "admin@qameha.com"
+  password: "qameha88260"
+  use_login: LOGIN
+  authentication: LOGIN
+  sleep_time: 30
+  processed_folder: "Processed"
+  error_folder: "Error"
+
+
+
+production:
+  type: IMAP
+  server: "imap.gmail.com"
+  port: 993
+  ssl: yes
+  username: "admin@qameha.com"
+  password: "qameha88260"
+  use_login: LOGIN
+  authentication: LOGIN
+  sleep_time: 30
+  processed_folder: "Processed"
+  error_folder: "Error"

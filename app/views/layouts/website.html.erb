@@ -1,7 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
-    <title><%= t "website_title" %></title>
+    <title>
+       Agile Recruiting Solutions Qameha
+    </title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <%= stylesheet_link_tag "reset", :media => "all" %>
     <%= stylesheet_link_tag "style", :media => "all" %>
@@ -21,37 +23,36 @@
 	<![endif]-->
 <%#= include_tiny_mce_if_needed %>
   </head>
-  <body class="<%= t "language_class" %>">
-    <% if @display_promo %>
-      <div id="promoWrapper">
-        <%= link_to "", recruitment_agencies_path %>
-        <div id="promo">
-        </div>
-      </div>
-    <% end %>
+  <body class="fr">
+    <%# if @display_promo %>
+      <%#*<div id="promoWrapper">%>
+        <%#= link_to "", recruitment_agencies_path %>
+        <%#*<div id="promo">%>
+        <%#*</div>%>
+      <%#*</div>%>
+    <%# end %>
 
     <div id="headest">
       <div class="fixedWidthContent">
-        Qameha | 
-        <%= link_to t("recruiting"), recruiting_path %>
-        <%= link_to t("evaluation"), evaluation_path %>
-        <%= link_to t("mobility"), mobility_path %>
+        Qameha | Agile Recruiting Solutions
       </div>
     </div>
 
     <div id="header" class="clearfix">
       <div class="fixedWidthContent">
         <div id="logo">
-          <%= link_to "", "/", :id => "logo", :title => t("qameha_baseline") %>
+          <%= link_to "", "/", :id => "logo", :title => "Agile Recruiting Solutions" %>
         </div>
         <div id="menu">
-          <%= link_to t("contact"), contact_path, :class => "contact" %> |
-          <%= link_to t("team"), team_path, :class => "team" %> |
-          <%= link_to t("join"), jobs_path, :class => "jobs" %>
+          <%= link_to "Faq", faq_path, :class => "faq" %>
           |
-          <%= link_to t("blog"), "/blog" %>
+          <%= link_to "Contact", contact_path, :class => "contact" %>
           |
-          <%= link_to "L'enquête", enquete_path %>
+          <%= link_to "Team", team_path, :class => "team" %> 
+          <%#*|%>
+          <%#= link_to "Blog", "/blog" %>
+          <%#*|%>
+          <%#= link_to "We are hiring", jobs_path, :class => "jobs" %>
 
         </div>
       </div>
@@ -69,26 +70,29 @@
     <div id="footer" class="clearfix">
 
       <div class="fixedWidthContent">
-        <%= link_to "", recruiting_path, :id => "recruiting", :class => "module"%>
-        <%= link_to "", evaluation_path, :id => "evaluation", :class => "module"%>
-        <%= link_to "", mobility_path, :id => "mobility", :class => "module"%>
+        <%#= link_to "", recruiting_path, :id => "recruiting", :class => "module"%>
+        <%#= link_to "", evaluation_path, :id => "evaluation", :class => "module"%>
+        <%#= link_to "", mobility_path, :id => "mobility", :class => "module"%>
         <div id="endNavigation">
           <ul>
             <li>
-              <%= link_to t("contact"), contact_path %>
+              <%= link_to "Faq", faq_path %>
             </li>
             <li>
-              <%= link_to t("team"), team_path %>
+              <%= link_to "Contact", contact_path %>
             </li>
             <li>
-              <%= link_to t("join"), jobs_path %>
+              <%= link_to "Team", team_path %>
             </li>
-            <li>
-              <%= link_to t("blog"), "/blog" %>
-            </li>
-            <li>
-              <%= link_to "L'enquête", enquete_path %>
-            </li>
+            <%#*<li>%>
+              <%#= link_to "We are hiring", jobs_path %>
+            <%#*</li>%>
+            <%#*<li>%>
+              <%#= link_to "Blog", "/blog" %>
+            <%#*</li>%>
+            <%#*<li>%>
+              <%#= link_to "L'enquête", enquete_path %>
+            <%#*</li>%>
           </ul>
           <%= link_to image_tag("logo_telecomparis.gif", :width => 50, :alt=> "Telecom ParisTech Incubateur"), "http://entrepreneurs.telecom-paristech.fr", :target =>"_blank", :title => "L'incubateur de Telecom ParisTech" %>
           <%= link_to image_tag("scientipole.jpg", :height => 50, :alt=> "Scientipole Initiative"), "http://www.scientipole-initiative.org/", :target =>"_blank", :title => "Scientipole Initiative" %>

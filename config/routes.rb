@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.enquete "enquete-performance-RH", :controller => "website", :action => "enquete"
   map.enquete "enquete-performance-rh", :controller => "website", :action => "enquete"
   map.enquete "enquete", :controller => "website", :action => "enquete"
+  map.faq "faq", :controller => "website", :action => "faq"
   map.team "team", :controller => "website", :action => "team"
   map.contact "contact", :controller => "website", :action => "contact"
   map.jobs "jobs", :controller => "website", :action => "jobs"

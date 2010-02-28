@@ -94,6 +94,8 @@
               <%#= link_to "L'enquête", enquete_path %>
             <%#*</li>%>
           </ul>
+          <%= render :partial => "shared/select_languages" %>
+
           <%= link_to image_tag("logo_telecomparis.gif", :width => 50, :alt=> "Telecom ParisTech Incubateur"), "http://entrepreneurs.telecom-paristech.fr", :target =>"_blank", :title => "L'incubateur de Telecom ParisTech" %>
           <%= link_to image_tag("scientipole.jpg", :height => 50, :alt=> "Scientipole Initiative"), "http://www.scientipole-initiative.org/", :target =>"_blank", :title => "Scientipole Initiative" %>
         </div>

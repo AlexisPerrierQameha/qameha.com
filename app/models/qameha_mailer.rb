@@ -4,7 +4,7 @@ class QamehaMailer < ActionMailer::Base
   #TODO should be doubled with sms alerts
 
   def contact(message)
-    @recipients  = "alexis.perrier@gmail.com"
+    @recipients  = "contact@qameha.com"
     @from        = "admin@qameha.com"
     @subject     = "[Qameha CONTACT] " + message["subject"]
     @sent_on     = Time.now

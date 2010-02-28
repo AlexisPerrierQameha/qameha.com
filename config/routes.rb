@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.mobility "mobility", :controller => "website", :action => "mobility"
   map.recruitment_agencies "recruitment-agencies", :controller => "website", :action => "recruitment_agencies"
 
+  map.lang "lang", :controller => "website", :action => "change_lang"
 
   map.root :controller => "website"
 

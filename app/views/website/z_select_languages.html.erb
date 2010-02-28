@@ -1,0 +1,5 @@
+<div id="SelectLangage" style =" float:right;">
+  <form action="/lang" method="get" name="select_langage">
+    <%= select_tag "lang", @select_langages, :onchange => "javascript:this.form.submit();" %>
+  </form>
+</div>
